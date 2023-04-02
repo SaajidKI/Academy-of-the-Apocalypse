@@ -9,11 +9,12 @@ using UnityEngine.Audio;
 public class GameHandler : MonoBehaviour {
 
       private GameObject player;
-      public GameObject item;
-      private bool item_active = false;
-      public static int playerHealth = 100;
+      // public GameObject item;
+      // private bool item_active = false;
+      public int playerHealth = 100;
       public int StartPlayerHealth = 100;
-      public GameObject healthText;
+      public GameObject Canvas;
+      private HealthBarThirdPerson healthBarScript;
 
       public static bool GameisPaused = false;
       public GameObject pauseMenuUI;
@@ -31,10 +32,10 @@ public class GameHandler : MonoBehaviour {
 
       private string sceneName;
 
-      public CameraShake cameraShake;
-      public GameObject item2;
-      private bool item2_active = false;
-      private int Deaths = 0;
+      // public CameraShake cameraShake;
+      // public GameObject item2;
+      // private bool item2_active = false;
+      // private int Deaths = 0;
 
       void Awake (){
                 SetLevel (volumeLevel);
@@ -56,7 +57,7 @@ public class GameHandler : MonoBehaviour {
             pauseMenuUI.SetActive(false);
                 GameisPaused = false;
 
-            item_active = false;
+            // item_active = false;
       }
 
     //   public void playerGetTokens(int newTokens){
@@ -74,10 +75,10 @@ public class GameHandler : MonoBehaviour {
                         }
                 }
 
-                if (playerHealth <= 50 && item_active == false) {
-                    item_active = true;
-                    item.SetActive(true);
-                }
+            //     if (playerHealth <= 50 && item_active == false) {
+            //         item_active = true;
+            //         item.SetActive(true);
+            //     }
     }
 
     void Pause(){
@@ -99,9 +100,10 @@ public class GameHandler : MonoBehaviour {
         
 
       public void playerGetHit(int damage){
+            Debug.Log("Player Got hit!");
            if (isDefending == false){
                   playerHealth -= damage;
-                  cameraShake.ShakeCamera(0.15f, 0.3f);
+                  // cameraShake.ShakeCamera(0.15f, 0.3f);
                   if (playerHealth >=0){
                         updateStatsDisplay();
                   }
@@ -120,30 +122,32 @@ public class GameHandler : MonoBehaviour {
                   updateStatsDisplay();
                   playerDies();
             }
+
+            Debug.Log(playerHealth);
       }
 
       public void updateStatsDisplay(){
-            Text healthTextTemp = healthText.GetComponent<Text>();
-            healthTextTemp.text = "HEALTH: " + playerHealth;
+            healthBarScript = Canvas.GetComponent<HealthBarThirdPerson>();
+            healthBarScript.TakeDamage();
 
             // Text tokensTextTemp = tokensText.GetComponent<Text>();
             // tokensTextTemp.text = "GOLD: " + gotTokens;
       }
 
-      public void DeathCount() {
-          Deaths++;
-          Debug.Log(Deaths);
+      // public void DeathCount() {
+      //     Deaths++;
+      //     Debug.Log(Deaths);
 
-          if (Deaths >= 2 && item2_active == false) {
-              item2_active = true;
-              item2.SetActive(true);
-        }
+      //     if (Deaths >= 2 && item2_active == false) {
+      //         item2_active = true;
+      //         item2.SetActive(true);
+      //   }
 
-        if (Deaths > 4) {
-            SceneManager.LoadScene("WinScene");
-            Debug.Log("Goin to WinScene");
-        }
-      }
+      //   if (Deaths > 4) {
+      //       SceneManager.LoadScene("WinScene");
+      //       Debug.Log("Goin to WinScene");
+      //   }
+      // }
 
       public void playerDies(){
             // player.GetComponent<PlayerHurt>().playerDead();       

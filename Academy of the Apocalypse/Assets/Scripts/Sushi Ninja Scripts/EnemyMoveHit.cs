@@ -52,6 +52,7 @@ public class EnemyMoveHit : MonoBehaviour {
         public void OnCollisionEnter2D(Collision2D other){
             if (other.gameObject.tag == "Player") {
                     isAttacking = true;
+                    Debug.Log("Enemy hit player");
                     //anim.SetBool("Attack", true);
                     gameHandler.playerGetHit(damage);
                     //rend.material.color = new Color(2.4f, 0.9f, 0.9f, 0.5f);

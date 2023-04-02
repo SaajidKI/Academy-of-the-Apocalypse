@@ -48,7 +48,7 @@ public class PlayerAttackMelee : MonoBehaviour{
                   StartCoroutine(EndKnockBack(pushRB));
 
                   // hit_SFX
-                  gameObject.GetComponent<AudioSource>().Play();
+                  // gameObject.GetComponent<AudioSource>().Play();
 
                   // added hit_VFX
                   Vector3 attackPosition = transform.position;
