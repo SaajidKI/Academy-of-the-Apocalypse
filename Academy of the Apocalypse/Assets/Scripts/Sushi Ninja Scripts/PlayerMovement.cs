@@ -43,23 +43,26 @@ public class PlayerMovement : MonoBehaviour {
 
             mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
 
-            Vector3 ScaleVal = transform.localScale;
-            float ScaleDeter = ScaleVal.x;
+            // Vector3 playerPos = transform.localPosition
+            // float playerPosX = playerPos.x;
 
-            Debug.Log(mousePos.x);
+            // Vector3 ScaleVal = transform.localScale;
+            // float ScaleDeter = ScaleVal.x;
 
-            if (mousePos.x > 0 && ScaleDeter > 0) {
-                  playerTurn();
-            }
+            // Debug.Log(mousePos.x);
 
-            if (mousePos.x < 0 && ScaleDeter < 0) {
-                  playerTurn();
-            }
+            // if (mousePos.x > 0 && ScaleDeter > 0) {
+            //       playerTurn();
+            // }
 
-            // Vector2 lookDir = mousePos - rb2D.position;
-            // float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
-            // angle = Mathf.RoundToInt(angle);
-            // Debug.Log(angle);
+            // if (mousePos.x < 0 && ScaleDeter < 0) {
+            //       playerTurn();
+            // }
+
+            Vector2 lookDir = mousePos - rb2D.position;
+            float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
+            angle = Mathf.RoundToInt(angle);
+            Debug.Log(angle);
             // // rb2D.rotation = angle;
 
             // if (angle == 0 || angle == -180) {
@@ -73,22 +76,24 @@ public class PlayerMovement : MonoBehaviour {
             //       turned = false;
             // }
 
-            // if ((angle > 0 && angle < 90) || (angle > -270 && angle < -180)) {
-                  
-            //        turned = false;
-            //       // if (angle > -270 && angle < -180) {
-            //       //       Debug.Log("HERE!");
-            //       //       playerTurn();
-            //       // }
-            // }
+            if ((angle > 0 && angle < 90) || (angle > -270 && angle < -180)) {
+                  if (turned == false) {
+                        playerTurn();
+                        turned = true; 
+                  }
+                  // if (angle > -270 && angle < -180) {
+                  //       Debug.Log("HERE!");
+                  //       playerTurn();
+                  // }
+            }
 
-            // if (angle < 0 && angle > -180) {
-            //       Debug.Log("Here!");
-            //       if (turned == false) {
-            //             playerTurn();
-            //             turned = true;
-            //       }
-            // }
+            if (angle < 0 && angle > -180) {
+                  Debug.Log("Here!");
+                  if (turned == true) {
+                        playerTurn();
+                        turned = false;
+                  }
+            }
 
 
 
