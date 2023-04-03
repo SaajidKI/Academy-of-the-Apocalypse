@@ -11,6 +11,11 @@ public class PlayerMovement : MonoBehaviour {
       public static float runSpeed = 10f;
       public float startSpeed = 10f;
       public bool isAlive = true;
+      private bool turned = true;
+
+      public Camera cam;
+
+      Vector2 mousePos;
 
       void Start(){
         //    anim = gameObject.GetComponent<Animator>();
@@ -34,14 +39,62 @@ public class PlayerMovement : MonoBehaviour {
                   //     WalkSFX.Stop();
                  }
 
-                  // Turning. Reverse if input is moving the Player right and Player faces left.
-                 if ((hvMove.x <0 && !FaceRight) || (hvMove.x >0 && FaceRight)){
-                        playerTurn();
-                  }
             }
+
+            mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+
+            Vector3 ScaleVal = transform.localScale;
+            float ScaleDeter = ScaleVal.x;
+
+            Debug.Log(mousePos.x);
+
+            if (mousePos.x > 0 && ScaleDeter > 0) {
+                  playerTurn();
+            }
+
+            if (mousePos.x < 0 && ScaleDeter < 0) {
+                  playerTurn();
+            }
+
+            // Vector2 lookDir = mousePos - rb2D.position;
+            // float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
+            // angle = Mathf.RoundToInt(angle);
+            // Debug.Log(angle);
+            // // rb2D.rotation = angle;
+
+            // if (angle == 0 || angle == -180) {
+            //       if (turned == false) {
+            //             playerTurn();
+            //             turned = true;
+            //       }
+            // }
+
+            // if (angle == -1 || angle == -179) {
+            //       turned = false;
+            // }
+
+            // if ((angle > 0 && angle < 90) || (angle > -270 && angle < -180)) {
+                  
+            //        turned = false;
+            //       // if (angle > -270 && angle < -180) {
+            //       //       Debug.Log("HERE!");
+            //       //       playerTurn();
+            //       // }
+            // }
+
+            // if (angle < 0 && angle > -180) {
+            //       Debug.Log("Here!");
+            //       if (turned == false) {
+            //             playerTurn();
+            //             turned = true;
+            //       }
+            // }
+
+
+
       }
 
-      private void playerTurn(){
+      public void playerTurn(){
             // NOTE: Switch player facing label
             FaceRight = !FaceRight;
 
@@ -50,4 +103,5 @@ public class PlayerMovement : MonoBehaviour {
             theScale.x *= -1f;
             transform.localScale = theScale;
       }
+
 }
