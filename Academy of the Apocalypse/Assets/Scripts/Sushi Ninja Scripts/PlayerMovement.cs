@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour {
 
     //   public Animator anim;
-      //public AudioSource WalkSFX;
+      public AudioSource WalkSFX;
       public Rigidbody2D rb2D;
       private bool FaceRight = true; // determine which way player is facing.
       public static float runSpeed = 10f;
@@ -31,12 +31,12 @@ public class PlayerMovement : MonoBehaviour {
 
                   if ((Input.GetAxis("Horizontal") != 0) || (Input.GetAxis("Vertical") != 0)){
                     //   anim.SetBool ("isWalking", true);
-                  //     if (!WalkSFX.isPlaying){
-                  //           WalkSFX.Play();
-                  //     }
+                      if (!WalkSFX.isPlaying){
+                            WalkSFX.Play();
+                      }
                   } else {
                     //   anim.SetBool ("isWalking", false);
-                  //     WalkSFX.Stop();
+                      WalkSFX.Stop();
                  }
 
             }
