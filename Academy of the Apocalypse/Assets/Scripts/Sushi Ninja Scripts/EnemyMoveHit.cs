@@ -49,22 +49,27 @@ public class EnemyMoveHit : MonoBehaviour {
                //else { anim.SetBool("Walk", false);}
        }
 
-        public void OnCollisionEnter2D(Collision2D other){
-            if (other.gameObject.tag == "Player") {
-                    isAttacking = true;
-                    Debug.Log("Enemy hit player");
-                    //anim.SetBool("Attack", true);
-                    gameHandler.playerGetHit(damage);
-                    //rend.material.color = new Color(2.4f, 0.9f, 0.9f, 0.5f);
-                    //StartCoroutine(HitEnemy());
+       public void OnCollisionEnter2D(Collision2D other){
+              if (other.gameObject.tag == "Player") {
+                     isAttacking = true;
+                     Debug.Log("Enemy hit player");
+                     //anim.SetBool("Attack", true);
+                     gameHandler.playerGetHit(damage);
+                     //rend.material.color = new Color(2.4f, 0.9f, 0.9f, 0.5f);
+                     //StartCoroutine(HitEnemy());
 
-                //This method adds force to the player, pushing them back without teleporting (choose above or below).
-                Rigidbody2D pushRB = other.gameObject.GetComponent<Rigidbody2D>();
-                Vector2 moveDirectionPush = rb2D.transform.position - other.transform.position;
-                pushRB.AddForce(moveDirectionPush.normalized * knockBackForce * - 1f, ForceMode2D.Impulse);
-                StartCoroutine(EndKnockBack(pushRB));
+                     //This method adds force to the player, pushing them back without teleporting (choose above or below).
+                     Rigidbody2D pushRB = other.gameObject.GetComponent<Rigidbody2D>();
+                     Vector2 moveDirectionPush = rb2D.transform.position - other.transform.position;
+                     pushRB.AddForce(moveDirectionPush.normalized * knockBackForce * - 1f, ForceMode2D.Impulse);
+                     StartCoroutine(EndKnockBack(pushRB));
             }
-        }
+       }
+
+       // public void TakePushback(float KB) {
+              
+       // }
+
 
        public void OnCollisionExit2D(Collision2D other){
               if (other.gameObject.tag == "Player") {

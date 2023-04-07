@@ -27,6 +27,7 @@ public class EnemyMeleeDamage : MonoBehaviour {
                      Die();
               }
        }
+       
 
        void Die(){
             //   Instantiate (healthLoot, transform.position, Quaternion.identity);

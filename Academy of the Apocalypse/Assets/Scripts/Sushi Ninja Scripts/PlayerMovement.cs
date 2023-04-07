@@ -62,7 +62,6 @@ public class PlayerMovement : MonoBehaviour {
             Vector2 lookDir = mousePos - rb2D.position;
             float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
             angle = Mathf.RoundToInt(angle);
-            Debug.Log(angle);
             // // rb2D.rotation = angle;
 
             // if (angle == 0 || angle == -180) {
@@ -88,7 +87,6 @@ public class PlayerMovement : MonoBehaviour {
             }
 
             if (angle < 0 && angle > -180) {
-                  Debug.Log("Here!");
                   if (turned == true) {
                         playerTurn();
                         turned = false;
