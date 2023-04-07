@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c71250d7cdd276c419bcf41e9c266774
+guid: 7faab67f74f70b84cacc6d4e046b44fe
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -116,7 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Inside_Wall_1
+      name: Inside_Tilemap_0
       rect:
         serializedVersion: 2
         x: 0
@@ -130,14 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8244d048609f4cb4a90cb74bc4e2068c
-      internalID: -143411600
+      spriteID: b3b8325fa5414b74bb215b85b7539aa4
+      internalID: -1678553495
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inside_Wall_2
+      name: Inside_Tilemap_1
       rect:
         serializedVersion: 2
         x: 240
@@ -151,14 +151,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d21f88eb84f58584a82dcfe46e47b3c3
-      internalID: -860586819
+      spriteID: cec26fc0ad1c59e48bfb6e35d66b23ee
+      internalID: -2145998797
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inside_Wall_3
+      name: Inside_Tilemap_2
       rect:
         serializedVersion: 2
         x: 480
@@ -172,14 +172,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9806e5f8e7640d54f91e8901544e079b
-      internalID: 1649915157
+      spriteID: 5399cbc7426742e48a2b519699cb98c2
+      internalID: 1053177852
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inside_Wall_4
+      name: Broken_Table_1
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1200
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 040092149890699498ae87aaa92a2079
+      internalID: -1705765226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inside_Tilemap_3
       rect:
         serializedVersion: 2
         x: 0
@@ -193,14 +214,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b45935494967c6a439becc0d8a73d0f1
-      internalID: -1549899724
+      spriteID: c04f7a5daf8170f4bbc2b2e05091b0fd
+      internalID: 1709639188
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inside_Wall_5
+      name: Inside_Tilemap_4
       rect:
         serializedVersion: 2
         x: 240
@@ -214,14 +235,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc2358dc15c8f284b9f8cd46a0b085ca
-      internalID: 1846782071
+      spriteID: 018bba3a6fe35684f982f9b9cf62428a
+      internalID: -819543615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inside_Wall_6
+      name: Inside_Tilemap_5
       rect:
         serializedVersion: 2
         x: 480
@@ -235,14 +256,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 13b85250afe242b49a94489021360a00
-      internalID: 697780440
+      spriteID: 96bb24e006d6c274f8bff05dfe1a273d
+      internalID: -1437957431
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inside_Wall_7
+      name: Broken_Table_2
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 960
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a605975f1ea5a3459a90eecf9dcec36
+      internalID: 2008905490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inside_Tilemap_6
       rect:
         serializedVersion: 2
         x: 0
@@ -256,14 +298,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7eecb918c58c5c749a39858eb6742eec
-      internalID: -276968319
+      spriteID: c5410849d14d8204ba2803519a1d4fc7
+      internalID: -412429193
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inside_Wall_8
+      name: Inside_Tilemap_7
       rect:
         serializedVersion: 2
         x: 240
@@ -277,14 +319,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 41da439126453e744ad7a4f1eb6a5022
-      internalID: 34727868
+      spriteID: ab6091fc37194a24ca54e0fbbb1c2249
+      internalID: -585961066
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inside_Wall_9
+      name: Inside_Tilemap_8
       rect:
         serializedVersion: 2
         x: 480
@@ -298,14 +340,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb5ac8fa53208574696312c435b5dd26
-      internalID: 243466155
+      spriteID: 59c0376ec89375b47b580adc921714e3
+      internalID: -1360007585
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inside_Wall_10
+      name: Inside_Tilemap_9
       rect:
         serializedVersion: 2
         x: 0
@@ -319,14 +361,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d8a9b3a44c51124bafd0c59bd002eab
-      internalID: 1882024307
+      spriteID: 4483b277d9bd6ba4ca37bdba9baeb27c
+      internalID: 920371356
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inside_Chair_1
+      name: Inside_Tilemap_10
       rect:
         serializedVersion: 2
         x: 240
@@ -340,14 +382,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad7dc2ba44761eb4a9d728fac9cc3bea
-      internalID: -1906254488
+      spriteID: 7891fd288b94a38488e6d145166fb61c
+      internalID: -1363877726
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inside_Chair_2
+      name: Inside_Tilemap_11
       rect:
         serializedVersion: 2
         x: 480
@@ -361,14 +403,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8f13fda4fd490324a9ac46221695a3cb
-      internalID: -696392596
+      spriteID: afb25da2ae1348b4dbe26fc46182828a
+      internalID: -1028745577
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inside_Table_1
+      name: Table_1
       rect:
         serializedVersion: 2
         x: 0
@@ -382,14 +424,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62cc294fd7eec584fab3242f8e45f6ad
-      internalID: -1544610672
+      spriteID: ca32c2991c03c0844919b04b0057400c
+      internalID: -147726487
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inside_Table_2
+      name: Table_2
       rect:
         serializedVersion: 2
         x: 240
@@ -403,14 +445,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afb7daefcbcdd504589626e12d76dacf
-      internalID: 1031634629
+      spriteID: 011ca68de9239a940b851ac25d0a01fd
+      internalID: -887272613
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inside_Table_3
+      name: Table_3
       rect:
         serializedVersion: 2
         x: 480
@@ -424,14 +466,35 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a612ae1c397b07345962cc38ea2c0ec5
-      internalID: 1879752102
+      spriteID: 8ceb48417d2099c41a4ee4ab35476321
+      internalID: 144311033
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inside_Door_1
+      name: Chair_2
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 240
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 029d869178c0d864e9981943c18ef551
+      internalID: 1988245053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door_1
       rect:
         serializedVersion: 2
         x: 0
@@ -445,14 +508,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7625d1a2f930db4eb8e83b27453cf19
-      internalID: -398911444
+      spriteID: 7dc1f00d9a0fbb94892c5c0cec3981b1
+      internalID: 399294100
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inside_Door_3
+      name: Doorway
       rect:
         serializedVersion: 2
         x: 240
@@ -466,14 +529,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c45dee87648f68345bada1f0539b5403
-      internalID: -2104185714
+      spriteID: f5c6a0c335bc5c44cb29083e2231e286
+      internalID: -1880669522
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inside_Door_2
+      name: Door_2
       rect:
         serializedVersion: 2
         x: 480
@@ -487,8 +550,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 618b7c8db3bc4574ca7f2653402a1da5
-      internalID: 1630775533
+      spriteID: adf4d0c3068179141abd7e81707e3f9a
+      internalID: 1552095464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chair_1
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 0
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b01b80cc73ebbaa48a2aa2afe26a5a8e
+      internalID: 1570858910
       vertices: []
       indices: 
       edges: []
@@ -504,24 +588,28 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Inside_Wall_5: 1846782071
-      Inside_Wall_10: 1882024307
-      Inside_Wall_7: -276968319
-      Inside_Chair_1: -1906254488
-      Inside_Door_1: -398911444
-      Inside_Door_3: -2104185714
-      Inside_Wall_8: 34727868
-      Inside_Wall_4: -1549899724
-      Inside_Wall_6: 697780440
-      Inside_Wall_3: 1649915157
-      Inside_Table_2: 1031634629
-      Inside_Wall_2: -860586819
-      Inside_Door_2: 1630775533
-      Inside_Table_1: -1544610672
-      Inside_Chair_2: -696392596
-      Inside_Wall_1: -143411600
-      Inside_Table_3: 1879752102
-      Inside_Wall_9: 243466155
+      Chair_1: 1570858910
+      Inside_Tilemap_5: -1437957431
+      Inside_Tilemap_4: -819543615
+      Door_1: 399294100
+      Inside_Tilemap_1: -2145998797
+      Doorway: -1880669522
+      Broken_Table_1: -1705765226
+      Inside_Tilemap_10: -1363877726
+      Inside_Tilemap_7: -585961066
+      Inside_Tilemap_0: -1678553495
+      Broken_Table_2: 2008905490
+      Inside_Tilemap_2: 1053177852
+      Table_3: 144311033
+      Inside_Tilemap_3: 1709639188
+      Chair_2: 1988245053
+      Inside_Tilemap_8: -1360007585
+      Table_1: -147726487
+      Door_2: 1552095464
+      Inside_Tilemap_6: -412429193
+      Table_2: -887272613
+      Inside_Tilemap_9: 920371356
+      Inside_Tilemap_11: -1028745577
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
