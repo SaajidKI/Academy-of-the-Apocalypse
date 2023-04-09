@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7faab67f74f70b84cacc6d4e046b44fe
+guid: 230261bd949abb04bacd9b36546bf946
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 80
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -116,238 +116,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Inside_Tilemap_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 1200
-        width: 240
-        height: 240
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b3b8325fa5414b74bb215b85b7539aa4
-      internalID: -1678553495
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inside_Tilemap_2
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 1200
-        width: 240
-        height: 240
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cec26fc0ad1c59e48bfb6e35d66b23ee
-      internalID: -2145998797
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inside_Tilemap_3
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 1200
-        width: 240
-        height: 240
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5399cbc7426742e48a2b519699cb98c2
-      internalID: 1053177852
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Broken_Table_1
-      rect:
-        serializedVersion: 2
-        x: 720
-        y: 1200
-        width: 240
-        height: 240
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 040092149890699498ae87aaa92a2079
-      internalID: -1705765226
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inside_Tilemap_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 960
-        width: 240
-        height: 240
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c04f7a5daf8170f4bbc2b2e05091b0fd
-      internalID: 1709639188
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inside_Tilemap_5
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 960
-        width: 240
-        height: 240
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 018bba3a6fe35684f982f9b9cf62428a
-      internalID: -819543615
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inside_Tilemap_6
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 960
-        width: 240
-        height: 240
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 96bb24e006d6c274f8bff05dfe1a273d
-      internalID: -1437957431
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Broken_Table_2
-      rect:
-        serializedVersion: 2
-        x: 720
-        y: 960
-        width: 240
-        height: 240
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a605975f1ea5a3459a90eecf9dcec36
-      internalID: 2008905490
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inside_Tilemap_7
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 720
-        width: 240
-        height: 240
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c5410849d14d8204ba2803519a1d4fc7
-      internalID: -412429193
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inside_Tilemap_8
-      rect:
-        serializedVersion: 2
-        x: 240
-        y: 720
-        width: 240
-        height: 240
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ab6091fc37194a24ca54e0fbbb1c2249
-      internalID: -585961066
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inside_Tilemap_9
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 720
-        width: 240
-        height: 240
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 59c0376ec89375b47b580adc921714e3
-      internalID: -1360007585
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Inside_Tilemap_10
+      name: Chem_1
       rect:
         serializedVersion: 2
         x: 0
@@ -355,20 +124,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4483b277d9bd6ba4ca37bdba9baeb27c
-      internalID: 920371356
+      spriteID: 1fbdc4d8017f0e543b1c8510b6407f16
+      internalID: 381823449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inside_Tilemap_11
+      name: Chem_2
       rect:
         serializedVersion: 2
         x: 240
@@ -376,20 +145,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7891fd288b94a38488e6d145166fb61c
-      internalID: -1363877726
+      spriteID: 90a18c4fd7c5c4043afa6e7974955fed
+      internalID: 1401031432
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Inside_Tilemap_12
+      name: Chem_3
       rect:
         serializedVersion: 2
         x: 480
@@ -397,20 +166,62 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afb25da2ae1348b4dbe26fc46182828a
-      internalID: -1028745577
+      spriteID: 66e167d1f803c424093f8831afcdf884
+      internalID: -1782200221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Table_1
+      name: Chem_4
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 480
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44db479bd018a714ea45d01a0fcae2a5
+      internalID: -136420353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chem_5
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 480
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7b4675ff13623e4da7af245cac84849
+      internalID: 1009306622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Bio_1
       rect:
         serializedVersion: 2
         x: 0
@@ -418,20 +229,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca32c2991c03c0844919b04b0057400c
-      internalID: -147726487
+      spriteID: 69ba5e9f54e2290458b94a399996dcf1
+      internalID: 365233867
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Table_2
+      name: Bio_2
       rect:
         serializedVersion: 2
         x: 240
@@ -439,20 +250,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 011ca68de9239a940b851ac25d0a01fd
-      internalID: -887272613
+      spriteID: 710fe6d8210250b458326cd36d1fe242
+      internalID: 1322976054
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Table_3
+      name: Bio_3
       rect:
         serializedVersion: 2
         x: 480
@@ -460,20 +271,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ceb48417d2099c41a4ee4ab35476321
-      internalID: 144311033
+      spriteID: 3ec0788bc77cb594c91faad129f8c683
+      internalID: 417013205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chair_2
+      name: Bio_4
       rect:
         serializedVersion: 2
         x: 720
@@ -481,20 +292,41 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 029d869178c0d864e9981943c18ef551
-      internalID: 1988245053
+      spriteID: b5df7609e52b5b541acd323160bbc7b0
+      internalID: -1199099782
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Door_1
+      name: Bio_5
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 240
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d3c60c293da9048942ea420a602250
+      internalID: 1031545986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Physics_1
       rect:
         serializedVersion: 2
         x: 0
@@ -502,20 +334,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7dc1f00d9a0fbb94892c5c0cec3981b1
-      internalID: 399294100
+      spriteID: 5eb489ae50ff63e469124deb66e2cccb
+      internalID: 1924029756
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Doorway
+      name: Physics_2
       rect:
         serializedVersion: 2
         x: 240
@@ -523,20 +355,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5c6a0c335bc5c44cb29083e2231e286
-      internalID: -1880669522
+      spriteID: 16279f1b29008e549bd40a6b22312119
+      internalID: -1363528608
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Door_2
+      name: Physics_3
       rect:
         serializedVersion: 2
         x: 480
@@ -544,20 +376,20 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: adf4d0c3068179141abd7e81707e3f9a
-      internalID: 1552095464
+      spriteID: 5c71ca73a3c66214baa60ce4820acd3c
+      internalID: -1715216020
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Chair_1
+      name: Physics_4
       rect:
         serializedVersion: 2
         x: 720
@@ -565,35 +397,35 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b01b80cc73ebbaa48a2aa2afe26a5a8e
-      internalID: 1570858910
+      spriteID: e81077466fae6a841b020439b19d4c22
+      internalID: 1391035942
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Door_3
+      name: Physics_5
       rect:
         serializedVersion: 2
-        x: 720
-        y: 480
+        x: 956
+        y: 0
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc8d43b7905cb9d4fa7548556b3eee2d
-      internalID: 288132789
+      spriteID: 2444a125b3468a34ea15590cbd6362fa
+      internalID: -1080098372
       vertices: []
       indices: 
       edges: []
@@ -609,29 +441,21 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Chair_1: 1570858910
-      Inside_Tilemap_5: -819543615
-      Inside_Tilemap_12: -1028745577
-      Door_1: 399294100
-      Inside_Tilemap_1: -1678553495
-      Inside_Tilemap_4: 1709639188
-      Door_3: 288132789
-      Doorway: -1880669522
-      Broken_Table_1: -1705765226
-      Inside_Tilemap_10: 920371356
-      Inside_Tilemap_7: -412429193
-      Broken_Table_2: 2008905490
-      Inside_Tilemap_2: -2145998797
-      Table_3: 144311033
-      Inside_Tilemap_3: 1053177852
-      Chair_2: 1988245053
-      Inside_Tilemap_8: -585961066
-      Table_1: -147726487
-      Door_2: 1552095464
-      Inside_Tilemap_6: -1437957431
-      Table_2: -887272613
-      Inside_Tilemap_11: -1363877726
-      Inside_Tilemap_9: -1360007585
+      Bio_3: 417013205
+      Bio_5: 1031545986
+      Physics_1: 1924029756
+      Chem_1: 381823449
+      Chem_5: 1009306622
+      Bio_1: 365233867
+      Bio_4: -1199099782
+      Physics_4: 1391035942
+      Chem_2: 1401031432
+      Physics_3: -1715216020
+      Physics_5: -1080098372
+      Chem_4: -136420353
+      Bio_2: 1322976054
+      Physics_2: -1363528608
+      Chem_3: -1782200221
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
