@@ -12,6 +12,13 @@ public class Shooting : MonoBehaviour
     private Vector2 mousePos;
     private float lookAngle;
 
+    // public Animator animator;
+
+    // void Start(){
+    //        animator = gameObject.GetComponent<Animator>();
+    // }
+
+
     // Update is called once per frame
     void Update()
     {
@@ -20,12 +27,16 @@ public class Shooting : MonoBehaviour
         transform.rotation = Quaternion.Euler(0f, 0f, lookAngle - 90f);
 
         if(Input.GetButtonDown("Fire2")) {
+            // animator.SetBool("Fire", true);
             Shoot();
+        } else {
+            // animator.SetBool("Fire", false);
         }
         
     }
 
     void Shoot() {
+        // animator.SetTrigger ("Fire"); 
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.rotation = lookAngle + 180f;
