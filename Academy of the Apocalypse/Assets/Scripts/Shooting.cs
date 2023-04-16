@@ -7,7 +7,8 @@ public class Shooting : MonoBehaviour
     
     public Animator animator;
     public Transform firePoint;
-    public GameObject bulletPrefab;
+    public GameObject firePrefab;
+    public GameObject icePrefab;
     public float bulletForce = 20f;
 
     private Vector2 mousePos;
@@ -15,9 +16,13 @@ public class Shooting : MonoBehaviour
     public float attackRate = 2f;
     private float nextAttackTime = 0f;
 
-    // void Start(){
-        //    animator = gameObject.GetComponent<Animator>();
-    // }
+    private bool fireMode = false;
+    private bool iceMode = false;
+
+    void Start(){
+        // animator = gameObject.GetComponent<Animator>();
+        fireMode = true;
+    }
 
 
     // Update is called once per frame
@@ -28,20 +33,46 @@ public class Shooting : MonoBehaviour
         lookAngle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, 0f, lookAngle - 90f);
 
+        Switch();
+
         if (Time.time >= nextAttackTime) {
-            if(Input.GetButtonDown("Fire2")) {
+            if (Input.GetButtonDown("Fire2") && fireMode == true) {
                 // animator.SetBool("Fire", true);
-                Shoot();
+                ShootFire();
+                nextAttackTime = Time.time + 1f / attackRate;
+            } 
+
+            if (Input.GetButtonDown("Fire2") && iceMode == true) {
+                // animator.SetBool("Fire", true);
+                ShootIce();
                 nextAttackTime = Time.time + 1f / attackRate;
             } 
         }
-
     }
 
-    void Shoot() {
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+    void ShootFire() {
+        GameObject fireBullet = Instantiate(firePrefab, firePoint.position, firePoint.rotation);
+        Rigidbody2D rb = fireBullet.GetComponent<Rigidbody2D>();
         rb.rotation = lookAngle + 180f;
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+    }
+
+    void ShootIce() {
+        GameObject iceBullet = Instantiate(icePrefab, firePoint.position, firePoint.rotation);
+        Rigidbody2D rb = iceBullet.GetComponent<Rigidbody2D>();
+        rb.rotation = lookAngle + 180f;
+        rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+    }
+
+    void Switch() {
+        if (Input.GetButtonDown("FireMode")) {
+            fireMode = true;
+            iceMode = false;
+        }
+
+        if (Input.GetButtonDown("IceMode")) {
+            fireMode = false;
+            iceMode = true;
+        }
     }
 }
