@@ -11,6 +11,8 @@ public class Shooting : MonoBehaviour
 
     private Vector2 mousePos;
     private float lookAngle;
+    public float attackRate = 2f;
+    private float nextAttackTime = 0f;
 
     // public Animator animator;
 
@@ -26,13 +28,14 @@ public class Shooting : MonoBehaviour
         lookAngle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, 0f, lookAngle - 90f);
 
-        if(Input.GetButtonDown("Fire2")) {
-            // animator.SetBool("Fire", true);
-            Shoot();
-        } else {
-            // animator.SetBool("Fire", false);
+        if (Time.time >= nextAttackTime) {
+            if(Input.GetButtonDown("Fire2")) {
+                // animator.SetBool("Fire", true);
+                Shoot();
+                nextAttackTime = Time.time + 1f / attackRate;
+            } 
         }
-        
+
     }
 
     void Shoot() {
