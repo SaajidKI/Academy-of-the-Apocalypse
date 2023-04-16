@@ -23,19 +23,19 @@ public class PlayerAttackMelee : MonoBehaviour{
       void Update(){
            if (Time.time >= nextAttackTime){
                   if (Input.GetKeyDown(KeyCode.Space)) {
-                        // animator.SetBool("Melee", true); // added
+                        // animator.SetBool("Shoot", true); // added
                         if (Input.GetAxis("Attack") > 0){
                               Attack();
                               nextAttackTime = Time.time + 1f / attackRate;
                         }
                   } else {
-                        // animator.SetBool("Melee", false);
+                        // animator.SetBool("Shoot", false);
                   }
             }
       }
 
       void Attack(){
-            // animator.SetTrigger ("Melee"); // added
+            // animator.SetTrigger ("Shoot"); // added
             Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPt.position, attackRange, enemyLayers);
            
             foreach(Collider2D enemy in hitEnemies){
