@@ -100,7 +100,7 @@ public class GameHandler : MonoBehaviour {
         
 
       public void playerGetHit(int damage){
-            Debug.Log("Player Got hit!");
+            // Debug.Log("Player Got hit!");
            if (isDefending == false){
                   playerHealth -= damage;
                   // cameraShake.ShakeCamera(0.15f, 0.3f);

@@ -700,6 +700,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 100
+  damagePerSecond: 10
+  burnDuration: 5
+  tickRate: 1
 --- !u!114 &251461550
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1153,6 +1156,7 @@ MonoBehaviour:
   firePoint: {fileID: 606672389}
   firePrefab: {fileID: 8322153475562082104, guid: a5fb9a5387d144c9785f37d53f89198e, type: 3}
   icePrefab: {fileID: 229237312758947069, guid: 89b5f278dd9574f068edc876eb799fa4, type: 3}
+  FlameTrapPrefab: {fileID: 5848813516239934734, guid: 7252129e5f4864dfda4f9abcd0bc1dd8, type: 3}
   bulletForce: 20
   attackRate: 4
 --- !u!1 &613325107
@@ -1597,6 +1601,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 200
   currentHealth: 200
+  damagePerSecond: 10
+  burnDuration: 5
+  tickRate: 1
 --- !u!114 &726578828
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1908,6 +1915,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 100
+  damagePerSecond: 10
+  burnDuration: 5
+  tickRate: 1
 --- !u!114 &809869401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9037,6 +9047,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   currentHealth: 150
+  damagePerSecond: 10
+  burnDuration: 5
+  tickRate: 1
 --- !u!114 &1004702231
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9383,6 +9396,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   currentHealth: 150
+  damagePerSecond: 10
+  burnDuration: 5
+  tickRate: 1
 --- !u!114 &1249536793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10047,6 +10063,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 100
+  damagePerSecond: 10
+  burnDuration: 5
+  tickRate: 1
 --- !u!114 &1356370557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12107,6 +12126,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 200
   currentHealth: 200
+  damagePerSecond: 10
+  burnDuration: 5
+  tickRate: 1
 --- !u!114 &1935718580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12517,6 +12539,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   currentHealth: 150
+  damagePerSecond: 10
+  burnDuration: 5
+  tickRate: 1
 --- !u!114 &2024775137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12729,6 +12754,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 200
   currentHealth: 200
+  damagePerSecond: 10
+  burnDuration: 5
+  tickRate: 1
 --- !u!114 &2059609502
 MonoBehaviour:
   m_ObjectHideFlags: 0

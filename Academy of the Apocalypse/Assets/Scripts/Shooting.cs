@@ -9,12 +9,15 @@ public class Shooting : MonoBehaviour
     public Transform firePoint;
     public GameObject firePrefab;
     public GameObject icePrefab;
+    public GameObject FlameTrapPrefab;
     public float bulletForce = 20f;
 
     private Vector2 mousePos;
+    private Vector2 cursorPos;
     private float lookAngle;
     public float attackRate = 2f;
     private float nextAttackTime = 0f;
+    private float distance;
 
     private bool fireMode = true;
     private bool iceMode = false;
@@ -33,6 +36,8 @@ public class Shooting : MonoBehaviour
         lookAngle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0f, 0f, lookAngle - 90f);
 
+        
+
         Switch();
 
         if (Time.time >= nextAttackTime) {
@@ -48,6 +53,10 @@ public class Shooting : MonoBehaviour
                 nextAttackTime = Time.time + 1f / attackRate;
             } 
         }
+
+        if (Input.GetButtonDown("Skill")) {
+            ShootFlameTrap();
+        }
     }
 
     void ShootFire() {
@@ -57,6 +66,16 @@ public class Shooting : MonoBehaviour
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
     }
 
+    void ShootFlameTrap() {
+        cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        distance = Vector2.Distance(transform.position, cursorPos);
+        Debug.Log("Distance: " + distance);
+
+        if (distance < 5) {
+            Instantiate(FlameTrapPrefab, cursorPos, Quaternion.identity);
+        }
+    }
+
     void ShootIce() {
         GameObject iceBullet = Instantiate(icePrefab, firePoint.position, firePoint.rotation);
         Rigidbody2D rb = iceBullet.GetComponent<Rigidbody2D>();
@@ -64,6 +83,7 @@ public class Shooting : MonoBehaviour
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
     }
 
+    // Function for switching player mode
     void Switch() {
         if (Input.GetButtonDown("FireMode")) {
             fireMode = true;
