@@ -16,7 +16,7 @@ public class Shooting : MonoBehaviour
     public float attackRate = 2f;
     private float nextAttackTime = 0f;
 
-    private bool fireMode = false;
+    private bool fireMode = true;
     private bool iceMode = false;
 
     void Start(){

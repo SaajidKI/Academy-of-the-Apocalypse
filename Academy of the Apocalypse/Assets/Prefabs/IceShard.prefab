@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7922873128530404937}
   - component: {fileID: 7654881347914786698}
   - component: {fileID: 2640134731686389503}
+  - component: {fileID: 1061025929933986732}
   m_Layer: 0
   m_Name: IceShard
   m_TagString: Untagged
@@ -149,4 +150,24 @@ MonoBehaviour:
   BulletDamage: 20
   knockBackForce: 20
   rb2D: {fileID: 7922873128530404937}
-  animator: {fileID: 0}
+  animator: {fileID: 1061025929933986732}
+--- !u!95 &1061025929933986732
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229237312758947069}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 90929c639a7b84fabb0dbea0fada6060, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
