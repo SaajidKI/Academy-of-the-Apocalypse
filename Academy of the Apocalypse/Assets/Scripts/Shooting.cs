@@ -69,7 +69,8 @@ public class Shooting : MonoBehaviour
     void ShootFlameTrap() {
         cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         distance = Vector2.Distance(transform.position, cursorPos);
-        Debug.Log("Distance: " + distance);
+        Debug.Log("FlameTrap Activated");
+        // Debug.Log("Distance: " + distance);
 
         if (distance < 5) {
             Instantiate(FlameTrapPrefab, cursorPos, Quaternion.identity);
