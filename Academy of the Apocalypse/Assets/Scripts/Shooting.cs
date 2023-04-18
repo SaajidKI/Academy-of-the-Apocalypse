@@ -10,6 +10,7 @@ public class Shooting : MonoBehaviour
     public GameObject firePrefab;
     public GameObject icePrefab;
     public GameObject FlameTrapPrefab;
+    // public GameObject Indicator;
     public float bulletForce = 20f;
 
     private Vector2 mousePos;
