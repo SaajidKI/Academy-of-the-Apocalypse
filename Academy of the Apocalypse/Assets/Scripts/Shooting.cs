@@ -15,6 +15,7 @@ public class Shooting : MonoBehaviour
 
     private Vector2 mousePos;
     private Vector2 cursorPos;
+    private Vector2[] vecArray;
     private float lookAngle;
     public float attackRate = 2f;
     private float nextAttackTime = 0f;
@@ -23,9 +24,14 @@ public class Shooting : MonoBehaviour
     private bool fireMode = true;
     private bool iceMode = false;
 
+    public GameObject cooler;
+    public cooldown coolScript;
+    public bool isCooldown;
+
     void Start(){
         // animator = gameObject.GetComponent<Animator>();
         fireMode = true;
+        coolScript = cooler.GetComponent<cooldown>();
     }
 
 
@@ -55,9 +61,15 @@ public class Shooting : MonoBehaviour
             } 
         }
 
-        if (Input.GetButtonDown("Skill")) {
+        if (Input.GetButtonDown("Skill") && isCooldown == false) {
             ShootFlameTrap();
+            coolScript.starting();
+            isCooldown = true;
         }
+    }
+
+    public void boolSwitch() {
+        isCooldown = false;
     }
 
     void ShootFire() {
@@ -71,10 +83,17 @@ public class Shooting : MonoBehaviour
         cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         distance = Vector2.Distance(transform.position, cursorPos);
         Debug.Log("FlameTrap Activated");
+
+        vecArray = new Vector2[] { new Vector2(0.0f, 1.0f), new Vector2(0.0f, 2.0f), new Vector2(0.0f, 3.0f), new Vector2(0.0f, 4.0f)};
+
         // Debug.Log("Distance: " + distance);
 
         if (distance < 5) {
             Instantiate(FlameTrapPrefab, cursorPos, Quaternion.identity);
+            StartCoroutine(Delay(cursorPos, vecArray[0], 0.2f)); 
+            StartCoroutine(Delay(cursorPos, vecArray[1], 0.4f));
+            StartCoroutine(Delay(cursorPos, vecArray[2], 0.6f));
+            StartCoroutine(Delay(cursorPos, vecArray[3], 0.8f));   
         }
     }
 
@@ -96,5 +115,10 @@ public class Shooting : MonoBehaviour
             fireMode = false;
             iceMode = true;
         }
+    }
+
+    private IEnumerator Delay(Vector2 skillPos, Vector2 adjust, float wait) {
+        yield return new WaitForSeconds(wait);
+        Instantiate(FlameTrapPrefab, cursorPos - adjust, Quaternion.identity);
     }
 }

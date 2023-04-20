@@ -11,6 +11,7 @@ public class FlameEnter : MonoBehaviour
     void Start()
     {
         animator = gameObject.GetComponent<Animator>();
+        StartCoroutine(DestroyObject(gameObject));
     }
 
     // Update is called once per frame
@@ -23,7 +24,6 @@ public class FlameEnter : MonoBehaviour
 
         if (other.gameObject.tag == "Enemy") {
             other.GetComponent<EnemyMeleeDamage>().ApplyBurningDamage();
-            StartCoroutine(DestroyObject(gameObject));
         }
     }
 
