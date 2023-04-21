@@ -63,8 +63,6 @@ public class Shooting : MonoBehaviour
 
         if (Input.GetButtonDown("Skill") && isCooldown == false) {
             ShootFlameTrap();
-            coolScript.starting();
-            isCooldown = true;
         }
     }
 
@@ -82,7 +80,6 @@ public class Shooting : MonoBehaviour
     void ShootFlameTrap() {
         cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         distance = Vector2.Distance(transform.position, cursorPos);
-        Debug.Log("FlameTrap Activated");
 
         vecArray = new Vector2[] { new Vector2(0.0f, 1.0f), new Vector2(0.0f, 2.0f), new Vector2(0.0f, 3.0f), new Vector2(0.0f, 4.0f)};
 
@@ -93,7 +90,9 @@ public class Shooting : MonoBehaviour
             StartCoroutine(Delay(cursorPos, vecArray[0], 0.2f)); 
             StartCoroutine(Delay(cursorPos, vecArray[1], 0.4f));
             StartCoroutine(Delay(cursorPos, vecArray[2], 0.6f));
-            StartCoroutine(Delay(cursorPos, vecArray[3], 0.8f));   
+            StartCoroutine(Delay(cursorPos, vecArray[3], 0.8f)); 
+            coolScript.starting();
+            isCooldown = true;  
         }
     }
 

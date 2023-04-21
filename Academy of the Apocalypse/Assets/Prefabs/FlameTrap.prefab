@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 8089005213951999345}
   m_Layer: 0
   m_Name: FlameTrap
-  m_TagString: Untagged
+  m_TagString: bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -126,6 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   BulletDamage: 20
+  animator: {fileID: 0}
 --- !u!95 &8089005213951999345
 Animator:
   serializedVersion: 4
