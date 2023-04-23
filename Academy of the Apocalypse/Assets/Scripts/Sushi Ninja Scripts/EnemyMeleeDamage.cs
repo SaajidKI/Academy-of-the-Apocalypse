@@ -53,10 +53,6 @@ public class EnemyMeleeDamage : MonoBehaviour {
               spriteRenderer.color = color;
        }
 
-       public void ColorReset() {
-              StartCoroutine(ResetColor());
-       }
-
        public void ApplyBurningDamage() {
               isBurning = true;
               burnTimeLeft = burnDuration;
@@ -65,13 +61,6 @@ public class EnemyMeleeDamage : MonoBehaviour {
        }
 
        public void ApplyDamage(float damage) {
-              currentHealth -= damage;
-              if (currentHealth <= 0) {
-                     Die();
-              }
-       }
-
-       public void ApplyIceDamage(float damage) {
               currentHealth -= damage;
               if (currentHealth <= 0) {
                      Die();
@@ -110,8 +99,8 @@ public class EnemyMeleeDamage : MonoBehaviour {
 
        }
 
-       IEnumerator ResetColor(){
-              yield return new WaitForSeconds(4f);
-              spriteRenderer.color = Color.white;
-       }
+       // IEnumerator ResetColor(){
+       //        yield return new WaitForSeconds(0.5f);
+       //        rend.material.color = Color.white;
+       // }
 }

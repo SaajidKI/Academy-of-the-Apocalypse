@@ -322,7 +322,6 @@ GameObject:
   - component: {fileID: 157133394}
   - component: {fileID: 157133393}
   - component: {fileID: 157133392}
-  - component: {fileID: 157133398}
   m_Layer: 6
   m_Name: GreenEnemy4
   m_TagString: Enemy
@@ -582,22 +581,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &157133398
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 157133390}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90bbb7154314a4a9094cdbe4c89c7ea6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blue: 0
-  green: 1
-  red: 0
-  color: 
 --- !u!1 &208682562
 GameObject:
   m_ObjectHideFlags: 0
@@ -843,7 +826,6 @@ GameObject:
   - component: {fileID: 251461548}
   - component: {fileID: 251461547}
   - component: {fileID: 251461546}
-  - component: {fileID: 251461553}
   m_Layer: 6
   m_Name: GreenEnemy3
   m_TagString: Enemy
@@ -1103,22 +1085,6 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2210124415394262952, guid: e845fcf9d5fffec4c9f60365032cb262, type: 3}
   firePoint: {fileID: 868938740}
   fireRate: 1.5
---- !u!114 &251461553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 251461544}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90bbb7154314a4a9094cdbe4c89c7ea6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blue: 0
-  green: 1
-  red: 0
-  color: 
 --- !u!1 &410583952
 GameObject:
   m_ObjectHideFlags: 0
@@ -1317,7 +1283,6 @@ GameObject:
   - component: {fileID: 426742688}
   - component: {fileID: 426742687}
   - component: {fileID: 426742686}
-  - component: {fileID: 426742692}
   m_Layer: 6
   m_Name: BlueEnemy4
   m_TagString: Enemy
@@ -1576,22 +1541,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &426742692
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 426742684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90bbb7154314a4a9094cdbe4c89c7ea6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blue: 1
-  green: 0
-  red: 0
-  color: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1743,82 +1692,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &590647906
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 590647909}
-  - component: {fileID: 590647908}
-  - component: {fileID: 590647907}
-  m_Layer: 5
-  m_Name: CooldownIce
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &590647907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 590647906}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 06f3e06c7e80d457caea5f5cb5f0af7b, type: 3}
-  m_Type: 3
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 0
-  m_FillOrigin: 2
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &590647908
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 590647906}
-  m_CullTransparentMesh: 1
---- !u!224 &590647909
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 590647906}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 868592011}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 469, y: -297}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &606672388
 GameObject:
   m_ObjectHideFlags: 0
@@ -1865,17 +1738,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 868592014}
   firePoint: {fileID: 606672389}
-  player: {fileID: 1387982759}
   firePrefab: {fileID: 8322153475562082104, guid: a5fb9a5387d144c9785f37d53f89198e, type: 3}
   icePrefab: {fileID: 229237312758947069, guid: 89b5f278dd9574f068edc876eb799fa4, type: 3}
   FlameTrapPrefab: {fileID: 5848813516239934734, guid: 7252129e5f4864dfda4f9abcd0bc1dd8, type: 3}
-  IceMistPrefab: {fileID: 1314025645610056746, guid: cf87551238eed47939ca5e17d1bd2ecc, type: 3}
   bulletForce: 20
   attackRate: 4
-  cooler: {fileID: 868592007}
-  coolScript: {fileID: 868592015}
-  isCooldownFire: 0
-  isCooldownIce: 0
+  cooler: {fileID: 1918056020}
+  coolScript: {fileID: 1918056024}
+  isCooldown: 0
 --- !u!1 &613325107
 GameObject:
   m_ObjectHideFlags: 0
@@ -2139,7 +2009,6 @@ GameObject:
   - component: {fileID: 726578826}
   - component: {fileID: 726578825}
   - component: {fileID: 726578824}
-  - component: {fileID: 726578831}
   m_Layer: 6
   m_Name: BlueEnemy2
   m_TagString: Enemy
@@ -2398,22 +2267,6 @@ MonoBehaviour:
   attackRange: 5
   isAttacking: 1
   knockBackForce: 20
---- !u!114 &726578831
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 726578822}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90bbb7154314a4a9094cdbe4c89c7ea6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blue: 1
-  green: 0
-  red: 0
-  color: 
 --- !u!1 &751964207
 GameObject:
   m_ObjectHideFlags: 0
@@ -2633,7 +2486,6 @@ GameObject:
   - component: {fileID: 809869405}
   - component: {fileID: 809869404}
   - component: {fileID: 809869406}
-  - component: {fileID: 809869408}
   m_Layer: 6
   m_Name: GreenEnemy1
   m_TagString: Enemy
@@ -2893,22 +2745,6 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2210124415394262952, guid: e845fcf9d5fffec4c9f60365032cb262, type: 3}
   firePoint: {fileID: 894087882}
   fireRate: 1.5
---- !u!114 &809869408
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 809869399}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90bbb7154314a4a9094cdbe4c89c7ea6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blue: 0
-  green: 1
-  red: 0
-  color: 
 --- !u!1 &818589026
 GameObject:
   m_ObjectHideFlags: 0
@@ -9140,7 +8976,6 @@ GameObject:
   - component: {fileID: 868592012}
   - component: {fileID: 868592014}
   - component: {fileID: 868592013}
-  - component: {fileID: 868592015}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -9223,7 +9058,6 @@ RectTransform:
   m_Children:
   - {fileID: 1751191249}
   - {fileID: 1918056021}
-  - {fileID: 590647909}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9320,25 +9154,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &868592015
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 868592007}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74ce4b06bd97142d3a85152cb70cdc14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  abilityImage_1: {fileID: 1918056022}
-  abilityImage_2: {fileID: 590647907}
-  cooldown1: 5
-  coolTime: {fileID: 606672388}
-  starterFire: 0
-  starterIce: 0
-  shootScript: {fileID: 606672390}
 --- !u!1 &868938739
 GameObject:
   m_ObjectHideFlags: 0
@@ -9745,7 +9560,6 @@ GameObject:
   - component: {fileID: 1004702229}
   - component: {fileID: 1004702228}
   - component: {fileID: 1004702227}
-  - component: {fileID: 1004702234}
   m_Layer: 6
   m_Name: RedEnemy3
   m_TagString: Enemy
@@ -9999,22 +9813,6 @@ MonoBehaviour:
   attackRange: 10
   isAttacking: 1
   knockBackForce: 20
---- !u!114 &1004702234
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1004702225}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90bbb7154314a4a9094cdbe4c89c7ea6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blue: 0
-  green: 0
-  red: 1
-  color: 
 --- !u!1 &1013680874
 GameObject:
   m_ObjectHideFlags: 0
@@ -10222,7 +10020,6 @@ GameObject:
   - component: {fileID: 1249536791}
   - component: {fileID: 1249536790}
   - component: {fileID: 1249536796}
-  - component: {fileID: 1249536798}
   m_Layer: 6
   m_Name: RedEnemy1
   m_TagString: Enemy
@@ -10476,22 +10273,6 @@ MonoBehaviour:
   attackRange: 10
   isAttacking: 1
   knockBackForce: 20
---- !u!114 &1249536798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1249536789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90bbb7154314a4a9094cdbe4c89c7ea6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blue: 0
-  green: 0
-  red: 1
-  color: 
 --- !u!1 &1249879957
 GameObject:
   m_ObjectHideFlags: 0
@@ -10826,7 +10607,6 @@ GameObject:
   - component: {fileID: 1356370555}
   - component: {fileID: 1356370554}
   - component: {fileID: 1356370553}
-  - component: {fileID: 1356370560}
   m_Layer: 6
   m_Name: GreenEnemy2
   m_TagString: Enemy
@@ -11086,22 +10866,6 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2210124415394262952, guid: e845fcf9d5fffec4c9f60365032cb262, type: 3}
   firePoint: {fileID: 938579174}
   fireRate: 1.5
---- !u!114 &1356370560
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1356370551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90bbb7154314a4a9094cdbe4c89c7ea6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blue: 0
-  green: 1
-  red: 0
-  color: 
 --- !u!1 &1387982755
 GameObject:
   m_ObjectHideFlags: 0
@@ -12972,8 +12736,9 @@ GameObject:
   - component: {fileID: 1918056021}
   - component: {fileID: 1918056023}
   - component: {fileID: 1918056022}
+  - component: {fileID: 1918056024}
   m_Layer: 5
-  m_Name: CooldownFire
+  m_Name: Cooldown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13037,6 +12802,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1918056020}
   m_CullTransparentMesh: 1
+--- !u!114 &1918056024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1918056020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74ce4b06bd97142d3a85152cb70cdc14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityImage_1: {fileID: 1918056022}
+  cooldown1: 5
+  coolTime: {fileID: 606672388}
+  starter: 0
+  shootScript: {fileID: 606672390}
 --- !u!1 &1935718574
 GameObject:
   m_ObjectHideFlags: 0
@@ -13052,7 +12834,6 @@ GameObject:
   - component: {fileID: 1935718578}
   - component: {fileID: 1935718577}
   - component: {fileID: 1935718576}
-  - component: {fileID: 1935718583}
   m_Layer: 6
   m_Name: BlueEnemy3
   m_TagString: Enemy
@@ -13311,22 +13092,6 @@ MonoBehaviour:
   attackRange: 5
   isAttacking: 1
   knockBackForce: 20
---- !u!114 &1935718583
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935718574}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90bbb7154314a4a9094cdbe4c89c7ea6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blue: 1
-  green: 0
-  red: 0
-  color: 
 --- !u!1 &1941061847
 GameObject:
   m_ObjectHideFlags: 0
@@ -13487,7 +13252,6 @@ GameObject:
   - component: {fileID: 2024775135}
   - component: {fileID: 2024775134}
   - component: {fileID: 2024775133}
-  - component: {fileID: 2024775140}
   m_Layer: 6
   m_Name: RedEnemy2
   m_TagString: Enemy
@@ -13741,22 +13505,6 @@ MonoBehaviour:
   attackRange: 10
   isAttacking: 1
   knockBackForce: 20
---- !u!114 &2024775140
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2024775131}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90bbb7154314a4a9094cdbe4c89c7ea6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blue: 0
-  green: 0
-  red: 1
-  color: 
 --- !u!1 &2029236854
 GameObject:
   m_ObjectHideFlags: 0
@@ -13830,7 +13578,6 @@ GameObject:
   - component: {fileID: 2059609500}
   - component: {fileID: 2059609499}
   - component: {fileID: 2059609505}
-  - component: {fileID: 2059609507}
   m_Layer: 6
   m_Name: BlueEnemy1
   m_TagString: Enemy
@@ -14089,22 +13836,6 @@ MonoBehaviour:
   attackRange: 5
   isAttacking: 1
   knockBackForce: 20
---- !u!114 &2059609507
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2059609498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 90bbb7154314a4a9094cdbe4c89c7ea6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  blue: 1
-  green: 0
-  red: 0
-  color: 
 --- !u!1 &2138534042
 GameObject:
   m_ObjectHideFlags: 0

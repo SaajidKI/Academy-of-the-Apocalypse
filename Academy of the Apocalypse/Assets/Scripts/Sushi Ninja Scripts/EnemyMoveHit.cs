@@ -66,15 +66,6 @@ public class EnemyMoveHit : MonoBehaviour {
             }
        }
 
-       public void IceEffect() {
-              // Rigidbody2D pusher = this.gameObject.GetComponent<Rigidbody2D>();
-              // Vector2 moveDirectionPush = rb2D.transform.position - this.transform.position;
-              // pusher.AddForce(moveDirectionPush.normalized * knockBackForce * - 1f, ForceMode2D.Impulse);
-              // StartCoroutine(EndKnockBack(pusher));
-              // speed = 1f;
-              // StartCoroutine(Delay());
-       }
-
        // public void TakePushback(float KB) {
               
        // }
@@ -95,11 +86,5 @@ public class EnemyMoveHit : MonoBehaviour {
        IEnumerator EndKnockBack(Rigidbody2D otherRB){
               yield return new WaitForSeconds(0.2f);
               otherRB.velocity= new Vector3(0,0,0);
-       }
-
-       private IEnumerator Delay() {
-              yield return new WaitForSeconds(4f);
-              speed = 4f;
- 
        }
 }
