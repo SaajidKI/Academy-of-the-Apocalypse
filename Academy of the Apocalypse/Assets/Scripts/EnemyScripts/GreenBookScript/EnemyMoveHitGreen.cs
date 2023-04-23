@@ -70,6 +70,11 @@ public class EnemyMoveHitGreen : MonoBehaviour {
         }
     }
 
+    public void IceEffect() {
+        speed = 1f;
+        StartCoroutine(Delay());
+    }
+
     public void OnCollisionExit2D(Collision2D other) {
         if (other.gameObject.tag == "Player") {
             // anim.SetBool("Attack", false);
@@ -84,5 +89,11 @@ public class EnemyMoveHitGreen : MonoBehaviour {
     IEnumerator EndKnockBack(Rigidbody2D otherRB) {
         yield return new WaitForSeconds(0.2f);
         otherRB.velocity = new Vector3(0, 0, 0);
+    }
+
+    IEnumerator Delay() {
+        yield return new WaitForSeconds(4f);
+        speed = 4f;
+ 
     }
 }
