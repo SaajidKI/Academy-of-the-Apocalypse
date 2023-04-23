@@ -99,6 +99,11 @@ public class EnemyMoveHitBlue : MonoBehaviour
             }
        }
 
+       public void IceEffect() {
+            speed = 1f;
+            StartCoroutine(Delay());
+       }
+
        // public void TakePushback(float KB) {
               
        // }
@@ -120,5 +125,10 @@ public class EnemyMoveHitBlue : MonoBehaviour
               yield return new WaitForSeconds(0.2f);
               otherRB.velocity= new Vector3(0,0,0);
        }
+
+       IEnumerator Delay() {
+              yield return new WaitForSeconds(4f);
+              speed = 4f;
+        }
 }
 

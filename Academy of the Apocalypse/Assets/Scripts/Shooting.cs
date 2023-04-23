@@ -7,15 +7,18 @@ public class Shooting : MonoBehaviour
     
     public Animator animator;
     public Transform firePoint;
+    public Transform player;
     public GameObject firePrefab;
     public GameObject icePrefab;
     public GameObject FlameTrapPrefab;
+    public GameObject IceMistPrefab;
     // public GameObject Indicator;
     public float bulletForce = 20f;
 
     private Vector2 mousePos;
     private Vector2 cursorPos;
     private Vector2[] vecArray;
+    private Vector3 push;
     private float lookAngle;
     public float attackRate = 2f;
     private float nextAttackTime = 0f;
@@ -26,7 +29,8 @@ public class Shooting : MonoBehaviour
 
     public GameObject cooler;
     public cooldown coolScript;
-    public bool isCooldown;
+    public bool isCooldownFire;
+    public bool isCooldownIce;
 
     void Start(){
         // animator = gameObject.GetComponent<Animator>();
@@ -61,13 +65,23 @@ public class Shooting : MonoBehaviour
             } 
         }
 
-        if (Input.GetButtonDown("Skill") && isCooldown == false) {
+        if (Input.GetButtonDown("Skill") && isCooldownFire == false && fireMode == true) {
             ShootFlameTrap();
         }
+
+        if (Input.GetButtonDown("Skill") && isCooldownIce == false && iceMode == true) {
+            ShootIceMist();
+        }
+
+
     }
 
-    public void boolSwitch() {
-        isCooldown = false;
+    public void boolSwitchFire() {
+        isCooldownFire = false;
+    }
+
+    public void boolSwitchIce() {
+        isCooldownIce = false;
     }
 
     void ShootFire() {
@@ -91,8 +105,8 @@ public class Shooting : MonoBehaviour
             StartCoroutine(Delay(cursorPos, vecArray[1], 0.4f));
             StartCoroutine(Delay(cursorPos, vecArray[2], 0.6f));
             StartCoroutine(Delay(cursorPos, vecArray[3], 0.8f)); 
-            coolScript.starting();
-            isCooldown = true;  
+            coolScript.startingFire();
+            isCooldownFire = true;  
         }
     }
 
@@ -101,6 +115,20 @@ public class Shooting : MonoBehaviour
         Rigidbody2D rb = iceBullet.GetComponent<Rigidbody2D>();
         rb.rotation = lookAngle + 180f;
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+    }
+
+    void ShootIceMist() {
+
+        if (player.localScale.x < 0) {
+            push = new Vector3(3.0f, 0.0f, 0.0f);
+        }
+
+        if (player.localScale.x > 0) {
+            push = new Vector3(-3.0f, 0.0f, 0.0f);
+        }
+        GameObject IceMist = Instantiate(IceMistPrefab, firePoint.position + push, Quaternion.identity);
+        coolScript.startingIce();
+        isCooldownIce = true;
     }
 
     // Function for switching player mode
