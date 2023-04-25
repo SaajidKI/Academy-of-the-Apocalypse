@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3001364132611974906}
   - component: {fileID: 2317559092009374462}
   - component: {fileID: 571004778735919971}
+  - component: {fileID: 7024043640259046675}
   m_Layer: 0
   m_Name: WindStrike_4
   m_TagString: Untagged
@@ -150,3 +151,23 @@ MonoBehaviour:
   knockBackForce: 20
   rb2D: {fileID: 3001364132611974906}
   animator: {fileID: 0}
+--- !u!95 &7024043640259046675
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4522741059268890183}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1dd739dbd81554864974e9b5cffd4624, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
