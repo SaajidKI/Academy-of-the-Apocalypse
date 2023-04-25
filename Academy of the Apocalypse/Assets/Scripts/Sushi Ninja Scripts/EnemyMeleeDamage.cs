@@ -33,6 +33,7 @@ public class EnemyMeleeDamage : MonoBehaviour {
        void Update() {
               if (isBurning) {
                      burnTimeLeft -= Time.deltaTime;
+                     ColorChange(new Color(1f, 0.635f, 0.635f));
 
                      if (burnTimeLeft <= 0f) {
                             isBurning = false;
@@ -41,7 +42,6 @@ public class EnemyMeleeDamage : MonoBehaviour {
                      } else {
                             if (Time.time >= nextTickTime) {
                             ApplyDamage(damagePerSecond * tickRate);
-                            ColorChange(new Color(1f, 0.635f, 0.635f));
                             nextTickTime = Time.time + tickRate;
 
                             }
