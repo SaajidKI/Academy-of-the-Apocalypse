@@ -15,7 +15,7 @@ public class Shooting : MonoBehaviour
     public GameObject windPrefab;
     // public GameObject Indicator;
     public float bulletForce = 20f;
-
+ 
     private Vector2 mousePos;
     private Vector2 cursorPos;
     private Vector2[] vecArray;

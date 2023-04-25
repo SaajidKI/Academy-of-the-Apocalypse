@@ -92,8 +92,13 @@ public class PlayerMovement : MonoBehaviour {
                         turned = false;
                   }
             }
+      
 
-
+            if (Input.GetButtonDown("Fire2")) {
+                  anim.SetBool("shooting", true);
+            } else {
+                  anim.SetBool("shooting", false);
+            }
 
       }
 
