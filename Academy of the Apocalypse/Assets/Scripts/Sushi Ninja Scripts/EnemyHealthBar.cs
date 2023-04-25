@@ -25,7 +25,7 @@ public class EnemyHealthBar : MonoBehaviour
         // Debug.Log(h_script.currentHealth/h_script.maxHealth);
         // Debug.Log(h_script.currentHealth);
         // Debug.Log(h_script.maxHealth);
-        localScale.x = (h_script.currentHealth/h_script.maxHealth) * 5;
+        localScale.x = (h_script.currentHealth/h_script.maxHealth);
         transform.localScale = localScale;
     }
 }
