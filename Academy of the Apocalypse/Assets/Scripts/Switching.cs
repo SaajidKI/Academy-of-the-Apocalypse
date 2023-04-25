@@ -24,10 +24,14 @@ public class Switching : MonoBehaviour
             this.gameObject.GetComponent<SpriteRenderer>().sprite = playerFire;
             animator.SetBool ("toFire", true); 
             animator.SetBool ("toIce", false);
+            animator.SetBool ("toWind", false);
         }
 
         if (Input.GetButtonDown("WindMode")) {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = playerWind;
+            animator.SetBool ("toFire", false); 
+            animator.SetBool ("toIce", false);
+            animator.SetBool ("toWind", true);
         } 
 
         if (Input.GetButtonDown("IceMode")) {
@@ -35,7 +39,7 @@ public class Switching : MonoBehaviour
             animator.SetBool ("toIce", true); 
             //_clip.Play();
             animator.SetBool ("toFire", false);
-            
+            animator.SetBool ("toWind", false);
         }
     }
 }
