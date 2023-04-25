@@ -38,7 +38,7 @@ public class IceMistSkill : MonoBehaviour
     }
 
     private IEnumerator DestroyObject(GameObject bullet) {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(2f);
         Destroy(bullet);
     }
 }

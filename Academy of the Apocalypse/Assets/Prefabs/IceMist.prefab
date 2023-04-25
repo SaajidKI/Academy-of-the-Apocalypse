@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1314025645610056748}
   - component: {fileID: 1314025645610056749}
   - component: {fileID: 6292610131371241940}
+  - component: {fileID: 3923131546578293023}
   m_Layer: 0
   m_Name: IceMist
   m_TagString: Untagged
@@ -100,7 +101,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.000000059604645, y: -0.00000016391277}
+  m_Offset: {x: 0.0043202043, y: 0.021600723}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -111,7 +112,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.9230632, y: 0.8102108}
+  m_Size: {x: 1.7416147, y: 0.6978855}
   m_EdgeRadius: 0
 --- !u!114 &1314025645610056749
 MonoBehaviour:
@@ -138,3 +139,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _clip: {fileID: 0}
+--- !u!95 &3923131546578293023
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1314025645610056746}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5612e531a2cec4a48bded093515f99fd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
