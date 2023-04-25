@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour {
                   if ((Input.GetAxis("Horizontal") != 0) || (Input.GetAxis("Vertical") != 0)){
                       anim.SetBool ("isWalking", true);
                       if (!WalkSFX.isPlaying){
-                            //WalkSFX.Play();
+                            WalkSFX.Play();
                       }
                   } else {
                       anim.SetBool ("isWalking", false);

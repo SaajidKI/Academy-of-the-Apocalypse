@@ -172,7 +172,7 @@ public class GameHandler : MonoBehaviour {
 
       public void RestartGame() {
           Time.timeScale = 1f;
-            SceneManager.LoadScene("Menu");
+            SceneManager.LoadScene("MainMenu");
             playerHealth = StartPlayerHealth;
       }
 
