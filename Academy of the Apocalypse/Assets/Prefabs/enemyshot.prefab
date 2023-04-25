@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -4879832439889000562}
   - component: {fileID: -3686708200359285711}
   - component: {fileID: -1410002086543960250}
+  - component: {fileID: -4479548202940260463}
   m_Layer: 0
   m_Name: enemyshot
   m_TagString: Untagged
@@ -137,3 +138,16 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-4479548202940260463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2210124415394262952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bea189e8ef4b847138af180674a56876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _clip: {fileID: 0}

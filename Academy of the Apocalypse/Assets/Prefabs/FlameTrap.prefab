@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4797816317867726328}
   - component: {fileID: -2085692850288174935}
   - component: {fileID: 8089005213951999345}
+  - component: {fileID: -1574120519620576497}
   m_Layer: 0
   m_Name: FlameTrap
   m_TagString: bullet
@@ -147,3 +148,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-1574120519620576497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5848813516239934734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bea189e8ef4b847138af180674a56876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _clip: {fileID: 0}
