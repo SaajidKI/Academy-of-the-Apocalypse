@@ -95,7 +95,7 @@ public class Shooting : MonoBehaviour
     void ShootFire() {
         GameObject fireBullet = Instantiate(firePrefab, firePoint.position, firePoint.rotation);
         Rigidbody2D rb = fireBullet.GetComponent<Rigidbody2D>();
-        rb.rotation = lookAngle + 180f;
+        rb.rotation = lookAngle;
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
     }
 
@@ -130,7 +130,7 @@ public class Shooting : MonoBehaviour
     void ShootIce() {
         GameObject iceBullet = Instantiate(icePrefab, firePoint.position, firePoint.rotation);
         Rigidbody2D rb = iceBullet.GetComponent<Rigidbody2D>();
-        rb.rotation = lookAngle + 180f;
+        rb.rotation = lookAngle;
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
     }
 
