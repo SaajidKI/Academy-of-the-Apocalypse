@@ -12,6 +12,7 @@ public class Shooting : MonoBehaviour
     public GameObject icePrefab;
     public GameObject FlameTrapPrefab;
     public GameObject IceMistPrefab;
+    public GameObject windPrefab;
     // public GameObject Indicator;
     public float bulletForce = 20f;
 
@@ -26,6 +27,7 @@ public class Shooting : MonoBehaviour
 
     private bool fireMode = true;
     private bool iceMode = false;
+    private bool windMode = false;
 
     public GameObject cooler;
     public cooldown coolScript;
@@ -63,6 +65,12 @@ public class Shooting : MonoBehaviour
                 ShootIce();
                 nextAttackTime = Time.time + 1f / attackRate;
             } 
+
+            if (Input.GetButtonDown("Fire2") && windMode == true) {
+                // animator.SetBool("Fire", true);
+                ShootWind();
+                nextAttackTime = Time.time + 1f / attackRate;
+            } 
         }
 
         if (Input.GetButtonDown("Skill") && isCooldownFire == false && fireMode == true) {
@@ -90,6 +98,15 @@ public class Shooting : MonoBehaviour
         rb.rotation = lookAngle + 180f;
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
     }
+
+    void ShootWind() {
+        GameObject windBullet = Instantiate(windPrefab, firePoint.position, firePoint.rotation);
+        Rigidbody2D rb = windBullet.GetComponent<Rigidbody2D>();
+        rb.rotation = lookAngle;
+        rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+    }
+
+    
 
     void ShootFlameTrap() {
         cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -136,12 +153,22 @@ public class Shooting : MonoBehaviour
         if (Input.GetButtonDown("FireMode")) {
             fireMode = true;
             iceMode = false;
+            windMode = false;
         }
 
         if (Input.GetButtonDown("IceMode")) {
             fireMode = false;
             iceMode = true;
+            windMode = false;
         }
+
+        if (Input.GetButtonDown("WindMode")) {
+            fireMode = false;
+            iceMode = false;
+            windMode = true;
+        }
+
+
     }
 
     private IEnumerator Delay(Vector2 skillPos, Vector2 adjust, float wait) {
