@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Switching : MonoBehaviour
 {
+    //public AudioSource _clip;
     public Sprite playerFire;
     public Sprite playerIce;
     public Animator animator;
@@ -27,7 +28,9 @@ public class Switching : MonoBehaviour
         if (Input.GetButtonDown("IceMode")) {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = playerIce;
             animator.SetBool ("toIce", true); 
+            //_clip.Play();
             animator.SetBool ("toFire", false);
+            
         }
     }
 }
