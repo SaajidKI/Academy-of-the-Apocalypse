@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 
 public class HealthBarThirdPerson : MonoBehaviour {
 
+    //private bool isAlive = true;
+
       public float startHealth = 100;
       private float health;
       //public GameObject deathEffect;
@@ -49,9 +51,11 @@ public class HealthBarThirdPerson : MonoBehaviour {
 
       public void Die(){
             Debug.Log("You Died So Much");
+            //isAlive = false;
            // death stuff. change scene? how about a particle effect?
             //Vector3 objPos = this.transform.position
             //Instantiate(deathEffect, objPos, Quaternion.identity) as GameObject;
            //SceneManager.LoadScene ("Scene_lose");
       }
+
 }

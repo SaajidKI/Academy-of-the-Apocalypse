@@ -9,6 +9,7 @@ using UnityEngine.Audio;
 public class GameHandler : MonoBehaviour {
 
       private GameObject player;
+        public GameOverScreen _gameOverScreen;
       // public GameObject item;
       // private bool item_active = false;
       public int playerHealth = 100;
@@ -159,8 +160,11 @@ public class GameHandler : MonoBehaviour {
             // player.GetComponent<PlayerMove>().isAlive = false;
             // player.GetComponent<PlayerJump>().isAlive = false;
             yield return new WaitForSeconds(1.0f);
-            SceneManager.LoadScene("Menu");
+            _gameOverScreen.Setup(10);
+            //SceneManager.LoadScene("Menu");
       }
+
+     
 
       public void StartGame() {
             SceneManager.LoadScene("SampleScene");
