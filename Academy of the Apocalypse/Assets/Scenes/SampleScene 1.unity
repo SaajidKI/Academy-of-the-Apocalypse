@@ -12690,6 +12690,10 @@ PrefabInstance:
       propertyPath: m_Volume
       value: 0.944
       objectReference: {fileID: 0}
+    - target: {fileID: 2335314143056639022, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
     - target: {fileID: 4574508056532481639, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
       propertyPath: playerWind
       value: 
@@ -12762,6 +12766,10 @@ PrefabInstance:
       propertyPath: windPrefab
       value: 
       objectReference: {fileID: 4522741059268890183, guid: fdeb09297fc2549c0b44c27820a0eab7, type: 3}
+    - target: {fileID: 4574508056826875854, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
 --- !u!1001 &6660003531567906629

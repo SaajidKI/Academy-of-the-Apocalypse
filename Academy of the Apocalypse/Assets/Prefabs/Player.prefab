@@ -30,7 +30,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4574508056532481645}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &65981661
 AudioSource:
@@ -128,6 +128,38 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &2335314143056639022
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6212751185479579062}
+  m_Layer: 0
+  m_Name: FirePoint_Rotation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6212751185479579062
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2335314143056639022}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4574508056826875855}
+  m_Father: {fileID: 4574508056532481645}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4574508055885583279
 GameObject:
   m_ObjectHideFlags: 0
@@ -160,7 +192,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4574508056532481645}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4574508055885583267
 MeshFilter:
@@ -262,9 +294,9 @@ Transform:
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 1
   m_Children:
-  - {fileID: 4574508056826875855}
   - {fileID: 4574508055885583276}
   - {fileID: 65981660}
+  - {fileID: 6212751185479579062}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -526,9 +558,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98901fb5dec0b4ee895119092d4e38d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _clip: {fileID: 0}
   playerFire: {fileID: 2110202162, guid: 30a68ef094f7586429765f59b551327d, type: 3}
   playerIce: {fileID: -818772406, guid: 0c32d4646349f834d8e97d7b4015a3c8, type: 3}
+  playerWind: {fileID: 0}
   animator: {fileID: 0}
 --- !u!82 &1387982760
 AudioSource:
@@ -655,7 +687,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4574508056532481645}
+  m_Father: {fileID: 6212751185479579062}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4574508056826875852
@@ -672,11 +704,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
   firePoint: {fileID: 4574508056826875855}
+  firePointRotate: {fileID: 4574508056826875855}
   player: {fileID: 4574508056532481645}
   firePrefab: {fileID: 8322153475562082104, guid: a5fb9a5387d144c9785f37d53f89198e, type: 3}
   icePrefab: {fileID: 229237312758947069, guid: 89b5f278dd9574f068edc876eb799fa4, type: 3}
   FlameTrapPrefab: {fileID: 5848813516239934734, guid: 7252129e5f4864dfda4f9abcd0bc1dd8, type: 3}
   IceMistPrefab: {fileID: 1314025645610056746, guid: cf87551238eed47939ca5e17d1bd2ecc, type: 3}
+  windPrefab: {fileID: 0}
   bulletForce: 20
   attackRate: 4
   cooler: {fileID: 0}

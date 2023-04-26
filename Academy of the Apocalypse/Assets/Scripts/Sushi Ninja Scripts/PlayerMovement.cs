@@ -95,9 +95,10 @@ public class PlayerMovement : MonoBehaviour {
       
 
             if (Input.GetButtonDown("Fire2")) {
-                  anim.SetBool("shooting", true);
+                  //anim.SetBool("shooting", true);
+                  anim.SetTrigger("shooting");
             } else {
-                  anim.SetBool("shooting", false);
+                  //anim.SetBool("shooting", false);
             }
 
       }

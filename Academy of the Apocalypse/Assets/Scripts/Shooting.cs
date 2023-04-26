@@ -7,6 +7,7 @@ public class Shooting : MonoBehaviour
     
     public Animator animator;
     public Transform firePoint;
+    public Transform firePointRotate;
     public Transform player;
     public GameObject firePrefab;
     public GameObject icePrefab;
@@ -47,7 +48,7 @@ public class Shooting : MonoBehaviour
         // animator.SetTrigger ("Fire"); 
         mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
         lookAngle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
-        transform.rotation = Quaternion.Euler(0f, 0f, lookAngle - 90f);
+        firePointRotate.rotation = Quaternion.Euler(0f, 0f, lookAngle - 90f);
 
         
 
