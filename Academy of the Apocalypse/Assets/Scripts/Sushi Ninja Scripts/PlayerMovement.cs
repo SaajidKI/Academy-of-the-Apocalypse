@@ -113,4 +113,8 @@ public class PlayerMovement : MonoBehaviour {
             transform.localScale = theScale;
       }
 
+      public bool playerSide() {
+            return FaceRight;
+      }
+
 }

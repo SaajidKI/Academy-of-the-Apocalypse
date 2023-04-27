@@ -14,6 +14,7 @@ public class Shooting : MonoBehaviour
     public GameObject FlameTrapPrefab;
     public GameObject IceMistPrefab;
     public GameObject windPrefab;
+    public GameObject WindTornadoPrefab;
     // public GameObject Indicator;
     public float bulletForce = 20f;
  
@@ -34,6 +35,7 @@ public class Shooting : MonoBehaviour
     public cooldown coolScript;
     public bool isCooldownFire;
     public bool isCooldownIce;
+    public bool isCooldownWind;
 
     void Start(){
         // animator = gameObject.GetComponent<Animator>();
@@ -82,6 +84,10 @@ public class Shooting : MonoBehaviour
             ShootIceMist();
         }
 
+        if (Input.GetButtonDown("Skill") && isCooldownWind == false && windMode == true) {
+            ShootWindTornado();
+        }
+
 
     }
 
@@ -91,6 +97,10 @@ public class Shooting : MonoBehaviour
 
     public void boolSwitchIce() {
         isCooldownIce = false;
+    }
+
+    public void boolSwitchWind() {
+        isCooldownWind = false;
     }
 
     void ShootFire() {
@@ -105,6 +115,17 @@ public class Shooting : MonoBehaviour
         Rigidbody2D rb = windBullet.GetComponent<Rigidbody2D>();
         rb.rotation = lookAngle;
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+    }
+
+    void ShootWindTornado() {
+        cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        distance = Vector2.Distance(transform.position, cursorPos);
+
+        if(distance < 5) {
+            GameObject WindTornado = Instantiate(WindTornadoPrefab, cursorPos, Quaternion.identity);
+            coolScript.startingWind();
+            isCooldownWind = true;
+        }
     }
 
     
@@ -137,16 +158,14 @@ public class Shooting : MonoBehaviour
 
     void ShootIceMist() {
 
-        if (player.localScale.x < 0) {
-            push = new Vector3(3.0f, 0.0f, 0.0f);
-        }
+        cursorPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        distance = Vector2.Distance(transform.position, cursorPos);
 
-        if (player.localScale.x > 0) {
-            push = new Vector3(-3.0f, 0.0f, 0.0f);
-        }
-        GameObject IceMist = Instantiate(IceMistPrefab, firePoint.position + push, Quaternion.identity);
+        if (distance < 7) {
+            GameObject IceMist = Instantiate(IceMistPrefab, cursorPos, Quaternion.identity);
         coolScript.startingIce();
         isCooldownIce = true;
+        }
     }
 
     // Function for switching player mode

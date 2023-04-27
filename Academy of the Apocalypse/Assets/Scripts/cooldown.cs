@@ -7,10 +7,12 @@ public class cooldown : MonoBehaviour
 {
     public Image abilityImage_1;
     public Image abilityImage_2;
+    public Image abilityImage_3;
     public float cooldown1 = 5;
     public GameObject coolTime;
     public bool starterFire;
     public bool starterIce;
+    public bool starterWind;
     public Shooting shootScript;
 
 
@@ -19,8 +21,10 @@ public class cooldown : MonoBehaviour
     {
         starterFire = false;
         starterIce = false;
+        starterWind = false;
         abilityImage_1.fillAmount = 1;
         abilityImage_2.fillAmount = 1;
+        abilityImage_3.fillAmount = 1;
         shootScript = coolTime.GetComponent<Shooting>();
     }
 
@@ -33,6 +37,10 @@ public class cooldown : MonoBehaviour
 
         if (starterIce == true) {
             ability2();
+        }
+
+        if (starterWind == true) {
+            ability3();
         }
         
     }
@@ -58,12 +66,27 @@ public class cooldown : MonoBehaviour
         }
     }
 
+    public void ability3() {
+        abilityImage_3.fillAmount -= 1 / cooldown1 * Time.deltaTime;
+
+        if (abilityImage_3.fillAmount <= 0) {
+            abilityImage_3.fillAmount = 1;
+            shootScript.boolSwitchWind();
+            starterWind = false;
+            //change
+        }
+    }
+
     public void startingFire() {
         starterFire = true;
     }
 
     public void startingIce() {
         starterIce = true;
+    }
+
+    public void startingWind() {
+        starterWind = true;
     }
     
 }

@@ -1110,6 +1110,17 @@ MonoBehaviour:
   green: 1
   red: 0
   color: 
+--- !u!114 &256001726 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7892535449484497609, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
+  m_PrefabInstance: {fileID: 4395986398582832830}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &275467836
 GameObject:
   m_ObjectHideFlags: 0
@@ -13032,6 +13043,10 @@ PrefabInstance:
       propertyPath: shootScript
       value: 
       objectReference: {fileID: 606672390}
+    - target: {fileID: 4395986398352496433, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
+      propertyPath: abilityImage_3
+      value: 
+      objectReference: {fileID: 256001726}
     - target: {fileID: 4395986398352496437, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -13209,6 +13224,10 @@ PrefabInstance:
       propertyPath: windPrefab
       value: 
       objectReference: {fileID: 4522741059268890183, guid: fdeb09297fc2549c0b44c27820a0eab7, type: 3}
+    - target: {fileID: 4574508056826875852, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
+      propertyPath: WindTornadoPrefab
+      value: 
+      objectReference: {fileID: 766155229160702928, guid: 3aa711c7caa2e41e88e892da01ee805c, type: 3}
     - target: {fileID: 4574508056826875854, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
       propertyPath: m_Icon
       value: 
