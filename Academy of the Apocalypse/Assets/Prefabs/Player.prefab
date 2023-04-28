@@ -710,10 +710,12 @@ MonoBehaviour:
   icePrefab: {fileID: 229237312758947069, guid: 89b5f278dd9574f068edc876eb799fa4, type: 3}
   FlameTrapPrefab: {fileID: 5848813516239934734, guid: 7252129e5f4864dfda4f9abcd0bc1dd8, type: 3}
   IceMistPrefab: {fileID: 1314025645610056746, guid: cf87551238eed47939ca5e17d1bd2ecc, type: 3}
-  windPrefab: {fileID: 0}
+  windPrefab: {fileID: 4522741059268890183, guid: fdeb09297fc2549c0b44c27820a0eab7, type: 3}
+  WindTornadoPrefab: {fileID: 766155229160702928, guid: 3aa711c7caa2e41e88e892da01ee805c, type: 3}
   bulletForce: 20
   attackRate: 4
   cooler: {fileID: 0}
   coolScript: {fileID: 0}
   isCooldownFire: 0
   isCooldownIce: 0
+  isCooldownWind: 0

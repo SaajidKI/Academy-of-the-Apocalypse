@@ -422,6 +422,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &103586478 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 989921896068525315, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
+  m_PrefabInstance: {fileID: 1160285558}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &133601513
 GameObject:
   m_ObjectHideFlags: 0
@@ -7082,6 +7093,10 @@ PrefabInstance:
       propertyPath: pauseMenuUI
       value: 
       objectReference: {fileID: 251387201}
+    - target: {fileID: 3791975871212572930, guid: d40e5e47fc4694e64a8433e0ba4ad61f, type: 3}
+      propertyPath: enemyCountText
+      value: 
+      objectReference: {fileID: 103586478}
     - target: {fileID: 3791975871212572931, guid: d40e5e47fc4694e64a8433e0ba4ad61f, type: 3}
       propertyPath: m_Name
       value: GameHandler

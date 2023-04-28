@@ -38,6 +38,11 @@ public class GameHandler : MonoBehaviour {
       // private bool item2_active = false;
       // private int Deaths = 0;
 
+      private GameObject[] enemies;
+      // int enemiesLeft = 0;
+      // bool noEnemies = false;
+      public Text enemyCountText;
+
       void Awake (){
                 SetLevel (volumeLevel);
                 GameObject sliderTemp = GameObject.FindWithTag("PauseMenuSlider");
@@ -80,6 +85,9 @@ public class GameHandler : MonoBehaviour {
             //         item_active = true;
             //         item.SetActive(true);
             //     }
+
+            GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
+            enemyCountText.text = "Enemies Left: " + enemies.Length.ToString();
     }
 
     void Pause(){
