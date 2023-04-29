@@ -41,9 +41,11 @@ public class GameHandler : MonoBehaviour {
       // private int Deaths = 0;
 
       private GameObject[] enemies;
-      // int enemiesLeft = 0;
-      // bool noEnemies = false;
+      int enemiesLeft = 0;
+      private bool noEnemies = false;
       public Text enemyCountText;
+
+      public openDoor doorOpen;
 
       void Awake (){
                 SetLevel (volumeLevel);
@@ -90,7 +92,17 @@ public class GameHandler : MonoBehaviour {
 
             GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
             enemyCountText.text = "Enemies Left: " + enemies.Length.ToString();
-    }
+            enemiesLeft = enemies.Length;
+
+            if (enemiesLeft == 0) {
+                  noEnemies = true; 
+                  doorOpen.GetComponent<openDoor>().Open();
+            }
+     }
+
+     public bool NoMoreEnemies() {
+           return noEnemies;
+     }
 
     void Pause(){
         pauseMenuUI.SetActive(true);
