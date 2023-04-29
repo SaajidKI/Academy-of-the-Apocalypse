@@ -120,7 +120,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1200
+        y: 960
         width: 240
         height: 240
       alignment: 0
@@ -141,7 +141,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 240
-        y: 1200
+        y: 960
         width: 240
         height: 240
       alignment: 0
@@ -162,7 +162,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 480
-        y: 1200
+        y: 960
         width: 240
         height: 240
       alignment: 0
@@ -183,7 +183,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 720
-        y: 1200
+        y: 960
         width: 240
         height: 240
       alignment: 0
@@ -204,7 +204,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 960
+        y: 720
         width: 240
         height: 240
       alignment: 0
@@ -225,7 +225,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 240
-        y: 960
+        y: 720
         width: 240
         height: 240
       alignment: 0
@@ -246,7 +246,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 480
-        y: 960
+        y: 720
         width: 240
         height: 240
       alignment: 0
@@ -266,7 +266,7 @@ TextureImporter:
       name: Broken_Table_2
       rect:
         serializedVersion: 2
-        x: 720
+        x: 960
         y: 960
         width: 240
         height: 240
@@ -288,7 +288,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 720
+        y: 480
         width: 240
         height: 240
       alignment: 0
@@ -309,7 +309,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 240
-        y: 720
+        y: 480
         width: 240
         height: 240
       alignment: 0
@@ -330,7 +330,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 480
-        y: 720
+        y: 480
         width: 240
         height: 240
       alignment: 0
@@ -351,7 +351,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 480
+        y: 240
         width: 240
         height: 240
       alignment: 0
@@ -372,7 +372,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 240
-        y: 480
+        y: 240
         width: 240
         height: 240
       alignment: 0
@@ -393,7 +393,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 480
-        y: 480
+        y: 240
         width: 240
         height: 240
       alignment: 0
@@ -414,7 +414,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 240
+        y: 0
         width: 240
         height: 240
       alignment: 0
@@ -435,7 +435,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 240
-        y: 240
+        y: 0
         width: 240
         height: 240
       alignment: 0
@@ -456,7 +456,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 480
-        y: 240
+        y: 0
         width: 240
         height: 240
       alignment: 0
@@ -476,8 +476,8 @@ TextureImporter:
       name: Chair_2
       rect:
         serializedVersion: 2
-        x: 720
-        y: 240
+        x: 960
+        y: 0
         width: 240
         height: 240
       alignment: 0
@@ -497,8 +497,8 @@ TextureImporter:
       name: Door_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 960
+        y: 480
         width: 240
         height: 240
       alignment: 0
@@ -518,8 +518,8 @@ TextureImporter:
       name: Doorway
       rect:
         serializedVersion: 2
-        x: 240
-        y: 0
+        x: 960
+        y: 240
         width: 240
         height: 240
       alignment: 0
@@ -539,8 +539,8 @@ TextureImporter:
       name: Door_2
       rect:
         serializedVersion: 2
-        x: 480
-        y: 0
+        x: 720
+        y: 480
         width: 240
         height: 240
       alignment: 0
@@ -582,7 +582,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 720
-        y: 480
+        y: 240
         width: 240
         height: 240
       alignment: 0
@@ -594,6 +594,48 @@ TextureImporter:
       bones: []
       spriteID: dc8d43b7905cb9d4fa7548556b3eee2d
       internalID: 288132789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inside_Tilemap_13
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 720
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5169bbab5065d6409d3e89a32f531db
+      internalID: -95752009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Inside_Tilemap_14
+      rect:
+        serializedVersion: 2
+        x: 960
+        y: 720
+        width: 240
+        height: 240
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a299a81b2d37424c86a0c259a304e82
+      internalID: -1908484006
       vertices: []
       indices: 
       edges: []
@@ -618,6 +660,7 @@ TextureImporter:
       Door_3: 288132789
       Doorway: -1880669522
       Broken_Table_1: -1705765226
+      Inside_Tilemap_13: -95752009
       Inside_Tilemap_10: 920371356
       Inside_Tilemap_7: -412429193
       Broken_Table_2: 2008905490
@@ -632,6 +675,7 @@ TextureImporter:
       Table_2: -887272613
       Inside_Tilemap_11: -1363877726
       Inside_Tilemap_9: -1360007585
+      Inside_Tilemap_14: -1908484006
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
