@@ -35,6 +35,14 @@ public class Bullet : MonoBehaviour
             pushRB.AddForce(moveDirectionPush.normalized * knockBackForce * - 1f, ForceMode2D.Impulse);
             StartCoroutine(EndKnockBack(pushRB));
         }
+
+        if (other.gameObject.tag == "S_Enemy") {
+            other.GetComponent<EnemyMeleeDamage>().TakeDamage(BulletDamage);
+            Rigidbody2D pushRB = other.gameObject.GetComponent<Rigidbody2D>();
+            Vector2 moveDirectionPush = rb2D.transform.position - other.transform.position;
+            pushRB.AddForce(moveDirectionPush.normalized * (knockBackForce / 2f) * - 1f, ForceMode2D.Impulse);
+            StartCoroutine(EndKnockBack(pushRB));
+        }
     }
 
     private IEnumerator EndKnockBack(Rigidbody2D otherRB){
