@@ -66,13 +66,13 @@ public class Shooting : MonoBehaviour
             if (Input.GetButtonDown("Fire2") && iceMode == true) {
                 // animator.SetBool("Fire", true);
                 ShootIce();
-                nextAttackTime = Time.time + 1f / attackRate;
+                nextAttackTime = Time.time + 1f / 8f;
             } 
 
             if (Input.GetButtonDown("Fire2") && windMode == true) {
                 // animator.SetBool("Fire", true);
                 ShootWind();
-                nextAttackTime = Time.time + 1f / attackRate;
+                nextAttackTime = Time.time + 1f / 1f;
             } 
         }
 
