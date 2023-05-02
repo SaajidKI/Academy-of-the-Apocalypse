@@ -4,6 +4,7 @@ using UnityEngine;
 public class EnemyMoveHitGreen : MonoBehaviour
 {
     public Rigidbody2D rb2D;
+    public Transform target;
     public float speed = 4f;
     public int damage = 10;
     public int bulletDamage = 5;
@@ -19,7 +20,15 @@ public class EnemyMoveHitGreen : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform firePoint;
     public float fireRate = 1.5f;
+    public float bulletSpeed = 30f;
+
     private float nextFireTime = 0f;
+
+    private float lookAngle;
+
+    private Vector2 playerPos;
+
+    public float bulletForce = 20f;
 
     void Start()
     {
@@ -40,43 +49,40 @@ public class EnemyMoveHitGreen : MonoBehaviour
 
     void Update()
     {
-        float DistToPlayer = Vector3.Distance(transform.position, player.position);
+        float DistToPlayer = Vector3.Distance(transform.position, target.position);
 
-        if (Vector2.Distance(transform.position, player.position) > stoppingDistance && player != null && DistToPlayer <= attackRange)
+        if ((target != null) && (DistToPlayer <= attackRange))
         {
-            transform.position = Vector2.MoveTowards(transform.position, player.position, enemy_speed * Time.deltaTime);
-
+            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+            //anim.SetBool("Walk", true);
+            //flip enemy to face player direction. Wrong direction? Swap the * -1.
+            if (target.position.x > gameObject.transform.position.x)
+            {
+                gameObject.transform.localScale = new Vector2(scaleX, gameObject.transform.localScale.y);
+            }
+            else
+            {
+                gameObject.transform.localScale = new Vector2(scaleX * -1, gameObject.transform.localScale.y);
+            }
             if (Time.time >= nextFireTime)
             {
                 FireBullet();
                 nextFireTime = Time.time + fireRate;
+
             }
-        }
-        else if (Vector2.Distance(transform.position, player.position) < stoppingDistance && Vector2.Distance(transform.position, player.position) > retreatDistance)
-        {
-            gameObject.transform.localScale = new Vector2(scaleX, gameObject.transform.localScale.y);
-            transform.position = this.transform.position;
-        }
-        else if (Vector2.Distance(transform.position, player.position) < retreatDistance)
-        {
-            transform.position = Vector2.MoveTowards(transform.position, player.position, -enemy_speed * Time.deltaTime);
-            gameObject.transform.localScale = new Vector2(scaleX * -1, gameObject.transform.localScale.y);
         }
     }
 
     private void FireBullet()
     {
+        playerPos = target.position;
+        lookAngle = Mathf.Atan2(playerPos.y, playerPos.x) * Mathf.Rad2Deg;
+        firePoint.rotation = Quaternion.Euler(0f, 0f, lookAngle + 90f);
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        Rigidbody2D bulletRB = bullet.GetComponent<Rigidbody2D>();
-        bulletRB.AddForce(firePoint.right * 10f, ForceMode2D.Impulse);
-
-        // Check if the bullet hits the player and deal damage
-        RaycastHit2D hit = Physics2D.Raycast(firePoint.position, firePoint.right);
-        if (hit.collider != null && hit.collider.gameObject.CompareTag("Player"))
-        {
-            gameHandler.playerGetHit(bulletDamage);
-            Destroy(bullet);
-        }
+        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+        rb.rotation = lookAngle;
+        rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+        Debug.Log(rb.rotation);
     }
 
 

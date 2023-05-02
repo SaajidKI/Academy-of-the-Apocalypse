@@ -338,7 +338,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &157133391
 Transform:
   m_ObjectHideFlags: 0
@@ -529,6 +529,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
+  target: {fileID: 0}
   speed: 4
   damage: 10
   bulletDamage: 5
@@ -541,6 +542,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2210124415394262952, guid: e845fcf9d5fffec4c9f60365032cb262, type: 3}
   firePoint: {fileID: 53666409}
   fireRate: 1.5
+  bulletSpeed: 30
+  bulletForce: 20
 --- !u!212 &157133397
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -870,7 +873,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &251461545
 Transform:
   m_ObjectHideFlags: 0
@@ -1113,6 +1116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
+  target: {fileID: 0}
   speed: 4
   damage: 10
   bulletDamage: 5
@@ -1125,6 +1129,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2210124415394262952, guid: e845fcf9d5fffec4c9f60365032cb262, type: 3}
   firePoint: {fileID: 868938740}
   fireRate: 1.5
+  bulletSpeed: 30
+  bulletForce: 20
 --- !u!114 &251461553
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2497,6 +2503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 1387982766}
+  target: {fileID: 1387982759}
   speed: 4
   damage: 10
   bulletDamage: 5
@@ -2509,6 +2516,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2210124415394262952, guid: e845fcf9d5fffec4c9f60365032cb262, type: 3}
   firePoint: {fileID: 894087882}
   fireRate: 1.5
+  bulletSpeed: 3070
+  bulletForce: 20
 --- !u!114 &809869408
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10346,7 +10355,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1356370552
 Transform:
   m_ObjectHideFlags: 0
@@ -10589,6 +10598,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
+  target: {fileID: 0}
   speed: 4
   damage: 10
   bulletDamage: 5
@@ -10601,6 +10611,8 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2210124415394262952, guid: e845fcf9d5fffec4c9f60365032cb262, type: 3}
   firePoint: {fileID: 938579174}
   fireRate: 1.5
+  bulletSpeed: 30
+  bulletForce: 20
 --- !u!114 &1356370560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13378,6 +13390,10 @@ PrefabInstance:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4574508055885583279, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 4574508056532481639, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
       propertyPath: playerWind
       value: 
@@ -13458,6 +13474,10 @@ PrefabInstance:
       propertyPath: m_Icon
       value: 
       objectReference: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4574508056826875854, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
 --- !u!1001 &6660003531567906629
@@ -13473,7 +13493,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6660003531116119866, guid: 1f2d407005b764525868038cfa83ba4d, type: 3}
       propertyPath: orthographic size
-      value: 5
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6660003531116120004, guid: 1f2d407005b764525868038cfa83ba4d, type: 3}
       propertyPath: target
