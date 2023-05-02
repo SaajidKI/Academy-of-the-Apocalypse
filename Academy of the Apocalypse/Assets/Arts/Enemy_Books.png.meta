@@ -124,13 +124,13 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fbdc4d8017f0e543b1c8510b6407f16
+      spriteID: 5315a617ba6ee3743a074e9056b364f2
       internalID: 381823449
       vertices: []
       indices: 
@@ -145,77 +145,14 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90a18c4fd7c5c4043afa6e7974955fed
+      spriteID: 4e28bebed4b62674ea815b11350cd88f
       internalID: 1401031432
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Chem_3
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 480
-        width: 240
-        height: 240
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 66e167d1f803c424093f8831afcdf884
-      internalID: -1782200221
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Chem_4
-      rect:
-        serializedVersion: 2
-        x: 720
-        y: 480
-        width: 240
-        height: 240
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 44db479bd018a714ea45d01a0fcae2a5
-      internalID: -136420353
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Chem_5
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 480
-        width: 240
-        height: 240
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c7b4675ff13623e4da7af245cac84849
-      internalID: 1009306622
       vertices: []
       indices: 
       edges: []
@@ -229,13 +166,13 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 69ba5e9f54e2290458b94a399996dcf1
+      spriteID: d9216c56551a4584d93335abf052bec1
       internalID: 365233867
       vertices: []
       indices: 
@@ -250,77 +187,14 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 710fe6d8210250b458326cd36d1fe242
+      spriteID: 7f14acf8cbc6a7f4aa830697ff10c151
       internalID: 1322976054
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bio_3
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 240
-        width: 240
-        height: 240
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3ec0788bc77cb594c91faad129f8c683
-      internalID: 417013205
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bio_4
-      rect:
-        serializedVersion: 2
-        x: 720
-        y: 240
-        width: 240
-        height: 240
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b5df7609e52b5b541acd323160bbc7b0
-      internalID: -1199099782
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Bio_5
-      rect:
-        serializedVersion: 2
-        x: 960
-        y: 240
-        width: 240
-        height: 240
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 80d3c60c293da9048942ea420a602250
-      internalID: 1031545986
       vertices: []
       indices: 
       edges: []
@@ -334,13 +208,13 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5eb489ae50ff63e469124deb66e2cccb
+      spriteID: 0f327ea5d2fa3904e9d2a63b9fe505ff
       internalID: 1924029756
       vertices: []
       indices: 
@@ -355,77 +229,14 @@ TextureImporter:
         width: 240
         height: 240
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16279f1b29008e549bd40a6b22312119
+      spriteID: 2426dfa83dbac2d418c098e14c280437
       internalID: -1363528608
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Physics_3
-      rect:
-        serializedVersion: 2
-        x: 480
-        y: 0
-        width: 240
-        height: 240
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c71ca73a3c66214baa60ce4820acd3c
-      internalID: -1715216020
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Physics_4
-      rect:
-        serializedVersion: 2
-        x: 720
-        y: 0
-        width: 240
-        height: 240
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e81077466fae6a841b020439b19d4c22
-      internalID: 1391035942
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Physics_5
-      rect:
-        serializedVersion: 2
-        x: 956
-        y: 0
-        width: 240
-        height: 240
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2444a125b3468a34ea15590cbd6362fa
-      internalID: -1080098372
       vertices: []
       indices: 
       edges: []
@@ -441,21 +252,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Bio_3: 417013205
-      Bio_5: 1031545986
       Physics_1: 1924029756
       Chem_1: 381823449
-      Chem_5: 1009306622
       Bio_1: 365233867
-      Bio_4: -1199099782
-      Physics_4: 1391035942
       Chem_2: 1401031432
-      Physics_3: -1715216020
-      Physics_5: -1080098372
-      Chem_4: -136420353
       Bio_2: 1322976054
       Physics_2: -1363528608
-      Chem_3: -1782200221
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
