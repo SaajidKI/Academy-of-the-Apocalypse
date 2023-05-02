@@ -474,6 +474,7 @@ MonoBehaviour:
   rb2D: {fileID: 0}
   speed: 4
   damage: 10
+  bulletDamage: 5
   EnemyLives: 3
   attackRange: 10
   enemy_speed: 3
@@ -901,6 +902,7 @@ MonoBehaviour:
   rb2D: {fileID: 0}
   speed: 4
   damage: 10
+  bulletDamage: 5
   EnemyLives: 3
   attackRange: 10
   enemy_speed: 3
@@ -1788,9 +1790,9 @@ GameObject:
   - component: {fileID: 809869407}
   - component: {fileID: 809869400}
   - component: {fileID: 809869405}
-  - component: {fileID: 809869404}
   - component: {fileID: 809869406}
   - component: {fileID: 809869408}
+  - component: {fileID: 809869409}
   m_Layer: 6
   m_Name: GreenEnemy1
   m_TagString: Enemy
@@ -1883,32 +1885,6 @@ Transform:
   m_Father: {fileID: 1796986706}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &809869404
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 809869399}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0.025609672, y: -0.24922973}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.4, y: 2.4}
-    newSize: {x: 4.62, y: 5.63}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 2.0517054, y: 1.6066447}
-  m_EdgeRadius: 0
 --- !u!50 &809869405
 Rigidbody2D:
   serializedVersion: 4
@@ -2041,6 +2017,7 @@ MonoBehaviour:
   rb2D: {fileID: 0}
   speed: 4
   damage: 10
+  bulletDamage: 5
   EnemyLives: 3
   attackRange: 10
   enemy_speed: 3
@@ -2066,6 +2043,43 @@ MonoBehaviour:
   green: 1
   red: 0
   color: 
+--- !u!61 &809869409
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809869399}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.025609672, y: -0.24922973}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 2.4, y: 2.4}
+    newSize: {x: 4.62, y: 5.63}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.0517054, y: 1.6066447}
+  m_EdgeRadius: 0
+--- !u!114 &815033717 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7892535449484497609, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
+  m_PrefabInstance: {fileID: 4395986398582832830}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &868592007 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4395986398352496441, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
@@ -3426,6 +3440,7 @@ MonoBehaviour:
   rb2D: {fileID: 0}
   speed: 4
   damage: 10
+  bulletDamage: 5
   EnemyLives: 3
   attackRange: 10
   enemy_speed: 3
@@ -23701,6 +23716,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 25, y: 6.9308558}
   m_EdgeRadius: 0
+--- !u!114 &1599494184 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6652515625196221164, guid: 1f2d407005b764525868038cfa83ba4d, type: 3}
+  m_PrefabInstance: {fileID: 6660003531567906629}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aa503b4221c04ec797e7dae9d533954, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1601777336
 GameObject:
   m_ObjectHideFlags: 0
@@ -25558,6 +25584,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 868592007}
     - target: {fileID: 3791975871212572930, guid: d40e5e47fc4694e64a8433e0ba4ad61f, type: 3}
+      propertyPath: cameraShake
+      value: 
+      objectReference: {fileID: 1599494184}
+    - target: {fileID: 3791975871212572930, guid: d40e5e47fc4694e64a8433e0ba4ad61f, type: 3}
       propertyPath: pauseMenuUI
       value: 
       objectReference: {fileID: 620033105}
@@ -25691,6 +25721,10 @@ PrefabInstance:
       propertyPath: shootScript
       value: 
       objectReference: {fileID: 606672390}
+    - target: {fileID: 4395986398352496433, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
+      propertyPath: abilityImage_3
+      value: 
+      objectReference: {fileID: 815033717}
     - target: {fileID: 4395986398352496437, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
       propertyPath: m_Pivot.x
       value: 0
