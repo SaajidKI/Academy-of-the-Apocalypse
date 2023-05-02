@@ -75,9 +75,9 @@ public class EnemyMoveHitGreen : MonoBehaviour
 
     private void FireBullet()
     {
-        playerPos = target.position;
+        playerPos = target.position - firePoint.position;
         lookAngle = Mathf.Atan2(playerPos.y, playerPos.x) * Mathf.Rad2Deg;
-        firePoint.rotation = Quaternion.Euler(0f, 0f, lookAngle + 90f);
+        firePoint.rotation = Quaternion.Euler(0f, 0f, lookAngle - 90f);
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.rotation = lookAngle;
