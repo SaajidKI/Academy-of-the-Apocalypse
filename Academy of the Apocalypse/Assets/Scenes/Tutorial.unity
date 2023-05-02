@@ -7178,6 +7178,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1467520645}
     - target: {fileID: 3791975871212572930, guid: d40e5e47fc4694e64a8433e0ba4ad61f, type: 3}
+      propertyPath: cameraShake
+      value: 
+      objectReference: {fileID: 1869600327}
+    - target: {fileID: 3791975871212572930, guid: d40e5e47fc4694e64a8433e0ba4ad61f, type: 3}
       propertyPath: pauseMenuUI
       value: 
       objectReference: {fileID: 251387201}
@@ -7388,6 +7392,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4395986397940181126, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4395986398352496433, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
       propertyPath: coolTime
       value: 
@@ -8982,6 +8990,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4574508056532481645, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
   m_PrefabInstance: {fileID: 892291797}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1869600327 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6652515625196221164, guid: 1f2d407005b764525868038cfa83ba4d, type: 3}
+  m_PrefabInstance: {fileID: 1181294755}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0aa503b4221c04ec797e7dae9d533954, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1877059655
 GameObject:
   m_ObjectHideFlags: 0
