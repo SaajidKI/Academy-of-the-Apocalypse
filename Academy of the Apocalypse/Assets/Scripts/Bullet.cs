@@ -10,6 +10,7 @@ public class Bullet : MonoBehaviour
     public Animator animator;
 
 
+
     // Start is called before the first frame update
     void Start()
     {
