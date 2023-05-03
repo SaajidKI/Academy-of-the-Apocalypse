@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class door : MonoBehaviour
 {
+    public string scene = "";
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +22,7 @@ public class door : MonoBehaviour
      void OnTriggerEnter2D(Collider2D other) {
 
         if (other.gameObject.tag == "Player") {
-            SceneManager.LoadScene("SampleScene 1");
+            SceneManager.LoadScene(scene);
         }
     }
 }
