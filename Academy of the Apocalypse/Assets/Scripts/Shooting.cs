@@ -37,6 +37,8 @@ public class Shooting : MonoBehaviour
     public bool isCooldownIce;
     public bool isCooldownWind;
 
+    public bool shoot_f = true;
+
     void Start(){
         // animator = gameObject.GetComponent<Animator>();
         fireMode = true;
@@ -47,48 +49,56 @@ public class Shooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // animator.SetTrigger ("Fire"); 
-        mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-        lookAngle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
-        firePointRotate.rotation = Quaternion.Euler(0f, 0f, lookAngle - 90f);
+        if (shoot_f == true) {
+            // animator.SetTrigger ("Fire"); 
+            mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+            lookAngle = Mathf.Atan2(mousePos.y, mousePos.x) * Mathf.Rad2Deg;
+            firePointRotate.rotation = Quaternion.Euler(0f, 0f, lookAngle - 90f);
 
-        
+            
 
-        Switch();
+            Switch();
 
-        if (Time.time >= nextAttackTime) {
-            if (Input.GetButtonDown("Fire2") && fireMode == true) {
-                // animator.SetBool("Fire", true);
-                ShootFire();
-                nextAttackTime = Time.time + 1f / attackRate;
-            } 
+            if (Time.time >= nextAttackTime) {
+                if (Input.GetButtonDown("Fire2") && fireMode == true) {
+                    // animator.SetBool("Fire", true);
+                    ShootFire();
+                    nextAttackTime = Time.time + 1f / attackRate;
+                } 
 
-            if (Input.GetButtonDown("Fire2") && iceMode == true) {
-                // animator.SetBool("Fire", true);
-                ShootIce();
-                nextAttackTime = Time.time + 1f / 8f;
-            } 
+                if (Input.GetButtonDown("Fire2") && iceMode == true) {
+                    // animator.SetBool("Fire", true);
+                    ShootIce();
+                    nextAttackTime = Time.time + 1f / 8f;
+                } 
 
-            if (Input.GetButtonDown("Fire2") && windMode == true) {
-                // animator.SetBool("Fire", true);
-                ShootWind();
-                nextAttackTime = Time.time + 1f / 1f;
-            } 
+                if (Input.GetButtonDown("Fire2") && windMode == true) {
+                    // animator.SetBool("Fire", true);
+                    ShootWind();
+                    nextAttackTime = Time.time + 1f / 1f;
+                } 
+            }
+
+            if (Input.GetButtonDown("Skill") && isCooldownFire == false && fireMode == true) {
+                ShootFlameTrap();
+            }
+
+            if (Input.GetButtonDown("Skill") && isCooldownIce == false && iceMode == true) {
+                ShootIceMist();
+            }
+
+            if (Input.GetButtonDown("Skill") && isCooldownWind == false && windMode == true) {
+                ShootWindTornado();
+            }
         }
+    }
 
-        if (Input.GetButtonDown("Skill") && isCooldownFire == false && fireMode == true) {
-            ShootFlameTrap();
-        }
+    public void enable_shooting() {
+        shoot_f = true;
+    }
 
-        if (Input.GetButtonDown("Skill") && isCooldownIce == false && iceMode == true) {
-            ShootIceMist();
-        }
-
-        if (Input.GetButtonDown("Skill") && isCooldownWind == false && windMode == true) {
-            ShootWindTornado();
-        }
-
-
+    public void disable_shooting() {
+        shoot_f = false;
     }
 
     public void boolSwitchFire() {

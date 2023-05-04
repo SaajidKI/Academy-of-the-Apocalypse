@@ -47,6 +47,8 @@ public class GameHandler : MonoBehaviour {
 
       public openDoor doorOpen;
 
+      public bool damaged = true;
+
       void Awake (){
                 SetLevel (volumeLevel);
                 GameObject sliderTemp = GameObject.FindWithTag("PauseMenuSlider");
@@ -123,32 +125,42 @@ public class GameHandler : MonoBehaviour {
         
 
       public void playerGetHit(int damage){
-            cameraShake.ShakeCamera(0.15f, 0.3f);
+            if (damaged == true) {
+                  cameraShake.ShakeCamera(0.15f, 0.3f);
 
-            // Debug.Log("Player Got hit!");
-           if (isDefending == false){
-                  playerHealth -= damage;
-                  // cameraShake.ShakeCamera(0.15f, 0.3f);
-                  if (playerHealth >=0){
+                  // Debug.Log("Player Got hit!");
+                  if (isDefending == false){
+                        playerHealth -= damage;
+                        // cameraShake.ShakeCamera(0.15f, 0.3f);
+                        if (playerHealth >=0){
+                              updateStatsDisplay();
+                        }
+                        if (damage > 0){
+                              player.GetComponent<PlayerHurt>().playerHit();       //play GetHit animation
+                        }
+                  }
+
+                  if (playerHealth > StartPlayerHealth){
+                        playerHealth = StartPlayerHealth;
                         updateStatsDisplay();
                   }
-                  if (damage > 0){
-                        player.GetComponent<PlayerHurt>().playerHit();       //play GetHit animation
+
+                  if (playerHealth <= 0){
+                        playerHealth = 0;
+                        updateStatsDisplay();
+                        playerDies();
                   }
-            }
 
-           if (playerHealth > StartPlayerHealth){
-                  playerHealth = StartPlayerHealth;
-                  updateStatsDisplay();
+                  Debug.Log(playerHealth);
             }
+      }
 
-           if (playerHealth <= 0){
-                  playerHealth = 0;
-                  updateStatsDisplay();
-                  playerDies();
-            }
+      public void enable_damage() {
+            damaged = true;
+      }
 
-            Debug.Log(playerHealth);
+      public void disable_damage() {
+            damaged = false;
       }
 
       public void updateStatsDisplay(){

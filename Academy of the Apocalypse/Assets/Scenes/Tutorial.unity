@@ -889,7 +889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 852c52b01e86b41da8bfbec633c937f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: Testing Scene
+  scene: 
 --- !u!61 &173403922
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -9492,7 +9492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
-  target: {fileID: 0}
+  target: {fileID: 1735370371}
   speed: 4
   damage: 10
   bulletDamage: 5
