@@ -8,6 +8,7 @@ TagManager:
   - PauseMenuSlider
   - GameHandler
   - bullet
+  - S_Enemy
   layers:
   - Default
   - TransparentFX
