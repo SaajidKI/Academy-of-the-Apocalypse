@@ -6,11 +6,12 @@ public class EnemyMoveHitIce : MonoBehaviour
 {
     public Rigidbody2D rb2D;
     public Transform target;
-    public float speed = 4f;
+    public float speed = 3f;
     public int damage = 10;
     public int bulletDamage = 5;
     public int EnemyLives = 3;
     private GameHandler gameHandler;
+    public EnemyMeleeDamage healthIndicator;
     public float attackRange = 10;
     private Transform player;
     public float enemy_speed = 3;
@@ -36,6 +37,9 @@ public class EnemyMoveHitIce : MonoBehaviour
 
     public float bulletForce = 20f;
 
+    private float enemy_health;
+    private bool rageMode = false;
+
     void Start()
     {
         rb2D = GetComponentInChildren<Rigidbody2D>();
@@ -51,6 +55,8 @@ public class EnemyMoveHitIce : MonoBehaviour
         {
             gameHandler = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>();
         }
+
+        healthIndicator = this.GetComponent<EnemyMeleeDamage>();
     }
 
     void Update()
@@ -89,7 +95,7 @@ public class EnemyMoveHitIce : MonoBehaviour
                 nextSkillTime = Time.time + 10f;
             }
 
-            if (Time.time >= nextSprayTime) {
+            if (Time.time >= nextSprayTime && rageMode == true) {
                 Debug.Log("Spraytime");
                 // nextShootTime = Time.time + 1f;
                 // Debug.Log("Spraytime done");
@@ -111,6 +117,14 @@ public class EnemyMoveHitIce : MonoBehaviour
             } else {
                 ToAngle = -10f;
             }
+        }
+        enemy_health = healthIndicator.currentHealth;
+    
+        if (enemy_health < (healthIndicator.maxHealth / 2) && rageMode == false) {
+
+            fireRate = 1f;
+            rageMode = true;
+            speed = 4f;
         }
     }
 
@@ -190,7 +204,12 @@ public class EnemyMoveHitIce : MonoBehaviour
     IEnumerator Delay()
     {
         yield return new WaitForSeconds(4f);
-        speed = 4f;
+        if (rageMode == true) {
+            speed = 4f;
+        }
+        if (rageMode == false) {
+            speed = 3f;
+        }
 
     }
 
