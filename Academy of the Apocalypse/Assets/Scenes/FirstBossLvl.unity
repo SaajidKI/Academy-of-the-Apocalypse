@@ -3978,6 +3978,10 @@ PrefabInstance:
       propertyPath: abilityImage_3
       value: 
       objectReference: {fileID: 1436821870}
+    - target: {fileID: 4395986398352496434, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
+      propertyPath: gameHandler
+      value: 
+      objectReference: {fileID: 1331720203}
     - target: {fileID: 4395986398352496437, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -4082,6 +4086,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 74ce4b06bd97142d3a85152cb70cdc14, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1331720203 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3791975871212572930, guid: d40e5e47fc4694e64a8433e0ba4ad61f, type: 3}
+  m_PrefabInstance: {fileID: 1388284401}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ad82ddcecdf473e8e3b8d06e59e224, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1337393923
@@ -4789,6 +4804,7 @@ GameObject:
   - component: {fileID: 1658949800}
   - component: {fileID: 1658949798}
   - component: {fileID: 1658949797}
+  - component: {fileID: 1658949804}
   m_Layer: 0
   m_Name: BossIce
   m_TagString: S_Enemy
@@ -4954,6 +4970,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1658949804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658949796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90bbb7154314a4a9094cdbe4c89c7ea6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  blue: 0
+  green: 0
+  red: 0
+  table: 0
+  boss: 1
+  color: 
 --- !u!4 &1714807107 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4574508056532481645, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
