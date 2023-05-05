@@ -7,6 +7,7 @@ public class EnemyColorCheck : MonoBehaviour
     public bool blue;
     public bool green;
     public bool red;
+    public bool table;
     public string color;
 
     // Start is called before the first frame update
@@ -22,6 +23,10 @@ public class EnemyColorCheck : MonoBehaviour
 
         if (red == true) {
             color = "red";
+        }
+
+        if (table == true) {
+            color = "table";
         }
     }
 

@@ -63,6 +63,15 @@ public class WindTornadoSkill : MonoBehaviour
             pushRB.AddForce(moveDirectionPush.normalized * knockBackForce * - 1f, ForceMode2D.Impulse);
             StartCoroutine(EndKnockBack(pushRB));
         }
+
+        if (other.gameObject.tag == "S_Enemy") {
+            other.GetComponent<EnemyMeleeDamage>().TakeDamage(20);
+
+            Rigidbody2D pushRB = other.gameObject.GetComponent<Rigidbody2D>();
+            Vector2 moveDirectionPush = rb2D.transform.position - other.transform.position;
+            pushRB.AddForce(moveDirectionPush.normalized * (knockBackForce / 3f) * - 1f, ForceMode2D.Impulse);
+            StartCoroutine(EndKnockBack(pushRB));
+        }
     }
 
     private IEnumerator DestroyObject(GameObject bullet) {

@@ -14,12 +14,12 @@ public class HealthBarThirdPerson : MonoBehaviour {
       public Image healthBar;
       public Color healthyColor = new Color(0.3f, 0.8f, 0.3f);
       public Color unhealthyColor = new Color(0.8f, 0.3f, 0.3f);
-      private GameHandler gameHandler;
+      public GameHandler gameHandler;
 
 
       private void Start () {
         if (GameObject.FindWithTag ("GameHandler") != null) {
-            gameHandler = GameObject.FindWithTag ("GameHandler").GetComponent<GameHandler> ();
+            gameHandler = GameObject.FindWithTag ("GameHandler").GetComponent<GameHandler>();
             }
             health = gameHandler.StartPlayerHealth;
             Debug.Log("The starting health is: " + health);
