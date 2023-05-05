@@ -39,7 +39,7 @@ public class EnemyBullet : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag != "Enemy" || other.gameObject.tag != "S_Enemy" || other.gameObject.tag != "bullet")
+        if (other.gameObject.tag != "Enemy" && other.gameObject.tag != "S_Enemy" && other.gameObject.tag != "bullet")
         {
             // gameObject.GetComponent<Renderer>().enabled = false;
             StartCoroutine(DestroyObject(gameObject));
@@ -56,7 +56,6 @@ public class EnemyBullet : MonoBehaviour
 
     private IEnumerator DestroyObject(GameObject bullet)
     {
-        Debug.Log("Destroying bullet");
         yield return new WaitForSeconds(0.5f);
         Destroy(bullet);
     }

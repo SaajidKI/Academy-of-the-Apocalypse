@@ -22,8 +22,15 @@ public class EnemyMoveHitIce : MonoBehaviour
     public float bulletSpeed = 30f;
 
     private float nextFireTime = 0f;
+    private float nextSkillTime = 10f;
+    private float nextSprayTime = 15f;
+    private float stopSprayTime = 0f;
+    private float nextShootTime = 0f;
+    private bool smallSpray = false;
 
     private float lookAngle;
+    private float SkillAngle;
+    private float ToAngle = -10f;
 
     private Vector2 playerPos;
 
@@ -69,6 +76,41 @@ public class EnemyMoveHitIce : MonoBehaviour
                 nextFireTime = Time.time + fireRate;
 
             }
+            if (Time.time >= nextSkillTime) {
+                SprayBullet(0f);
+                SprayBullet(40f);
+                SprayBullet(80f);
+                SprayBullet(120f);
+                SprayBullet(160f);
+                SprayBullet(200f);
+                SprayBullet(240f);
+                SprayBullet(280f);
+                SprayBullet(320f);
+                nextSkillTime = Time.time + 10f;
+            }
+
+            if (Time.time >= nextSprayTime) {
+                Debug.Log("Spraytime");
+                // nextShootTime = Time.time + 1f;
+                // Debug.Log("Spraytime done");
+                nextSprayTime = Time.time + 15f;
+                smallSpray = true;
+                nextShootTime = Time.time + 1f;
+                stopSprayTime = Time.time + 3f;
+            }
+
+            if (Time.time >= stopSprayTime) {
+                smallSpray = false;
+            }
+
+            if (Time.time >= nextShootTime && smallSpray == true) {
+                    Debug.Log("In for loop!");
+                    portionSpray(ToAngle);
+                    nextShootTime = Time.time + 0.2f;
+                    ToAngle = ToAngle + 5f;
+            } else {
+                ToAngle = -10f;
+            }
         }
     }
 
@@ -81,7 +123,27 @@ public class EnemyMoveHitIce : MonoBehaviour
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.rotation = lookAngle;
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
-        Debug.Log(rb.rotation);
+        // Debug.Log(rb.rotation);
+    }
+
+    private void portionSpray(float Angle) {
+        playerPos = target.position - firePoint.position;
+        lookAngle = Mathf.Atan2(playerPos.y, playerPos.x) * Mathf.Rad2Deg;
+        firePoint.rotation = Quaternion.Euler(0f, 0f, lookAngle + Angle - 90f);
+        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+        rb.rotation = lookAngle + Angle;
+        rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+    }
+
+
+    private void SprayBullet(float SkillAngle) {
+        firePoint.rotation = Quaternion.Euler(0f, 0f, SkillAngle);
+        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+        rb.rotation = SkillAngle - 90f;
+        rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+        // Debug.Log(rb.rotation);
     }
 
 
@@ -131,4 +193,9 @@ public class EnemyMoveHitIce : MonoBehaviour
         speed = 4f;
 
     }
+
+    // IEnumerator SprayDelay() {
+    //     yield return new WaitForSeconds(10f);
+    //     SprayBullet();
+    // }
 }
