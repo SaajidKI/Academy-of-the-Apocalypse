@@ -41,6 +41,7 @@ public class GameHandler : MonoBehaviour {
       // private int Deaths = 0;
 
       private GameObject[] enemies;
+      private GameObject[] S_Enemies;
       int enemiesLeft = 0;
       private bool noEnemies = false;
       public Text enemyCountText;
@@ -93,8 +94,9 @@ public class GameHandler : MonoBehaviour {
             //     }
 
             GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
-            enemyCountText.text = "Enemies Left: " + enemies.Length.ToString();
-            enemiesLeft = enemies.Length;
+            GameObject[] S_Enemies = GameObject.FindGameObjectsWithTag("S_Enemy");
+            enemyCountText.text = "Enemies Left: " + enemies.Length.ToString() + S_Enemies.Length.ToString();
+            enemiesLeft = enemies.Length + S_Enemies.Length;
 
             if (enemiesLeft == 0) {
                   noEnemies = true; 
