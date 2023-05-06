@@ -15,6 +15,7 @@ public class Shooting : MonoBehaviour
     public GameObject IceMistPrefab;
     public GameObject windPrefab;
     public GameObject WindTornadoPrefab;
+    private CameraShake Shaker;
     // public GameObject Indicator;
     public float bulletForce = 20f;
  
@@ -43,6 +44,8 @@ public class Shooting : MonoBehaviour
         // animator = gameObject.GetComponent<Animator>();
         fireMode = true;
         coolScript = cooler.GetComponent<cooldown>();
+        Shaker = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<CameraShake>();
+
     }
 
 
@@ -118,6 +121,7 @@ public class Shooting : MonoBehaviour
         Rigidbody2D rb = fireBullet.GetComponent<Rigidbody2D>();
         rb.rotation = lookAngle;
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+        Shaker.ShakeCamera(0.05f, 0.1f);
     }
 
     void ShootWind() {
@@ -125,6 +129,7 @@ public class Shooting : MonoBehaviour
         Rigidbody2D rb = windBullet.GetComponent<Rigidbody2D>();
         rb.rotation = lookAngle;
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+        Shaker.ShakeCamera(0.05f, 0.1f);
     }
 
     void ShootWindTornado() {
@@ -133,6 +138,7 @@ public class Shooting : MonoBehaviour
 
         if(distance < 5) {
             GameObject WindTornado = Instantiate(WindTornadoPrefab, cursorPos, Quaternion.identity);
+            Shaker.ShakeCamera(0.15f, 0.5f);
             coolScript.startingWind();
             isCooldownWind = true;
         }
@@ -150,6 +156,7 @@ public class Shooting : MonoBehaviour
 
         if (distance < 5) {
             Instantiate(FlameTrapPrefab, cursorPos, Quaternion.identity);
+            Shaker.ShakeCamera(0.15f, 0.5f);
             StartCoroutine(Delay(cursorPos, vecArray[0], 0.2f)); 
             StartCoroutine(Delay(cursorPos, vecArray[1], 0.4f));
             StartCoroutine(Delay(cursorPos, vecArray[2], 0.6f));
@@ -164,6 +171,7 @@ public class Shooting : MonoBehaviour
         Rigidbody2D rb = iceBullet.GetComponent<Rigidbody2D>();
         rb.rotation = lookAngle;
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+        Shaker.ShakeCamera(0.05f, 0.1f);
     }
 
     void ShootIceMist() {
@@ -173,6 +181,7 @@ public class Shooting : MonoBehaviour
 
         if (distance < 7) {
             GameObject IceMist = Instantiate(IceMistPrefab, cursorPos, Quaternion.identity);
+            Shaker.ShakeCamera(0.15f, 0.5f);
         coolScript.startingIce();
         isCooldownIce = true;
         }

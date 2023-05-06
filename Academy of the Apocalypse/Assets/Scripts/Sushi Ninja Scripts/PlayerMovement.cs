@@ -13,6 +13,13 @@ public class PlayerMovement : MonoBehaviour {
       public bool isAlive = true;
       private bool turned = true;
       public bool walking = true;
+      public float dashSpeed = 5.0f;
+      public float dashDuration = 0.1f;
+      public float dashCooldown = 0.5f;
+
+      private bool isDashing = false;
+      private float dashTimer;
+      private float dashCooldownTimer;
 
       public Camera cam;
 
@@ -21,72 +28,56 @@ public class PlayerMovement : MonoBehaviour {
       void Start(){
            anim = gameObject.GetComponent<Animator>();
            rb2D = transform.GetComponent<Rigidbody2D>();
+           dashTimer = 0f;
+           dashCooldownTimer = 0f;
       }
 
       void Update(){
 
             if (walking == true) {
-                  //NOTE: Horizontal axis: [a] / left arrow is -1, [d] / right arrow is 1
-                  //NOTE: Vertical axis: [w] / up arrow, [s] / down arrow
                   Vector3 hvMove = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0.0f);
-                  if (isAlive == true){
-                        transform.position = transform.position + hvMove * runSpeed * Time.deltaTime;
-
-                        if ((Input.GetAxis("Horizontal") != 0) || (Input.GetAxis("Vertical") != 0)){
-                        anim.SetBool ("isWalking", true);
-                        if (!WalkSFX.isPlaying){
-                              WalkSFX.Play();
+                  if (isAlive == true) {
+                        if (!isDashing) {
+                              transform.position = transform.position + hvMove * runSpeed * Time.deltaTime;
                         }
+
+                        if ((Input.GetAxis("Horizontal") != 0) || (Input.GetAxis("Vertical") != 0)) {
+                              anim.SetBool ("isWalking", true);
+                              if (!WalkSFX.isPlaying){
+                                    WalkSFX.Play();
+                              }
                         } else {
-                        anim.SetBool ("isWalking", false);
-                        WalkSFX.Stop();
+                              anim.SetBool ("isWalking", false);
+                              WalkSFX.Stop();
                         }
-
                   }
 
+                  if (Input.GetButtonDown("Dash") && !isDashing && dashCooldownTimer <= 0) {
+                        StartCoroutine(Dash());
+                  }
+
+                  if (isDashing) {
+                        dashTimer -= Time.deltaTime;
+                        if (dashTimer <= 0) {
+                              isDashing = false;
+                        }
+                  }
+                  else if (dashCooldownTimer > 0) {
+                        dashCooldownTimer -= Time.deltaTime;
+                  }
+
+
                   mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-
-                  // Vector3 playerPos = transform.localPosition
-                  // float playerPosX = playerPos.x;
-
-                  // Vector3 ScaleVal = transform.localScale;
-                  // float ScaleDeter = ScaleVal.x;
-
-                  // Debug.Log(mousePos.x);
-
-                  // if (mousePos.x > 0 && ScaleDeter > 0) {
-                  //       playerTurn();
-                  // }
-
-                  // if (mousePos.x < 0 && ScaleDeter < 0) {
-                  //       playerTurn();
-                  // }
 
                   Vector2 lookDir = mousePos - rb2D.position;
                   float angle = Mathf.Atan2(lookDir.y, lookDir.x) * Mathf.Rad2Deg - 90f;
                   angle = Mathf.RoundToInt(angle);
-                  // // rb2D.rotation = angle;
-
-                  // if (angle == 0 || angle == -180) {
-                  //       if (turned == false) {
-                  //             playerTurn();
-                  //             turned = true;
-                  //       }
-                  // }
-
-                  // if (angle == -1 || angle == -179) {
-                  //       turned = false;
-                  // }
 
                   if ((angle > 0 && angle < 90) || (angle > -270 && angle < -180)) {
                         if (turned == false) {
                               playerTurn();
                               turned = true; 
                         }
-                        // if (angle > -270 && angle < -180) {
-                        //       Debug.Log("HERE!");
-                        //       playerTurn();
-                        // }
                   }
 
                   if (angle < 0 && angle > -180) {
@@ -126,6 +117,24 @@ public class PlayerMovement : MonoBehaviour {
 
       public bool playerSide() {
             return FaceRight;
+      }
+
+      IEnumerator Dash() {
+            isDashing = true;
+            dashTimer = dashDuration;
+            dashCooldownTimer = dashCooldown;
+
+            Vector2 dashDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
+            if (dashDirection == Vector2.zero)
+            {
+            dashDirection = FaceRight ? Vector2.left : Vector2.right;
+            }
+
+            rb2D.velocity = dashDirection * dashSpeed;
+            yield return new WaitForSeconds(dashDuration);
+
+            rb2D.velocity = Vector2.zero;
+            isDashing = false;
       }
 
 }
