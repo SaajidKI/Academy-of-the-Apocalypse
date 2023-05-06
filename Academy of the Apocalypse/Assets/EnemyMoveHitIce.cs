@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class EnemyMoveHitIce : MonoBehaviour
 {
+    public Animator animator;
     public Rigidbody2D rb2D;
     public Transform target;
     public float speed = 3f;
@@ -138,6 +139,7 @@ public class EnemyMoveHitIce : MonoBehaviour
         rb.rotation = lookAngle;
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
         // Debug.Log(rb.rotation);
+        animator.SetTrigger("Shooting"); 
     }
 
     private void portionSpray(float Angle) {
@@ -158,6 +160,7 @@ public class EnemyMoveHitIce : MonoBehaviour
         rb.rotation = SkillAngle - 90f;
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
         // Debug.Log(rb.rotation);
+        animator.SetTrigger("Shooting");
     }
 
 
