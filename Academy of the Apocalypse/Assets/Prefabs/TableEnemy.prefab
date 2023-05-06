@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6093185313410705110}
   - component: {fileID: 6093185313410705111}
   - component: {fileID: 6093185313410705108}
+  - component: {fileID: 9055204812478167246}
   m_Layer: 0
   m_Name: TableEnemy
   m_TagString: S_Enemy
@@ -188,4 +189,25 @@ MonoBehaviour:
   green: 0
   red: 0
   table: 1
+  boss: 0
   color: 
+--- !u!95 &9055204812478167246
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6093185313410705115}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 160e6c3c470d44d89a14fa86486fe7e2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
