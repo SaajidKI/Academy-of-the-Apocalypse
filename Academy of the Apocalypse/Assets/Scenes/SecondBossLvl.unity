@@ -4825,6 +4825,18 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 154122243}
+    - target: {fileID: 4574508056532481647, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
+      propertyPath: dashSpeed
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4574508056532481647, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
+      propertyPath: dashCooldown
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4574508056532481647, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
+      propertyPath: dashDuration
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 4574508056826875852, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
       propertyPath: cooler
       value: 
