@@ -8,6 +8,9 @@ public class Bullet : MonoBehaviour
     public float knockBackForce = 20f;
     public Rigidbody2D rb2D;    
     public Animator animator;
+    // private ParticleSystem testParticleSystem = default;
+    public GameObject hitParticles;
+    public Vector3 spwnPoint;
 
 
 
@@ -35,6 +38,12 @@ public class Bullet : MonoBehaviour
             Vector2 moveDirectionPush = rb2D.transform.position - other.transform.position;
             pushRB.AddForce(moveDirectionPush.normalized * knockBackForce * - 1f, ForceMode2D.Impulse);
             StartCoroutine(EndKnockBack(pushRB));
+            
+            
+            // spwnPoint = other.contacts[0].point;
+            // GameObject particleSys = Instantiate (hitParticles, spwnPoint, other.transform.rotation);
+            // StartCoroutine(destroyParticles(particleSys));
+            // testParticleSystem.Play();
         }
 
         if (other.gameObject.tag == "S_Enemy") {
@@ -43,6 +52,7 @@ public class Bullet : MonoBehaviour
             Vector2 moveDirectionPush = rb2D.transform.position - other.transform.position;
             pushRB.AddForce(moveDirectionPush.normalized * (knockBackForce / 2f) * - 1f, ForceMode2D.Impulse);
             StartCoroutine(EndKnockBack(pushRB));
+            // testParticleSystem.Play();
         }
     }
 
@@ -54,6 +64,25 @@ public class Bullet : MonoBehaviour
     private IEnumerator DestroyObject(GameObject bullet) {
         yield return new WaitForSeconds(0.5f);
         Destroy(bullet);
+    }
+    
+    
+    
+    
+    public void OnCollisionEnter2D(Collision2D other){
+    //if the impact has enough force
+    if (other.gameObject.tag == "Enemy") {
+        //get impact location
+       spwnPoint = other.contacts[0].point;
+        //make particles
+       GameObject particleSys = Instantiate (hitParticles, spwnPoint, other.transform.rotation);
+       StartCoroutine(destroyParticles(particleSys));
+    }
+}
+
+    private IEnumerator destroyParticles(GameObject pSys){
+           yield return new WaitForSeconds(2f);
+           Destroy(pSys);
     }
 }
 
