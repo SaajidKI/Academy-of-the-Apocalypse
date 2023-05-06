@@ -716,6 +716,82 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 17.502214, y: 31.011894}
   m_EdgeRadius: 0
+--- !u!1 &526422409
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 526422410}
+  - component: {fileID: 526422412}
+  - component: {fileID: 526422411}
+  m_Layer: 5
+  m_Name: HealthBorder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &526422410
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526422409}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 713035406}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.2962, y: 0.5923}
+  m_SizeDelta: {x: 216.6661, y: 54.9918}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &526422411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526422409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 13ed27e7aee85154bb147fae4d3705a0, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &526422412
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526422409}
+  m_CullTransparentMesh: 1
 --- !u!1 &529483156
 GameObject:
   m_ObjectHideFlags: 0
@@ -1087,6 +1163,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.937481, y: 4.0045047}
   m_EdgeRadius: 0
+--- !u!224 &713035406 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4395986398979256431, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
+  m_PrefabInstance: {fileID: 1239863988}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &732346888
 GameObject:
   m_ObjectHideFlags: 0
@@ -4865,6 +4946,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 4395986398979256431, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -466
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395986398979256431, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -635
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
 --- !u!1 &1287668255 stripped
@@ -5703,9 +5792,9 @@ GameObject:
   - component: {fileID: 1658949802}
   - component: {fileID: 1658949801}
   - component: {fileID: 1658949800}
-  - component: {fileID: 1658949798}
   - component: {fileID: 1658949797}
   - component: {fileID: 1658949804}
+  - component: {fileID: 1658949805}
   m_Layer: 0
   m_Name: BossWind
   m_TagString: S_Enemy
@@ -5730,33 +5819,6 @@ MonoBehaviour:
   damagePerSecond: 10
   burnDuration: 5
   tickRate: 1
---- !u!114 &1658949798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658949796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b15954fa6e7d409ba84c2512ad9456b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rb2D: {fileID: 1714807108}
-  target: {fileID: 1714807107}
-  speed: 4
-  damage: 10
-  bulletDamage: 5
-  EnemyLives: 3
-  healthIndicator: {fileID: 0}
-  attackRange: 10
-  enemy_speed: 3
-  knockBackForce: 20
-  bulletPrefab: {fileID: 4522741059268890183, guid: 56309fe64636f416c8d837c323175c0e, type: 3}
-  firePoint: {fileID: 1814237428}
-  fireRate: 1.5
-  bulletSpeed: 30
-  bulletForce: 10
 --- !u!61 &1658949800
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5891,6 +5953,33 @@ MonoBehaviour:
   table: 0
   boss: 1
   color: 
+--- !u!114 &1658949805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658949796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 102219378df62474d9a262714f1c8336, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb2D: {fileID: 1714807108}
+  target: {fileID: 1714807107}
+  speed: 3
+  damage: 10
+  bulletDamage: 5
+  EnemyLives: 3
+  healthIndicator: {fileID: 0}
+  attackRange: 10
+  enemy_speed: 3
+  knockBackForce: 20
+  bulletPrefab: {fileID: 4522741059268890183, guid: 56309fe64636f416c8d837c323175c0e, type: 3}
+  firePoint: {fileID: 1814237428}
+  fireRate: 1.5
+  bulletSpeed: 30
+  bulletForce: 10
 --- !u!4 &1714807107 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4574508056532481645, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
