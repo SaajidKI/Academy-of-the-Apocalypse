@@ -8,6 +8,10 @@ public class DialogueManager : MonoBehaviour
     public Text nameText;
     public Text dialogText;
     private Queue<string> sentences;
+    public GameObject button;
+    public GameObject StartWalkingButton;
+    public GameObject dialogBox;
+
 
     void Start()
     {
@@ -39,5 +43,8 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue(){
         Debug.Log("Ending conversation");
+        button.SetActive(false);
+        dialogBox.SetActive(false);
+        StartWalkingButton.SetActive(true);
     }
 }

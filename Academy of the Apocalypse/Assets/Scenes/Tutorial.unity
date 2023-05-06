@@ -181,6 +181,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 28.746206, y: 1.0476828}
   m_EdgeRadius: 0
+--- !u!114 &8208946 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8473840347056052292, guid: 2b61949888ea34b2ba55280b9c42a867, type: 3}
+  m_PrefabInstance: {fileID: 412378850}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49e8ca7e3505c42ee96b8250246fd479, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &29897529
 GameObject:
   m_ObjectHideFlags: 0
@@ -433,6 +444,164 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &111621492
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 111621493}
+  - component: {fileID: 111621496}
+  - component: {fileID: 111621495}
+  - component: {fileID: 111621494}
+  m_Layer: 5
+  m_Name: StartWalking
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &111621493
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111621492}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1639631548}
+  m_Father: {fileID: 1467520648}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &111621494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111621492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 111621495}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1735370379}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: enable_Walking
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 111621492}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8208946}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: 8c88a8877e6904cc3a941afabbe6969c, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &111621495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111621492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &111621496
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111621492}
+  m_CullTransparentMesh: 1
 --- !u!1 &133601513
 GameObject:
   m_ObjectHideFlags: 0
@@ -1302,6 +1471,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 8208946}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: f88bc454ba5e344cd8d08164bf07004e, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &284534870
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1393,7 +1574,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &335175742
 Transform:
   m_ObjectHideFlags: 0
@@ -1426,6 +1607,8 @@ MonoBehaviour:
   blue: 0
   green: 1
   red: 0
+  table: 0
+  boss: 0
   color: 
 --- !u!82 &335175744
 AudioSource:
@@ -1722,6 +1905,8 @@ MonoBehaviour:
   blue: 1
   green: 0
   red: 0
+  table: 0
+  boss: 0
   color: 
 --- !u!82 &358880474
 AudioSource:
@@ -2146,7 +2331,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &432763257
 Transform:
   m_ObjectHideFlags: 0
@@ -2179,6 +2364,8 @@ MonoBehaviour:
   blue: 0
   green: 1
   red: 0
+  table: 0
+  boss: 0
   color: 
 --- !u!82 &432763259
 AudioSource:
@@ -2986,6 +3173,8 @@ MonoBehaviour:
   blue: 0
   green: 0
   red: 1
+  table: 0
+  boss: 0
   color: 
 --- !u!82 &628736038
 AudioSource:
@@ -3509,7 +3698,8 @@ MonoBehaviour:
     - Ah, I see you're new here. Let me explain ;)
     - An alien hive mind merged different life forms to create new beings and gave
       them superpowers.
-    - We need you to help stop them.
+    - We need you to help stop them. They look like books but are deadly. Kill them
+      before they kill you.
     - Move with WASD. Now aim and shoot fireballs with left mouse.
 --- !u!1 &838976758
 GameObject:
@@ -3576,6 +3766,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4574508056532481633, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
+      propertyPath: m_Volume
+      value: 0.515
+      objectReference: {fileID: 0}
     - target: {fileID: 4574508056532481641, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
       propertyPath: m_Name
       value: Player
@@ -3717,6 +3911,8 @@ MonoBehaviour:
   blue: 1
   green: 0
   red: 0
+  table: 0
+  boss: 0
   color: 
 --- !u!82 &901231108
 AudioSource:
@@ -6786,6 +6982,8 @@ MonoBehaviour:
   blue: 0
   green: 0
   red: 1
+  table: 0
+  boss: 0
   color: 
 --- !u!82 &995153271
 AudioSource:
@@ -7040,7 +7238,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1001687412
 Transform:
   m_ObjectHideFlags: 0
@@ -7073,6 +7271,8 @@ MonoBehaviour:
   blue: 0
   green: 1
   red: 0
+  table: 0
+  boss: 0
   color: 
 --- !u!82 &1001687414
 AudioSource:
@@ -7369,6 +7569,8 @@ MonoBehaviour:
   blue: 1
   green: 0
   red: 0
+  table: 0
+  boss: 0
   color: 
 --- !u!82 &1023365145
 AudioSource:
@@ -7757,6 +7959,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nameText: {fileID: 960070279}
   dialogText: {fileID: 211136066}
+  button: {fileID: 955077393}
+  StartWalkingButton: {fileID: 111621492}
+  dialogBox: {fileID: 413454008}
 --- !u!4 &1151014705
 Transform:
   m_ObjectHideFlags: 0
@@ -8268,6 +8473,8 @@ MonoBehaviour:
   blue: 1
   green: 0
   red: 0
+  table: 0
+  boss: 0
   color: 
 --- !u!82 &1256432988
 AudioSource:
@@ -8505,6 +8712,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1259072549 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3791975871212572930, guid: d40e5e47fc4694e64a8433e0ba4ad61f, type: 3}
+  m_PrefabInstance: {fileID: 1066542595}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5ad82ddcecdf473e8e3b8d06e59e224, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1316204747
 GameObject:
   m_ObjectHideFlags: 0
@@ -9075,6 +9293,86 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 53.057465, y: 5.74106}
   m_EdgeRadius: 0
+--- !u!1 &1639631547
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1639631548}
+  - component: {fileID: 1639631550}
+  - component: {fileID: 1639631549}
+  m_Layer: 5
+  m_Name: Text (Legacy)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1639631548
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639631547}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 111621493}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1639631549
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639631547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: LET'S GO!!!
+--- !u!222 &1639631550
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1639631547}
+  m_CullTransparentMesh: 1
 --- !u!1 &1646860912
 GameObject:
   m_ObjectHideFlags: 0
@@ -9285,7 +9583,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1734152778
 Transform:
   m_ObjectHideFlags: 0
@@ -9318,6 +9616,8 @@ MonoBehaviour:
   blue: 0
   green: 1
   red: 0
+  table: 0
+  boss: 0
   color: 
 --- !u!82 &1734152780
 AudioSource:
@@ -9564,6 +9864,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4574508056532481645, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
   m_PrefabInstance: {fileID: 892291797}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1735370373 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4574508056532481639, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
+  m_PrefabInstance: {fileID: 892291797}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98901fb5dec0b4ee895119092d4e38d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1735370379 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4574508056532481647, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
+  m_PrefabInstance: {fileID: 892291797}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdad26bf77d774093b24043d97949c65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1744850210
 GameObject:
   m_ObjectHideFlags: 0
@@ -9764,6 +10086,54 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1735370373}
+        m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+        m_MethodName: set_enabled
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1735370379}
+        m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
+        m_MethodName: disable_Waling
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1259072549}
+        m_TargetAssemblyTypeName: GameHandler, Assembly-CSharp
+        m_MethodName: disable_damage
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8208946}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: PlaySound
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 8300000, guid: f88bc454ba5e344cd8d08164bf07004e, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1853532255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9867,6 +10237,8 @@ MonoBehaviour:
   blue: 0
   green: 0
   red: 1
+  table: 0
+  boss: 0
   color: 
 --- !u!82 &1877059658
 AudioSource:
