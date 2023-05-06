@@ -564,6 +564,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 513204257}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &111621495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2951,6 +2963,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 28.790897, y: 5.760677}
   m_EdgeRadius: 0
+--- !u!1 &513204257 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2335314143056639022, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
+  m_PrefabInstance: {fileID: 892291797}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &521563478
 GameObject:
   m_ObjectHideFlags: 0
@@ -3895,6 +3912,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2335314143056639022, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4574508056532481633, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
       propertyPath: m_Volume
       value: 0.515
@@ -10791,6 +10812,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 8300000, guid: ccaa107d44dbc4f148f9c5dca3f701b6, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AudioClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 513204257}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
