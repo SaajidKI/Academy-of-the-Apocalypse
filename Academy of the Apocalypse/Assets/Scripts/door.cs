@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class door : MonoBehaviour
 {
     public string scene = "";
+    public AudioSource nextLevelSound;
     
     // Start is called before the first frame update
     void Start()
@@ -23,6 +24,7 @@ public class door : MonoBehaviour
 
         if (other.gameObject.tag == "Player") {
             SceneManager.LoadScene(scene);
+            nextLevelSound.Play();
         }
     }
 }
