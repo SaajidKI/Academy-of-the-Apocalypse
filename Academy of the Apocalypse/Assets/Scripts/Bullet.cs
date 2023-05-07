@@ -40,10 +40,9 @@ public class Bullet : MonoBehaviour
             StartCoroutine(EndKnockBack(pushRB));
             
             
-            // spwnPoint = other.contacts[0].point;
-            // GameObject particleSys = Instantiate (hitParticles, spwnPoint, other.transform.rotation);
-            // StartCoroutine(destroyParticles(particleSys));
-            // testParticleSystem.Play();
+            spwnPoint = other.transform.position;
+            GameObject particleSys = Instantiate (hitParticles, spwnPoint, other.transform.rotation);
+            StartCoroutine(destroyParticles(particleSys));
         }
 
         if (other.gameObject.tag == "S_Enemy") {
@@ -69,16 +68,16 @@ public class Bullet : MonoBehaviour
     
     
     
-    public void OnCollisionEnter2D(Collision2D other){
-    //if the impact has enough force
-    if (other.gameObject.tag == "Enemy") {
-        //get impact location
-       spwnPoint = other.contacts[0].point;
-        //make particles
-       GameObject particleSys = Instantiate (hitParticles, spwnPoint, other.transform.rotation);
-       StartCoroutine(destroyParticles(particleSys));
-    }
-}
+//     public void OnTriggerEnter2D(Collider2D other){
+//     //if the impact has enough force
+//     if (other.gameObject.tag == "Enemy") {
+//         //get impact location
+//        spwnPoint = other.contacts[0].point;
+//         //make particles
+//        GameObject particleSys = Instantiate (hitParticles, spwnPoint, other.transform.rotation);
+//        StartCoroutine(destroyParticles(particleSys));
+//     }
+// }
 
     private IEnumerator destroyParticles(GameObject pSys){
            yield return new WaitForSeconds(2f);
