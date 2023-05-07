@@ -151,6 +151,8 @@ MonoBehaviour:
   knockBackForce: 20
   rb2D: {fileID: 3001364132611974906}
   animator: {fileID: 0}
+  hitParticles: {fileID: 6513856143062510836, guid: b93e12a8101544a24bd8f6ea6a0922e7, type: 3}
+  spwnPoint: {x: 0, y: 0, z: 0}
 --- !u!95 &7024043640259046675
 Animator:
   serializedVersion: 4

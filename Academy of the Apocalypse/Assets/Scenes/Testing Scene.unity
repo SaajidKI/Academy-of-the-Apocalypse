@@ -611,6 +611,8 @@ MonoBehaviour:
   blue: 0
   green: 1
   red: 0
+  table: 0
+  boss: 0
   color: 
 --- !u!1 &164162689
 GameObject:
@@ -1146,6 +1148,8 @@ MonoBehaviour:
   blue: 0
   green: 1
   red: 0
+  table: 0
+  boss: 0
   color: 
 --- !u!114 &256001726 stripped
 MonoBehaviour:
@@ -1532,6 +1536,8 @@ MonoBehaviour:
   blue: 1
   green: 0
   red: 0
+  table: 0
+  boss: 0
   color: 
 --- !u!1 &458210979
 GameObject:
@@ -2153,6 +2159,8 @@ MonoBehaviour:
   blue: 1
   green: 0
   red: 0
+  table: 0
+  boss: 0
   color: 
 --- !u!1 &729122287
 GameObject:
@@ -2533,6 +2541,8 @@ MonoBehaviour:
   blue: 0
   green: 1
   red: 0
+  table: 0
+  boss: 0
   color: 
 --- !u!1 &818589026
 GameObject:
@@ -9550,6 +9560,8 @@ MonoBehaviour:
   blue: 0
   green: 0
   red: 1
+  table: 0
+  boss: 0
   color: 
 --- !u!1 &1068012904
 GameObject:
@@ -9597,6 +9609,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scene: Level 2
+  nextLevelSound: {fileID: 0}
 --- !u!61 &1068012907
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -10076,6 +10089,8 @@ MonoBehaviour:
   blue: 0
   green: 0
   red: 1
+  table: 0
+  boss: 0
   color: 
 --- !u!1 &1263105810
 GameObject:
@@ -10629,6 +10644,8 @@ MonoBehaviour:
   blue: 0
   green: 1
   red: 0
+  table: 0
+  boss: 0
   color: 
 --- !u!4 &1387982759 stripped
 Transform:
@@ -11995,6 +12012,8 @@ MonoBehaviour:
   blue: 1
   green: 0
   red: 0
+  table: 0
+  boss: 0
   color: 
 --- !u!1 &1961163543
 GameObject:
@@ -12494,6 +12513,8 @@ MonoBehaviour:
   blue: 0
   green: 0
   red: 1
+  table: 0
+  boss: 0
   color: 
 --- !u!1 &2029236854
 GameObject:
@@ -12843,6 +12864,8 @@ MonoBehaviour:
   blue: 1
   green: 0
   red: 0
+  table: 0
+  boss: 0
   color: 
 --- !u!1 &2096386917
 GameObject:
