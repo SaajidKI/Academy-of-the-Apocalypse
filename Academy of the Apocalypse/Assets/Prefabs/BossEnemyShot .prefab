@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -1410002086543960250}
   - component: {fileID: -4479548202940260463}
   m_Layer: 0
-  m_Name: enemyshot
+  m_Name: 'BossEnemyShot '
   m_TagString: bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -716,6 +716,82 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 17.502214, y: 31.011894}
   m_EdgeRadius: 0
+--- !u!1 &526422409
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 526422410}
+  - component: {fileID: 526422412}
+  - component: {fileID: 526422411}
+  m_Layer: 5
+  m_Name: HealthBorder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &526422410
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526422409}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 713035406}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.2962, y: 0.5923}
+  m_SizeDelta: {x: 216.6661, y: 54.9918}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &526422411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526422409}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 13ed27e7aee85154bb147fae4d3705a0, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &526422412
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 526422409}
+  m_CullTransparentMesh: 1
 --- !u!1 &529483156
 GameObject:
   m_ObjectHideFlags: 0
@@ -1088,6 +1164,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.937481, y: 4.0045047}
   m_EdgeRadius: 0
+--- !u!224 &713035406 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4395986398979256431, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
+  m_PrefabInstance: {fileID: 1239863988}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &732346888
 GameObject:
   m_ObjectHideFlags: 0
@@ -4328,7 +4409,7 @@ Tilemap:
   - m_RefCount: 258
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   - m_RefCount: 0
-    m_Data: {r: 5.0349e-41, g: 5.0349e-41, b: 5.0349e-41, a: 5.0349e-41}
+    m_Data: {r: 6.1904e-41, g: 6.1904e-41, b: 6.1904e-41, a: 6.1904e-41}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4751,6 +4832,18 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 154122243}
+    - target: {fileID: 4574508056532481647, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
+      propertyPath: dashSpeed
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4574508056532481647, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
+      propertyPath: dashCooldown
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4574508056532481647, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
+      propertyPath: dashDuration
+      value: 0.1
+      objectReference: {fileID: 0}
     - target: {fileID: 4574508056826875852, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
       propertyPath: cooler
       value: 
@@ -4871,6 +4964,14 @@ PrefabInstance:
     - target: {fileID: 4395986398352496441, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395986398979256431, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -466
+      objectReference: {fileID: 0}
+    - target: {fileID: 4395986398979256431, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -635
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
@@ -5710,12 +5811,11 @@ GameObject:
   - component: {fileID: 1658949802}
   - component: {fileID: 1658949801}
   - component: {fileID: 1658949800}
-  - component: {fileID: 1658949798}
   - component: {fileID: 1658949797}
   - component: {fileID: 1658949804}
   - component: {fileID: 1658949805}
   m_Layer: 0
-  m_Name: BossIce
+  m_Name: BossShadow
   m_TagString: S_Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5738,34 +5838,6 @@ MonoBehaviour:
   damagePerSecond: 10
   burnDuration: 5
   tickRate: 1
---- !u!114 &1658949798
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1658949796}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2b15954fa6e7d409ba84c2512ad9456b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 1658949805}
-  rb2D: {fileID: 1714807108}
-  target: {fileID: 1714807107}
-  speed: 4
-  damage: 10
-  bulletDamage: 5
-  EnemyLives: 3
-  healthIndicator: {fileID: 0}
-  attackRange: 10
-  enemy_speed: 3
-  knockBackForce: 20
-  bulletPrefab: {fileID: 229237312758947069, guid: dcd060b8150324909bca22625702a185, type: 3}
-  firePoint: {fileID: 1814237428}
-  fireRate: 1.5
-  bulletSpeed: 30
-  bulletForce: 10
 --- !u!61 &1658949800
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5779,7 +5851,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.049504757, y: 0.024752676}
+  m_Offset: {x: 0.0019888878, y: 0.049926043}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -5790,7 +5862,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.2118826, y: 2.20198}
+  m_Size: {x: 1.0994844, y: 2.1019268}
   m_EdgeRadius: 0
 --- !u!50 &1658949801
 Rigidbody2D:
@@ -5854,7 +5926,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 20
-  m_Sprite: {fileID: -818772406, guid: 0c32d4646349f834d8e97d7b4015a3c8, type: 3}
+  m_Sprite: {fileID: -1833033022, guid: 5626df9789a578349a3ba34a2b4868b7, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5900,26 +5972,34 @@ MonoBehaviour:
   table: 0
   boss: 1
   color: 
---- !u!95 &1658949805
-Animator:
-  serializedVersion: 4
+--- !u!114 &1658949805
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1658949796}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 206cdbe7e8e3347deae87458117bc6eb, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11611d0d02ba04f0eb3ba11c8c49be15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb2D: {fileID: 1714807108}
+  target: {fileID: 1714807107}
+  speed: 3
+  damage: 10
+  bulletDamage: 5
+  EnemyLives: 3
+  attackRange: 10
+  enemy_speed: 3
+  knockBackForce: 20
+  planePrefab: {fileID: 2210124415394262952, guid: 3aeaafe96c6db4383a296529adedbabc, type: 3}
+  icePrefab: {fileID: 229237312758947069, guid: dcd060b8150324909bca22625702a185, type: 3}
+  windPrefab: {fileID: 4522741059268890183, guid: 56309fe64636f416c8d837c323175c0e, type: 3}
+  firePoint: {fileID: 1814237428}
+  fireRate: 1.5
+  bulletSpeed: 30
+  bulletForce: 10
 --- !u!4 &1714807107 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4574508056532481645, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
