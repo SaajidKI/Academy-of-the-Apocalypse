@@ -11,6 +11,9 @@ public class DialogueManager : MonoBehaviour
     public GameObject button;
     public GameObject StartWalkingButton;
     public GameObject dialogBox;
+    public GameObject skipButton1;
+    public GameObject skipButton2;
+
 
 
     void Start()
@@ -46,5 +49,9 @@ public class DialogueManager : MonoBehaviour
         button.SetActive(false);
         dialogBox.SetActive(false);
         StartWalkingButton.SetActive(true);
+        skipButton1.SetActive(false);
+        skipButton2.SetActive(false);
     }
+
+
 }
