@@ -5826,6 +5826,7 @@ GameObject:
   - component: {fileID: 1658949797}
   - component: {fileID: 1658949804}
   - component: {fileID: 1658949805}
+  - component: {fileID: 1658949806}
   m_Layer: 0
   m_Name: BossShadow
   m_TagString: S_Enemy
@@ -6014,6 +6015,26 @@ MonoBehaviour:
   fireRate: 1.5
   bulletSpeed: 30
   bulletForce: 10
+--- !u!95 &1658949806
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658949796}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bdb0bacf3d13b496985d6dee71c8254a, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &1714807107 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4574508056532481645, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
