@@ -5970,7 +5970,9 @@ MonoBehaviour:
   green: 0
   red: 0
   table: 0
-  boss: 1
+  iceboss: 0
+  windboss: 1
+  finalboss: 0
   color: 
 --- !u!114 &1658949805
 MonoBehaviour:

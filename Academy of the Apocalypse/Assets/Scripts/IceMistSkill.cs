@@ -38,6 +38,19 @@ public class IceMistSkill : MonoBehaviour
             if (other.GetComponent<EnemyColorCheck>().enemyCheck() == "table") {
                 other.GetComponent<EnemyMoveHit>().IceEffect();
             }
+
+            if (other.GetComponent<EnemyColorCheck>().enemyCheck() == "iceboss") {
+                other.GetComponent<EnemyMoveHitIce>().IceEffect();
+            }
+
+            if (other.GetComponent<EnemyColorCheck>().enemyCheck() == "windboss") {
+                other.GetComponent<EnemyMoveHitWind>().IceEffect();
+            }
+
+            if (other.GetComponent<EnemyColorCheck>().enemyCheck() == "finalboss") {
+                other.GetComponent<EnemyMoveHitBoss>().IceEffect();
+            }
+
             
         }
     }
