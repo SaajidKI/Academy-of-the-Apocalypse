@@ -139,6 +139,7 @@ GameObject:
   - component: {fileID: 30586215}
   - component: {fileID: 30586214}
   - component: {fileID: 30586213}
+  - component: {fileID: 30586220}
   m_Layer: 6
   m_Name: RedEnemy3 (3)
   m_TagString: Enemy
@@ -413,6 +414,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &30586220
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 30586211}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0d0a08da4847e4011aedb092826b272f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &52066929
 GameObject:
   m_ObjectHideFlags: 0
@@ -1004,6 +1025,7 @@ GameObject:
   - component: {fileID: 100169850}
   - component: {fileID: 100169849}
   - component: {fileID: 100169848}
+  - component: {fileID: 100169855}
   m_Layer: 6
   m_Name: RedEnemy3
   m_TagString: Enemy
@@ -1278,6 +1300,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &100169855
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100169846}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5630f1bfa6c524f00b300ca296d7f4cb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &102166983 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 989921896068525315, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
@@ -1378,6 +1420,7 @@ GameObject:
   - component: {fileID: 149986704}
   - component: {fileID: 149986703}
   - component: {fileID: 149986702}
+  - component: {fileID: 149986709}
   m_Layer: 6
   m_Name: GreenEnemy3
   m_TagString: Enemy
@@ -1662,6 +1705,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &149986709
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 149986700}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cdc958f67ef0a4a4fb839f75dee87d8b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &208682562
 GameObject:
   m_ObjectHideFlags: 0
@@ -1824,6 +1887,7 @@ GameObject:
   - component: {fileID: 391448919}
   - component: {fileID: 391448918}
   - component: {fileID: 391448917}
+  - component: {fileID: 391448924}
   m_Layer: 6
   m_Name: GreenEnemy4
   m_TagString: Enemy
@@ -2108,6 +2172,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &391448924
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 391448915}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 78d908b0b069f48c583b6d5cabe54800, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &444808130
 GameObject:
   m_ObjectHideFlags: 0
@@ -2124,6 +2208,7 @@ GameObject:
   - component: {fileID: 444808134}
   - component: {fileID: 444808133}
   - component: {fileID: 444808132}
+  - component: {fileID: 444808139}
   m_Layer: 6
   m_Name: BlueEnemy3
   m_TagString: Enemy
@@ -2404,6 +2489,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &444808139
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 444808130}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2111b505bf201471b87fa6c4670d9e1d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &457403483
 GameObject:
   m_ObjectHideFlags: 0
@@ -3427,6 +3532,7 @@ GameObject:
   - component: {fileID: 692256803}
   - component: {fileID: 692256802}
   - component: {fileID: 692256801}
+  - component: {fileID: 692256808}
   m_Layer: 6
   m_Name: RedEnemy3 (1)
   m_TagString: Enemy
@@ -3701,6 +3807,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &692256808
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692256799}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7d10c24026d294ae5acb1e34fda12cda, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &710284857 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4395986397940181127, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
@@ -3728,6 +3854,7 @@ GameObject:
   - component: {fileID: 710709014}
   - component: {fileID: 710709013}
   - component: {fileID: 710709012}
+  - component: {fileID: 710709019}
   m_Layer: 6
   m_Name: RedEnemy1
   m_TagString: Enemy
@@ -4002,6 +4129,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &710709019
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710709010}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 07ff9eb8db4324a38937c601e570fe2e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &768167572
 GameObject:
   m_ObjectHideFlags: 0
@@ -4326,6 +4473,7 @@ GameObject:
   - component: {fileID: 893120795}
   - component: {fileID: 893120794}
   - component: {fileID: 893120793}
+  - component: {fileID: 893120800}
   m_Layer: 6
   m_Name: BlueEnemy1
   m_TagString: Enemy
@@ -4606,6 +4754,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &893120800
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893120791}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a3a4bd2f363b74b018fc1c71a140d7e7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &906721853
 GameObject:
   m_ObjectHideFlags: 0
@@ -5104,6 +5272,7 @@ GameObject:
   - component: {fileID: 1037344102}
   - component: {fileID: 1037344101}
   - component: {fileID: 1037344100}
+  - component: {fileID: 1037344107}
   m_Layer: 6
   m_Name: RedEnemy3 (4)
   m_TagString: Enemy
@@ -5378,6 +5547,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1037344107
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037344098}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3d2b27843827847de8ead4f032de8ca1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1049714322
 GameObject:
   m_ObjectHideFlags: 0
@@ -5394,6 +5583,7 @@ GameObject:
   - component: {fileID: 1049714326}
   - component: {fileID: 1049714325}
   - component: {fileID: 1049714324}
+  - component: {fileID: 1049714331}
   m_Layer: 6
   m_Name: GreenEnemy2
   m_TagString: Enemy
@@ -5678,6 +5868,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1049714331
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049714322}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 236572ed536bc4a7a92478586f2839a6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1057218454
 GameObject:
   m_ObjectHideFlags: 0
@@ -5694,6 +5904,7 @@ GameObject:
   - component: {fileID: 1057218458}
   - component: {fileID: 1057218457}
   - component: {fileID: 1057218456}
+  - component: {fileID: 1057218463}
   m_Layer: 6
   m_Name: RedEnemy3 (2)
   m_TagString: Enemy
@@ -5968,6 +6179,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1057218463
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1057218454}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4f17f8cb4a08a4281924211ebc3a5ec6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1073965597
 GameObject:
   m_ObjectHideFlags: 0
@@ -29513,6 +29744,7 @@ GameObject:
   - component: {fileID: 1655582075}
   - component: {fileID: 1655582074}
   - component: {fileID: 1655582073}
+  - component: {fileID: 1655582080}
   m_Layer: 6
   m_Name: GreenEnemy1
   m_TagString: Enemy
@@ -29797,6 +30029,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1655582080
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655582071}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a02131d5b961941b6858325f39a2995e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1671629328
 GameObject:
   m_ObjectHideFlags: 0
@@ -30214,6 +30466,7 @@ GameObject:
   - component: {fileID: 1775563160}
   - component: {fileID: 1775563159}
   - component: {fileID: 1775563158}
+  - component: {fileID: 1775563165}
   m_Layer: 6
   m_Name: BlueEnemy4
   m_TagString: Enemy
@@ -30494,6 +30747,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1775563165
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775563156}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9e95acaaface942d1b8fc306d7de8126, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1800436221
 GameObject:
   m_ObjectHideFlags: 0
@@ -30899,6 +31172,7 @@ GameObject:
   - component: {fileID: 1908884902}
   - component: {fileID: 1908884901}
   - component: {fileID: 1908884900}
+  - component: {fileID: 1908884907}
   m_Layer: 6
   m_Name: BlueEnemy2
   m_TagString: Enemy
@@ -31179,6 +31453,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1908884907
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1908884898}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c757064c0407845959c876cd6b52ce37, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1913521190
 GameObject:
   m_ObjectHideFlags: 0
@@ -31973,6 +32267,7 @@ GameObject:
   - component: {fileID: 2146733181}
   - component: {fileID: 2146733180}
   - component: {fileID: 2146733179}
+  - component: {fileID: 2146733186}
   m_Layer: 6
   m_Name: RedEnemy2
   m_TagString: Enemy
@@ -32247,6 +32542,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &2146733186
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2146733177}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c798b1b56a4d343349fa894615ad0937, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1135322697744724230
 PrefabInstance:
   m_ObjectHideFlags: 0

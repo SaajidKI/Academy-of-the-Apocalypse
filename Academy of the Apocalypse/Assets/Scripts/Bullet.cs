@@ -51,7 +51,11 @@ public class Bullet : MonoBehaviour
             Vector2 moveDirectionPush = rb2D.transform.position - other.transform.position;
             pushRB.AddForce(moveDirectionPush.normalized * (knockBackForce / 10f) * - 1f, ForceMode2D.Impulse);
             StartCoroutine(EndKnockBack(pushRB));
-            // testParticleSystem.Play();
+
+
+            spwnPoint = other.transform.position;
+            GameObject particleSys = Instantiate (hitParticles, spwnPoint, other.transform.rotation);
+            StartCoroutine(destroyParticles(particleSys));
         }
     }
 

@@ -2252,7 +2252,9 @@ MonoBehaviour:
   green: 1
   red: 0
   table: 0
-  boss: 0
+  iceboss: 0
+  windboss: 0
+  finalboss: 0
   color: 
 --- !u!82 &335175744
 AudioSource:
@@ -2510,6 +2512,7 @@ GameObject:
   - component: {fileID: 358880475}
   - component: {fileID: 358880474}
   - component: {fileID: 358880473}
+  - component: {fileID: 358880480}
   m_Layer: 6
   m_Name: BlueEnemy4
   m_TagString: Enemy
@@ -2550,7 +2553,9 @@ MonoBehaviour:
   green: 0
   red: 0
   table: 0
-  boss: 0
+  iceboss: 0
+  windboss: 0
+  finalboss: 0
   color: 
 --- !u!82 &358880474
 AudioSource:
@@ -2788,6 +2793,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &358880480
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358880471}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7b89e69c097154d0b9f10ed58763af83, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &367974374 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7892535449484497609, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
@@ -3010,7 +3035,9 @@ MonoBehaviour:
   green: 1
   red: 0
   table: 0
-  boss: 0
+  iceboss: 0
+  windboss: 0
+  finalboss: 0
   color: 
 --- !u!82 &432763259
 AudioSource:
@@ -4036,6 +4063,7 @@ GameObject:
   - component: {fileID: 628736039}
   - component: {fileID: 628736038}
   - component: {fileID: 628736037}
+  - component: {fileID: 628736044}
   m_Layer: 6
   m_Name: RedEnemy3
   m_TagString: Enemy
@@ -4075,7 +4103,9 @@ MonoBehaviour:
   green: 0
   red: 1
   table: 0
-  boss: 0
+  iceboss: 0
+  windboss: 0
+  finalboss: 0
   color: 
 --- !u!82 &628736038
 AudioSource:
@@ -4308,6 +4338,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &628736044
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 628736035}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 60928d7db6c92433cb0ec22575a40f51, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &635430715
 GameObject:
   m_ObjectHideFlags: 0
@@ -4906,6 +4956,7 @@ GameObject:
   - component: {fileID: 901231109}
   - component: {fileID: 901231108}
   - component: {fileID: 901231107}
+  - component: {fileID: 901231114}
   m_Layer: 6
   m_Name: BlueEnemy1
   m_TagString: Enemy
@@ -4946,7 +4997,9 @@ MonoBehaviour:
   green: 0
   red: 0
   table: 0
-  boss: 0
+  iceboss: 0
+  windboss: 0
+  finalboss: 0
   color: 
 --- !u!82 &901231108
 AudioSource:
@@ -5184,6 +5237,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &901231114
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901231105}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4f77aeb77ba294e40bc2d2d4d284a569, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &939712455
 GameObject:
   m_ObjectHideFlags: 0
@@ -7978,6 +8051,7 @@ GameObject:
   - component: {fileID: 995153272}
   - component: {fileID: 995153271}
   - component: {fileID: 995153270}
+  - component: {fileID: 995153277}
   m_Layer: 6
   m_Name: RedEnemy1
   m_TagString: Enemy
@@ -8017,7 +8091,9 @@ MonoBehaviour:
   green: 0
   red: 1
   table: 0
-  boss: 0
+  iceboss: 0
+  windboss: 0
+  finalboss: 0
   color: 
 --- !u!82 &995153271
 AudioSource:
@@ -8250,6 +8326,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &995153277
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995153268}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8776440a9fb6c48afb1a297b63d6124b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &997506948
 GameObject:
   m_ObjectHideFlags: 0
@@ -8524,7 +8620,9 @@ MonoBehaviour:
   green: 1
   red: 0
   table: 0
-  boss: 0
+  iceboss: 0
+  windboss: 0
+  finalboss: 0
   color: 
 --- !u!82 &1001687414
 AudioSource:
@@ -8782,6 +8880,7 @@ GameObject:
   - component: {fileID: 1023365146}
   - component: {fileID: 1023365145}
   - component: {fileID: 1023365144}
+  - component: {fileID: 1023365151}
   m_Layer: 6
   m_Name: BlueEnemy2
   m_TagString: Enemy
@@ -8822,7 +8921,9 @@ MonoBehaviour:
   green: 0
   red: 0
   table: 0
-  boss: 0
+  iceboss: 0
+  windboss: 0
+  finalboss: 0
   color: 
 --- !u!82 &1023365145
 AudioSource:
@@ -9060,6 +9161,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1023365151
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1023365142}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6091c7f21fee34c2d80677c8234e236d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1039446292
 GameObject:
   m_ObjectHideFlags: 0
@@ -10175,6 +10296,7 @@ GameObject:
   - component: {fileID: 1256432989}
   - component: {fileID: 1256432988}
   - component: {fileID: 1256432987}
+  - component: {fileID: 1256432994}
   m_Layer: 6
   m_Name: BlueEnemy3
   m_TagString: Enemy
@@ -10215,7 +10337,9 @@ MonoBehaviour:
   green: 0
   red: 0
   table: 0
-  boss: 0
+  iceboss: 0
+  windboss: 0
+  finalboss: 0
   color: 
 --- !u!82 &1256432988
 AudioSource:
@@ -10453,6 +10577,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1256432994
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1256432985}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bdbdafe643ba74ae78780f3135745b0e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1259072549 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3791975871212572930, guid: d40e5e47fc4694e64a8433e0ba4ad61f, type: 3}
@@ -11942,7 +12086,9 @@ MonoBehaviour:
   green: 1
   red: 0
   table: 0
-  boss: 0
+  iceboss: 0
+  windboss: 0
+  finalboss: 0
   color: 
 --- !u!82 &1734152780
 AudioSource:
@@ -12548,6 +12694,7 @@ GameObject:
   - component: {fileID: 1877059659}
   - component: {fileID: 1877059658}
   - component: {fileID: 1877059657}
+  - component: {fileID: 1877059664}
   m_Layer: 6
   m_Name: RedEnemy2
   m_TagString: Enemy
@@ -12587,7 +12734,9 @@ MonoBehaviour:
   green: 0
   red: 1
   table: 0
-  boss: 0
+  iceboss: 0
+  windboss: 0
+  finalboss: 0
   color: 
 --- !u!82 &1877059658
 AudioSource:
@@ -12820,6 +12969,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1877059664
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1877059655}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0727f76095d2e4a18be7eb936825f50b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1885268629
 GameObject:
   m_ObjectHideFlags: 0

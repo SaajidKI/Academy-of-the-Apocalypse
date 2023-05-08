@@ -332,6 +332,7 @@ GameObject:
   - component: {fileID: 157133393}
   - component: {fileID: 157133392}
   - component: {fileID: 157133398}
+  - component: {fileID: 157133399}
   m_Layer: 6
   m_Name: GreenEnemy4
   m_TagString: Enemy
@@ -612,8 +613,30 @@ MonoBehaviour:
   green: 1
   red: 0
   table: 0
-  boss: 0
+  iceboss: 0
+  windboss: 0
+  finalboss: 0
   color: 
+--- !u!95 &157133399
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157133390}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1d4a187a733624855b680b421a76a4fa, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &164162689
 GameObject:
   m_ObjectHideFlags: 0
@@ -869,6 +892,7 @@ GameObject:
   - component: {fileID: 251461547}
   - component: {fileID: 251461546}
   - component: {fileID: 251461553}
+  - component: {fileID: 251461554}
   m_Layer: 6
   m_Name: GreenEnemy3
   m_TagString: Enemy
@@ -1149,8 +1173,30 @@ MonoBehaviour:
   green: 1
   red: 0
   table: 0
-  boss: 0
+  iceboss: 0
+  windboss: 0
+  finalboss: 0
   color: 
+--- !u!95 &251461554
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 251461544}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b6270acca4b834c04b1945097c0bb822, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &256001726 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7892535449484497609, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
@@ -1262,6 +1308,7 @@ GameObject:
   - component: {fileID: 426742687}
   - component: {fileID: 426742686}
   - component: {fileID: 426742692}
+  - component: {fileID: 426742693}
   m_Layer: 6
   m_Name: BlueEnemy4
   m_TagString: Enemy
@@ -1537,8 +1584,30 @@ MonoBehaviour:
   green: 0
   red: 0
   table: 0
-  boss: 0
+  iceboss: 0
+  windboss: 0
+  finalboss: 0
   color: 
+--- !u!95 &426742693
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 426742684}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 54bf19a93488f4eea8b78a718b7bd05b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &458210979
 GameObject:
   m_ObjectHideFlags: 0
@@ -1885,6 +1954,7 @@ GameObject:
   - component: {fileID: 726578825}
   - component: {fileID: 726578824}
   - component: {fileID: 726578831}
+  - component: {fileID: 726578832}
   m_Layer: 6
   m_Name: BlueEnemy2
   m_TagString: Enemy
@@ -2160,8 +2230,30 @@ MonoBehaviour:
   green: 0
   red: 0
   table: 0
-  boss: 0
+  iceboss: 0
+  windboss: 0
+  finalboss: 0
   color: 
+--- !u!95 &726578832
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 726578822}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b4b09b6b494204b70b23bbf14d4caf61, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &729122287
 GameObject:
   m_ObjectHideFlags: 0
@@ -2262,6 +2354,7 @@ GameObject:
   - component: {fileID: 809869404}
   - component: {fileID: 809869406}
   - component: {fileID: 809869408}
+  - component: {fileID: 809869409}
   m_Layer: 6
   m_Name: GreenEnemy1
   m_TagString: Enemy
@@ -2542,8 +2635,30 @@ MonoBehaviour:
   green: 1
   red: 0
   table: 0
-  boss: 0
+  iceboss: 0
+  windboss: 0
+  finalboss: 0
   color: 
+--- !u!95 &809869409
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 809869399}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: acd04e95806f34d10a30277ea97689a7, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &818589026
 GameObject:
   m_ObjectHideFlags: 0
@@ -9291,6 +9406,7 @@ GameObject:
   - component: {fileID: 1004702228}
   - component: {fileID: 1004702227}
   - component: {fileID: 1004702234}
+  - component: {fileID: 1004702235}
   m_Layer: 6
   m_Name: RedEnemy3
   m_TagString: Enemy
@@ -9561,8 +9677,30 @@ MonoBehaviour:
   green: 0
   red: 1
   table: 0
-  boss: 0
+  iceboss: 0
+  windboss: 0
+  finalboss: 0
   color: 
+--- !u!95 &1004702235
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1004702225}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 91c7ef1b4e198458da86d78d17f413fe, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1068012904
 GameObject:
   m_ObjectHideFlags: 0
@@ -9820,6 +9958,7 @@ GameObject:
   - component: {fileID: 1249536790}
   - component: {fileID: 1249536796}
   - component: {fileID: 1249536798}
+  - component: {fileID: 1249536799}
   m_Layer: 6
   m_Name: RedEnemy1
   m_TagString: Enemy
@@ -10090,8 +10229,30 @@ MonoBehaviour:
   green: 0
   red: 1
   table: 0
-  boss: 0
+  iceboss: 0
+  windboss: 0
+  finalboss: 0
   color: 
+--- !u!95 &1249536799
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1249536789}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 44d94bb3cd54340c78dbee312569def1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1263105810
 GameObject:
   m_ObjectHideFlags: 0
@@ -10365,6 +10526,7 @@ GameObject:
   - component: {fileID: 1356370554}
   - component: {fileID: 1356370553}
   - component: {fileID: 1356370560}
+  - component: {fileID: 1356370561}
   m_Layer: 6
   m_Name: GreenEnemy2
   m_TagString: Enemy
@@ -10645,8 +10807,30 @@ MonoBehaviour:
   green: 1
   red: 0
   table: 0
-  boss: 0
+  iceboss: 0
+  windboss: 0
+  finalboss: 0
   color: 
+--- !u!95 &1356370561
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1356370551}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 74c6acc450dd741428a8cb767b77caea, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &1387982759 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4574508056532481645, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
@@ -11738,6 +11922,7 @@ GameObject:
   - component: {fileID: 1935718577}
   - component: {fileID: 1935718576}
   - component: {fileID: 1935718583}
+  - component: {fileID: 1935718584}
   m_Layer: 6
   m_Name: BlueEnemy3
   m_TagString: Enemy
@@ -12013,8 +12198,30 @@ MonoBehaviour:
   green: 0
   red: 0
   table: 0
-  boss: 0
+  iceboss: 0
+  windboss: 0
+  finalboss: 0
   color: 
+--- !u!95 &1935718584
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935718574}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 62369d7a4e0d84a76a2424a3ace1207c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1961163543
 GameObject:
   m_ObjectHideFlags: 0
@@ -12244,6 +12451,7 @@ GameObject:
   - component: {fileID: 2024775134}
   - component: {fileID: 2024775133}
   - component: {fileID: 2024775140}
+  - component: {fileID: 2024775141}
   m_Layer: 6
   m_Name: RedEnemy2
   m_TagString: Enemy
@@ -12514,8 +12722,30 @@ MonoBehaviour:
   green: 0
   red: 1
   table: 0
-  boss: 0
+  iceboss: 0
+  windboss: 0
+  finalboss: 0
   color: 
+--- !u!95 &2024775141
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2024775131}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 56a2a0bb7579642fbbb3ae341939c7bd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2029236854
 GameObject:
   m_ObjectHideFlags: 0
@@ -12590,6 +12820,7 @@ GameObject:
   - component: {fileID: 2059609499}
   - component: {fileID: 2059609505}
   - component: {fileID: 2059609507}
+  - component: {fileID: 2059609508}
   m_Layer: 6
   m_Name: BlueEnemy1
   m_TagString: Enemy
@@ -12865,8 +13096,30 @@ MonoBehaviour:
   green: 0
   red: 0
   table: 0
-  boss: 0
+  iceboss: 0
+  windboss: 0
+  finalboss: 0
   color: 
+--- !u!95 &2059609508
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059609498}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c96065518ccfa4f9296e491fbc1a7891, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2096386917
 GameObject:
   m_ObjectHideFlags: 0
