@@ -1857,7 +1857,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ccaa107d44dbc4f148f9c5dca3f701b6, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.318
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4418,7 +4418,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ccaa107d44dbc4f148f9c5dca3f701b6, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.318
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4780,7 +4780,7 @@ MonoBehaviour:
       them superpowers.
     - We need you to help stop them. They look like books but are deadly. Kill them
       before they kill you.
-    - Move with WASD. Now aim and shoot fireballs with left mouse.
+    - Move with WASD. Now aim and shoot fireballs with left mouse. Dash with 'SHIFT'
 --- !u!1 &838976758
 GameObject:
   m_ObjectHideFlags: 0
@@ -9237,6 +9237,7 @@ MonoBehaviour:
     - Having trouble fighting your enemies?
     - 'You have a second skill to combat them? Press "spacebar" to make a firewall. '
     - Still not enough.You've got more inside of you?? Press "2" or "3" to explore.
+      They have a second skill, too.
 --- !u!1001 &1066542595
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13808,7 +13809,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: ccaa107d44dbc4f148f9c5dca3f701b6, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 0.318
+  m_Volume: 1
   m_Pitch: 1
   Loop: 0
   Mute: 0
