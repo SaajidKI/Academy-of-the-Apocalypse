@@ -8,7 +8,7 @@ public class HealthBarThirdPerson : MonoBehaviour {
 
     //private bool isAlive = true;
 
-      public float startHealth = 100;
+      public float startHealth = 150;
       private float health;
       //public GameObject deathEffect;
       public Image healthBar;

@@ -11,7 +11,7 @@ public class EnemyMeleeDamage : MonoBehaviour {
        // public GameObject NextEnemy;
        // public GameHandler gameHandler;
 
-       public float damagePerSecond = 10f; // how much damage to apply per second
+       public float damagePerSecond = 50f; // how much damage to apply per second
        public float burnDuration = 5f; // how long the enemy should burn
        public float tickRate = 1f; // how often to apply damage (in seconds)
 
@@ -61,10 +61,10 @@ public class EnemyMeleeDamage : MonoBehaviour {
               isBurning = true;
               burnTimeLeft = burnDuration;
               nextTickTime = Time.time + tickRate;
-
        }
 
        public void ApplyDamage(float damage) {
+              damage += 20;
               currentHealth -= damage;
               if (currentHealth <= 0) {
                      Die();
@@ -72,6 +72,7 @@ public class EnemyMeleeDamage : MonoBehaviour {
        }
 
        public void ApplyIceDamage(float damage) {
+              damage += 20;
               currentHealth -= damage;
               if (currentHealth <= 0) {
                      Die();
@@ -79,6 +80,7 @@ public class EnemyMeleeDamage : MonoBehaviour {
        }
 
        public void TakeDamage(int damage){
+              damage += 20;
               currentHealth -= damage;
               //rend.material.color = new Color(2.4f, 0.9f, 0.9f, 1f);
               //StartCoroutine(ResetColor());

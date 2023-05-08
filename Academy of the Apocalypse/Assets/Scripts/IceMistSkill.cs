@@ -19,7 +19,7 @@ public class IceMistSkill : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other) {
 
         if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "S_Enemy") {
-            other.GetComponent<EnemyMeleeDamage>().ApplyIceDamage(20);
+            other.GetComponent<EnemyMeleeDamage>().ApplyIceDamage(40);
             other.GetComponent<EnemyMeleeDamage>().ColorChange(new Color(0.6117647f, 0.9921569f, 1f));
             other.GetComponent<EnemyMeleeDamage>().ColorReset();
 

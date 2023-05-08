@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class FlameEnter : MonoBehaviour
 {
-    public int BulletDamage = 20;
+    // public int BulletDamage = 60;
     public Animator animator;
 
     // Start is called before the first frame update

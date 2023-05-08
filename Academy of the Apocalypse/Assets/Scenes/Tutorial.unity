@@ -2712,8 +2712,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 200
-  currentHealth: 200
+  maxHealth: 100
+  currentHealth: 100
   damagePerSecond: 10
   burnDuration: 5
   tickRate: 1
@@ -4262,8 +4262,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 150
-  currentHealth: 150
+  maxHealth: 100
+  currentHealth: 100
   damagePerSecond: 10
   burnDuration: 5
   tickRate: 1
@@ -5156,8 +5156,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 200
-  currentHealth: 200
+  maxHealth: 100
+  currentHealth: 100
   damagePerSecond: 10
   burnDuration: 5
   tickRate: 1
@@ -8250,8 +8250,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 150
-  currentHealth: 150
+  maxHealth: 100
+  currentHealth: 100
   damagePerSecond: 10
   burnDuration: 5
   tickRate: 1
@@ -9080,8 +9080,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 200
-  currentHealth: 200
+  maxHealth: 100
+  currentHealth: 100
   damagePerSecond: 10
   burnDuration: 5
   tickRate: 1
@@ -10497,8 +10497,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 200
-  currentHealth: 200
+  maxHealth: 100
+  currentHealth: 100
   damagePerSecond: 10
   burnDuration: 5
   tickRate: 1
@@ -12894,8 +12894,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 150
-  currentHealth: 150
+  maxHealth: 100
+  currentHealth: 100
   damagePerSecond: 10
   burnDuration: 5
   tickRate: 1

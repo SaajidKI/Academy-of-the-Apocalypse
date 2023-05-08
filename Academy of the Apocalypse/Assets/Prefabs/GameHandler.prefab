@@ -45,9 +45,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _gameOverScreen: {fileID: 0}
-  playerHealth: 100
-  StartPlayerHealth: 100
+  playerHealth: 200
+  StartPlayerHealth: 200
   Canvas: {fileID: 0}
   pauseMenuUI: {fileID: 0}
   mixer: {fileID: 24100000, guid: bdf6792074ea74f0eb51b2afc6bcaba1, type: 2}
   isDefending: 0
+  cameraShake: {fileID: 0}
+  enemyCountText: {fileID: 0}
+  doorOpen: {fileID: 0}
+  damaged: 1

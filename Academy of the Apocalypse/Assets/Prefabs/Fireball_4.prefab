@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 866165556e6bb462693b750e14308643, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BulletDamage: 20
+  BulletDamage: 30
   knockBackForce: 10
   rb2D: {fileID: 6649609139812832049}
   animator: {fileID: 6732568099537861879}

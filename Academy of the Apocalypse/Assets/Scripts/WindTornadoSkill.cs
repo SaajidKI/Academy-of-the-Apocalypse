@@ -56,7 +56,7 @@ public class WindTornadoSkill : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other) {
         if (other.gameObject.tag == "Enemy") {
-            other.GetComponent<EnemyMeleeDamage>().TakeDamage(20);
+            other.GetComponent<EnemyMeleeDamage>().TakeDamage(50);
 
             Rigidbody2D pushRB = other.gameObject.GetComponent<Rigidbody2D>();
             Vector2 moveDirectionPush = rb2D.transform.position - other.transform.position;
@@ -65,7 +65,7 @@ public class WindTornadoSkill : MonoBehaviour
         }
 
         if (other.gameObject.tag == "S_Enemy") {
-            other.GetComponent<EnemyMeleeDamage>().TakeDamage(20);
+            other.GetComponent<EnemyMeleeDamage>().TakeDamage(40);
 
             Rigidbody2D pushRB = other.gameObject.GetComponent<Rigidbody2D>();
             Vector2 moveDirectionPush = rb2D.transform.position - other.transform.position;

@@ -12,8 +12,8 @@ public class GameHandler : MonoBehaviour {
         public GameOverScreen _gameOverScreen;
       // public GameObject item;
       // private bool item_active = false;
-      public int playerHealth = 100;
-      public int StartPlayerHealth = 100;
+      public int playerHealth = 150;
+      public int StartPlayerHealth = 150;
       public GameObject Canvas;
       private HealthBarThirdPerson healthBarScript;
 
