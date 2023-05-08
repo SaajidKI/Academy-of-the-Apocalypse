@@ -5898,7 +5898,9 @@ MonoBehaviour:
   green: 0
   red: 0
   table: 0
-  boss: 1
+  iceboss: 1
+  windboss: 0
+  finalboss: 0
   color: 
 --- !u!95 &1658949805
 Animator:

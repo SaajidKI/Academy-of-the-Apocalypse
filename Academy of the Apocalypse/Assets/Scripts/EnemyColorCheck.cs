@@ -8,7 +8,9 @@ public class EnemyColorCheck : MonoBehaviour
     public bool green;
     public bool red;
     public bool table;
-    public bool boss;
+    public bool iceboss;
+    public bool windboss;
+    public bool finalboss;
     public string color;
 
     // Start is called before the first frame update
@@ -30,8 +32,16 @@ public class EnemyColorCheck : MonoBehaviour
             color = "table";
         }
 
-        if (boss == true) {
-            color = "boss";
+        if (iceboss == true) {
+            color = "iceboss";
+        }
+
+        if (windboss == true) {
+            color = "windboss";
+        }
+
+        if (finalboss == true) {
+            color = "finalboss";
         }
     }
 

@@ -5833,8 +5833,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 300
-  currentHealth: 300
+  maxHealth: 1000
+  currentHealth: 1000
   damagePerSecond: 10
   burnDuration: 5
   tickRate: 1
@@ -5970,7 +5970,9 @@ MonoBehaviour:
   green: 0
   red: 0
   table: 0
-  boss: 1
+  iceboss: 0
+  windboss: 0
+  finalboss: 1
   color: 
 --- !u!114 &1658949805
 MonoBehaviour:
