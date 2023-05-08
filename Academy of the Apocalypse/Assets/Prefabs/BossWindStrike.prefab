@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2317559092009374462}
   - component: {fileID: 7024043640259046675}
   - component: {fileID: 4243622927031228445}
+  - component: {fileID: 1438351648434059176}
   m_Layer: 0
   m_Name: BossWindStrike
   m_TagString: bullet
@@ -170,3 +171,17 @@ MonoBehaviour:
   speed: 0
   BulletDamage: 30
   rb2D: {fileID: 3001364132611974906}
+--- !u!114 &1438351648434059176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4522741059268890183}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bea189e8ef4b847138af180674a56876, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefVolume: 1
+  _clip: {fileID: 8300000, guid: 4b6e15d931da8409792e505ab9241c10, type: 3}
