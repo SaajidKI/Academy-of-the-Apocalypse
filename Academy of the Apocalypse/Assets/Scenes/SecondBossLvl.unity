@@ -5833,9 +5833,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 300
-  currentHealth: 300
-  damagePerSecond: 10
+  maxHealth: 1500
+  currentHealth: 1500
+  damagePerSecond: 40
   burnDuration: 5
   tickRate: 1
 --- !u!61 &1658949800
@@ -5989,11 +5989,11 @@ MonoBehaviour:
   rb2D: {fileID: 1714807108}
   target: {fileID: 1714807107}
   speed: 3
-  damage: 10
-  bulletDamage: 5
+  damage: 20
+  bulletDamage: 15
   EnemyLives: 3
   healthIndicator: {fileID: 0}
-  attackRange: 10
+  attackRange: 12
   enemy_speed: 3
   knockBackForce: 20
   bulletPrefab: {fileID: 4522741059268890183, guid: 56309fe64636f416c8d837c323175c0e, type: 3}

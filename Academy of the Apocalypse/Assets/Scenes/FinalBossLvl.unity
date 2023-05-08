@@ -5845,9 +5845,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1000
-  currentHealth: 1000
-  damagePerSecond: 10
+  maxHealth: 2500
+  currentHealth: 2500
+  damagePerSecond: 50
   burnDuration: 5
   tickRate: 1
 --- !u!61 &1658949800
@@ -6000,11 +6000,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb2D: {fileID: 1714807108}
   target: {fileID: 1714807107}
-  speed: 3
-  damage: 10
-  bulletDamage: 5
+  speed: 4
+  damage: 20
+  bulletDamage: 10
   EnemyLives: 3
-  attackRange: 10
+  attackRange: 12
   enemy_speed: 3
   knockBackForce: 20
   planePrefab: {fileID: 2210124415394262952, guid: 3aeaafe96c6db4383a296529adedbabc, type: 3}

@@ -5733,10 +5733,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 300
-  currentHealth: 300
-  damagePerSecond: 10
-  burnDuration: 5
+  maxHealth: 1000
+  currentHealth: 1000
+  damagePerSecond: 40
+  burnDuration: 3
   tickRate: 1
 --- !u!114 &1658949798
 MonoBehaviour:
@@ -5755,7 +5755,7 @@ MonoBehaviour:
   target: {fileID: 1714807107}
   speed: 4
   damage: 10
-  bulletDamage: 5
+  bulletDamage: 10
   EnemyLives: 3
   healthIndicator: {fileID: 0}
   attackRange: 10
