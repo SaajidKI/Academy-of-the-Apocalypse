@@ -341,7 +341,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 200
   currentHealth: 200
-  damagePerSecond: 20
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &20809024
@@ -357,8 +357,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
-  speed: 3
-  damage: 20
+  speed: 2.5
+  damage: 10
   EnemyLives: 3
   gameHandler: {fileID: 0}
   attackRange: 10
@@ -654,7 +654,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 100
-  damagePerSecond: 20
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &61077761
@@ -671,8 +671,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
   target: {fileID: 1387982759}
-  speed: 4
-  damage: 10
+  speed: 3
+  damage: 5
   bulletDamage: 5
   EnemyLives: 3
   attackRange: 10
@@ -1278,7 +1278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   currentHealth: 150
-  damagePerSecond: 20
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &156412305
@@ -2323,7 +2323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   currentHealth: 150
-  damagePerSecond: 20
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &342157749
@@ -3126,7 +3126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   currentHealth: 150
-  damagePerSecond: 20
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &547778870
@@ -3459,7 +3459,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   currentHealth: 150
-  damagePerSecond: 20
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &646332737
@@ -17933,7 +17933,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 100
-  damagePerSecond: 20
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &743435038
@@ -17951,7 +17951,7 @@ MonoBehaviour:
   rb2D: {fileID: 0}
   target: {fileID: 1387982759}
   speed: 4
-  damage: 10
+  damage: 5
   bulletDamage: 5
   EnemyLives: 3
   attackRange: 10
@@ -17962,7 +17962,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2210124415394262952, guid: e845fcf9d5fffec4c9f60365032cb262, type: 3}
   firePoint: {fileID: 1118910959}
   fireRate: 1.5
-  bulletSpeed: 30
+  bulletSpeed: 20
   bulletForce: 10
 --- !u!212 &743435039
 SpriteRenderer:
@@ -19143,7 +19143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 100
-  damagePerSecond: 20
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &1085365595
@@ -19161,7 +19161,7 @@ MonoBehaviour:
   rb2D: {fileID: 0}
   target: {fileID: 1387982759}
   speed: 4
-  damage: 10
+  damage: 5
   bulletDamage: 5
   EnemyLives: 3
   attackRange: 10
@@ -19172,7 +19172,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2210124415394262952, guid: e845fcf9d5fffec4c9f60365032cb262, type: 3}
   firePoint: {fileID: 193231748}
   fireRate: 1.5
-  bulletSpeed: 30
+  bulletSpeed: 20
   bulletForce: 10
 --- !u!212 &1085365596
 SpriteRenderer:
@@ -20448,7 +20448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   currentHealth: 150
-  damagePerSecond: 20
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &1488246143
@@ -33877,7 +33877,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 200
   currentHealth: 200
-  damagePerSecond: 20
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &1579866652
@@ -33893,11 +33893,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
-  speed: 3
-  damage: 20
+  speed: 2.5
+  damage: 10
   EnemyLives: 3
   gameHandler: {fileID: 0}
-  attackRange: 10
+  attackRange: 12
   isAttacking: 1
   knockBackForce: 20
 --- !u!212 &1579866653
@@ -34190,7 +34190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 100
-  damagePerSecond: 20
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &1587387552
@@ -34208,7 +34208,7 @@ MonoBehaviour:
   rb2D: {fileID: 0}
   target: {fileID: 1387982759}
   speed: 4
-  damage: 10
+  damage: 5
   bulletDamage: 5
   EnemyLives: 3
   attackRange: 10
@@ -34219,7 +34219,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2210124415394262952, guid: e845fcf9d5fffec4c9f60365032cb262, type: 3}
   firePoint: {fileID: 1359475446}
   fireRate: 1.5
-  bulletSpeed: 30
+  bulletSpeed: 20
   bulletForce: 10
 --- !u!212 &1587387553
 SpriteRenderer:
@@ -34606,7 +34606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 200
   currentHealth: 200
-  damagePerSecond: 20
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &1633384969
@@ -34622,8 +34622,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
-  speed: 3
-  damage: 20
+  speed: 2.5
+  damage: 10
   EnemyLives: 3
   gameHandler: {fileID: 0}
   attackRange: 10
@@ -35202,7 +35202,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   currentHealth: 150
-  damagePerSecond: 20
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &1726336458
@@ -35756,7 +35756,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   currentHealth: 150
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &1835906561
@@ -36534,7 +36534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 200
   currentHealth: 200
-  damagePerSecond: 20
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &2042183898
@@ -36550,11 +36550,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
-  speed: 3
-  damage: 20
+  speed: 2.5
+  damage: 10
   EnemyLives: 3
   gameHandler: {fileID: 0}
-  attackRange: 10
+  attackRange: 12
   isAttacking: 1
   knockBackForce: 20
 --- !u!212 &2042183899

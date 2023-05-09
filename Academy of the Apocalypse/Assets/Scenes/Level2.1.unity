@@ -340,7 +340,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   currentHealth: 150
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &30586218
@@ -1227,7 +1227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   currentHealth: 150
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &100169853
@@ -1624,7 +1624,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 100
-  damagePerSecond: 10
+  damagePerSecond: 25
   burnDuration: 5
   tickRate: 1
 --- !u!114 &149986707
@@ -1641,8 +1641,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
   target: {fileID: 1387982759}
-  speed: 4
-  damage: 10
+  speed: 3
+  damage: 7
   bulletDamage: 5
   EnemyLives: 3
   attackRange: 10
@@ -1653,7 +1653,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2210124415394262952, guid: e845fcf9d5fffec4c9f60365032cb262, type: 3}
   firePoint: {fileID: 1375225458}
   fireRate: 1.5
-  bulletSpeed: 30
+  bulletSpeed: 20
   bulletForce: 10
 --- !u!212 &149986708
 SpriteRenderer:
@@ -2091,7 +2091,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 100
-  damagePerSecond: 10
+  damagePerSecond: 25
   burnDuration: 5
   tickRate: 1
 --- !u!114 &391448922
@@ -2109,7 +2109,7 @@ MonoBehaviour:
   rb2D: {fileID: 0}
   target: {fileID: 1387982759}
   speed: 4
-  damage: 10
+  damage: 7
   bulletDamage: 5
   EnemyLives: 3
   attackRange: 10
@@ -2120,7 +2120,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2210124415394262952, guid: e845fcf9d5fffec4c9f60365032cb262, type: 3}
   firePoint: {fileID: 1171492931}
   fireRate: 1.5
-  bulletSpeed: 30
+  bulletSpeed: 20
   bulletForce: 10
 --- !u!212 &391448923
 SpriteRenderer:
@@ -2194,6 +2194,11 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &402316917 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6093185313410705115, guid: 54447ede56e30460191955166e13a39b, type: 3}
+  m_PrefabInstance: {fileID: 1393453501}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &444808130
 GameObject:
   m_ObjectHideFlags: 0
@@ -2412,7 +2417,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 200
   currentHealth: 200
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &444808137
@@ -2429,7 +2434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
   speed: 3
-  damage: 20
+  damage: 10
   EnemyLives: 3
   gameHandler: {fileID: 0}
   attackRange: 10
@@ -2565,6 +2570,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.493988, y: 35}
   m_EdgeRadius: 0
+--- !u!1 &473272753 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6093185313410705115, guid: 54447ede56e30460191955166e13a39b, type: 3}
+  m_PrefabInstance: {fileID: 1993912063}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &475056063
 GameObject:
   m_ObjectHideFlags: 0
@@ -2729,6 +2739,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 774611078}
     m_Modifications:
+    - target: {fileID: 4501605112755214365, guid: 54447ede56e30460191955166e13a39b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6093185313410705109, guid: 54447ede56e30460191955166e13a39b, type: 3}
       propertyPath: maxHealth
       value: 300
@@ -2787,11 +2801,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6093185313410705114, guid: 54447ede56e30460191955166e13a39b, type: 3}
       propertyPath: speed
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6093185313410705114, guid: 54447ede56e30460191955166e13a39b, type: 3}
       propertyPath: damage
-      value: 30
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6093185313410705115, guid: 54447ede56e30460191955166e13a39b, type: 3}
       propertyPath: m_Name
@@ -2987,6 +3001,25 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1135322697274213719, guid: 3e54b2e96b50f45909c29a881bc80a87, type: 3}
   m_PrefabInstance: {fileID: 1135322697744724230}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &638588596 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7283537198825850336, guid: 54447ede56e30460191955166e13a39b, type: 3}
+  m_PrefabInstance: {fileID: 503985125}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &638588600
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638588596}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 414fbfd22b6564f93ab3d1505bfdb840, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enemy: {fileID: 1273807279}
+  localScale: {x: 0, y: 0, z: 0}
 --- !u!1 &639986109
 GameObject:
   m_ObjectHideFlags: 0
@@ -3747,7 +3780,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   currentHealth: 150
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &692256806
@@ -4070,7 +4103,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   currentHealth: 150
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &710709017
@@ -4353,6 +4386,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &830070664 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7283537198825850336, guid: 54447ede56e30460191955166e13a39b, type: 3}
+  m_PrefabInstance: {fileID: 1993912063}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &830070668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 830070664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 414fbfd22b6564f93ab3d1505bfdb840, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enemy: {fileID: 473272753}
+  localScale: {x: 0, y: 0, z: 0}
 --- !u!1 &838973489
 GameObject:
   m_ObjectHideFlags: 0
@@ -4691,7 +4743,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 200
   currentHealth: 200
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &893120798
@@ -4708,10 +4760,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
   speed: 3
-  damage: 20
+  damage: 15
   EnemyLives: 3
   gameHandler: {fileID: 0}
-  attackRange: 10
+  attackRange: 12
   isAttacking: 1
   knockBackForce: 20
 --- !u!212 &893120799
@@ -5485,7 +5537,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   currentHealth: 150
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &1037344105
@@ -5798,7 +5850,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 100
-  damagePerSecond: 10
+  damagePerSecond: 25
   burnDuration: 5
   tickRate: 1
 --- !u!114 &1049714329
@@ -5815,8 +5867,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
   target: {fileID: 1387982759}
-  speed: 4
-  damage: 10
+  speed: 3
+  damage: 7
   bulletDamage: 5
   EnemyLives: 3
   attackRange: 10
@@ -5827,7 +5879,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2210124415394262952, guid: e845fcf9d5fffec4c9f60365032cb262, type: 3}
   firePoint: {fileID: 768167573}
   fireRate: 1.5
-  bulletSpeed: 30
+  bulletSpeed: 20
   bulletForce: 10
 --- !u!212 &1049714330
 SpriteRenderer:
@@ -6118,7 +6170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   currentHealth: 150
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &1057218461
@@ -6596,6 +6648,11 @@ Transform:
   m_Father: {fileID: 444808131}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1273807279 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6093185313410705115, guid: 54447ede56e30460191955166e13a39b, type: 3}
+  m_PrefabInstance: {fileID: 503985125}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1278849057
 GameObject:
   m_ObjectHideFlags: 0
@@ -29074,6 +29131,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 774611078}
     m_Modifications:
+    - target: {fileID: 4501605112755214365, guid: 54447ede56e30460191955166e13a39b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6093185313410705109, guid: 54447ede56e30460191955166e13a39b, type: 3}
       propertyPath: maxHealth
       value: 300
@@ -29132,11 +29193,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6093185313410705114, guid: 54447ede56e30460191955166e13a39b, type: 3}
       propertyPath: speed
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6093185313410705114, guid: 54447ede56e30460191955166e13a39b, type: 3}
       propertyPath: damage
-      value: 30
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6093185313410705115, guid: 54447ede56e30460191955166e13a39b, type: 3}
       propertyPath: m_Name
@@ -29489,6 +29550,25 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1477436225 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7283537198825850336, guid: 54447ede56e30460191955166e13a39b, type: 3}
+  m_PrefabInstance: {fileID: 1393453501}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1477436229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477436225}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 414fbfd22b6564f93ab3d1505bfdb840, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enemy: {fileID: 402316917}
+  localScale: {x: 0, y: 0, z: 0}
 --- !u!1 &1530660490
 GameObject:
   m_ObjectHideFlags: 0
@@ -29976,7 +30056,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 100
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &1655582078
@@ -29993,8 +30073,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
   target: {fileID: 1387982759}
-  speed: 4
-  damage: 10
+  speed: 3
+  damage: 7
   bulletDamage: 5
   EnemyLives: 3
   attackRange: 10
@@ -30005,7 +30085,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2210124415394262952, guid: e845fcf9d5fffec4c9f60365032cb262, type: 3}
   firePoint: {fileID: 99909300}
   fireRate: 1.5
-  bulletSpeed: 30
+  bulletSpeed: 20
   bulletForce: 10
 --- !u!212 &1655582079
 SpriteRenderer:
@@ -31400,7 +31480,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 200
   currentHealth: 200
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &1908884905
@@ -31417,7 +31497,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
   speed: 3
-  damage: 20
+  damage: 10
   EnemyLives: 3
   gameHandler: {fileID: 0}
   attackRange: 10
@@ -31900,6 +31980,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 774611078}
     m_Modifications:
+    - target: {fileID: 4501605112755214365, guid: 54447ede56e30460191955166e13a39b, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6093185313410705109, guid: 54447ede56e30460191955166e13a39b, type: 3}
       propertyPath: maxHealth
       value: 300
@@ -31958,15 +32042,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6093185313410705114, guid: 54447ede56e30460191955166e13a39b, type: 3}
       propertyPath: speed
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6093185313410705114, guid: 54447ede56e30460191955166e13a39b, type: 3}
       propertyPath: damage
-      value: 30
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 6093185313410705115, guid: 54447ede56e30460191955166e13a39b, type: 3}
       propertyPath: m_Name
       value: TableEnemy (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8812225080559506413, guid: 54447ede56e30460191955166e13a39b, type: 3}
+      propertyPath: burnDuration
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 54447ede56e30460191955166e13a39b, type: 3}
@@ -32506,7 +32594,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   currentHealth: 150
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &2146733184

@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 6093185313410705111}
   - component: {fileID: 6093185313410705108}
   - component: {fileID: 9055204812478167246}
+  - component: {fileID: 8812225080559506413}
   m_Layer: 0
   m_Name: TableEnemy
   m_TagString: S_Enemy
@@ -103,9 +104,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9d2d5d1d77ac4b9f9e07b7c09127a5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb2D: {fileID: 0}
-  speed: 3
-  damage: 30
+  rb2D: {fileID: 6093185313410705110}
+  speed: 2
+  damage: 25
   EnemyLives: 3
   attackRange: 10
   isAttacking: 0
@@ -117,14 +118,14 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6093185313410705115}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 300
   currentHealth: 300
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!50 &6093185313410705110
@@ -214,6 +215,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8812225080559506413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6093185313410705115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0560a7fd7d1343918bea2ca5e94f7b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 9055204812478167246}
+  maxHealth: 300
+  currentHealth: 300
+  damagePerSecond: 30
+  burnDuration: 5
+  tickRate: 1
 --- !u!1 &7283537198825850336
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,6 +244,7 @@ GameObject:
   - component: {fileID: 4528511106790128614}
   - component: {fileID: 1072638527505463287}
   - component: {fileID: 4501605112755214365}
+  - component: {fileID: 4892780944897940976}
   m_Layer: 6
   m_Name: E_health
   m_TagString: Untagged
@@ -306,9 +326,23 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7283537198825850336}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de32ace0cdcbc4ef7b4c36ca2cc27f1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enemy: {fileID: 6093185313410705115}
+  localScale: {x: 0, y: 0, z: 0}
+--- !u!114 &4892780944897940976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7283537198825850336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 414fbfd22b6564f93ab3d1505bfdb840, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Enemy: {fileID: 6093185313410705115}

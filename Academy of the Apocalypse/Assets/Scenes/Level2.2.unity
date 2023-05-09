@@ -436,7 +436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 200
   currentHealth: 200
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &71059955
@@ -844,7 +844,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 200
   currentHealth: 200
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &142748384
@@ -1428,7 +1428,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   currentHealth: 150
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &277114928
@@ -1837,7 +1837,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 100
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &317045276
@@ -2325,7 +2325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 200
   currentHealth: 200
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &466982001
@@ -3049,7 +3049,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 100
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &522484181
@@ -3861,7 +3861,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   currentHealth: 150
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &696662203
@@ -4585,7 +4585,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   currentHealth: 150
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &870106062
@@ -5263,7 +5263,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   currentHealth: 150
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &1036992684
@@ -5674,7 +5674,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   currentHealth: 150
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &1127664033
@@ -5998,7 +5998,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 100
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &1207834121
@@ -6027,7 +6027,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2210124415394262952, guid: e845fcf9d5fffec4c9f60365032cb262, type: 3}
   firePoint: {fileID: 302813271}
   fireRate: 1.5
-  bulletSpeed: 30
+  bulletSpeed: 20
   bulletForce: 10
 --- !u!212 &1207834122
 SpriteRenderer:
@@ -6762,7 +6762,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 200
   currentHealth: 200
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &1374736489
@@ -7080,7 +7080,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 100
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &1476236182
@@ -7109,7 +7109,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2210124415394262952, guid: e845fcf9d5fffec4c9f60365032cb262, type: 3}
   firePoint: {fileID: 1814389102}
   fireRate: 1.5
-  bulletSpeed: 30
+  bulletSpeed: 20
   bulletForce: 10
 --- !u!212 &1476236183
 SpriteRenderer:
@@ -7851,7 +7851,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 100
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &1577233353
@@ -7880,7 +7880,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2210124415394262952, guid: e845fcf9d5fffec4c9f60365032cb262, type: 3}
   firePoint: {fileID: 679088316}
   fireRate: 1.5
-  bulletSpeed: 30
+  bulletSpeed: 20
   bulletForce: 10
 --- !u!212 &1577233354
 SpriteRenderer:
@@ -8497,7 +8497,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 100
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &1649881340
@@ -8526,7 +8526,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 2210124415394262952, guid: e845fcf9d5fffec4c9f60365032cb262, type: 3}
   firePoint: {fileID: 633209639}
   fireRate: 1.5
-  bulletSpeed: 30
+  bulletSpeed: 20
   bulletForce: 10
 --- !u!212 &1649881341
 SpriteRenderer:
@@ -9898,7 +9898,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 200
   currentHealth: 200
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &1974697757
@@ -10190,7 +10190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   currentHealth: 150
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &2034665135
@@ -92417,7 +92417,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 200
   currentHealth: 200
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &2077686276
@@ -92729,7 +92729,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   currentHealth: 150
-  damagePerSecond: 10
+  damagePerSecond: 30
   burnDuration: 5
   tickRate: 1
 --- !u!114 &2078940653
