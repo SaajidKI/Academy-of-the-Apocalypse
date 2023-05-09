@@ -117,7 +117,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 30
-  BulletDamage: 30
+  BulletDamage: 15
   rb2D: {fileID: -1410002086543960250}
 --- !u!50 &-1410002086543960250
 Rigidbody2D:

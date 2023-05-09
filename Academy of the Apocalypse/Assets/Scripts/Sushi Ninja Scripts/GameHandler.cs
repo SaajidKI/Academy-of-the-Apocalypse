@@ -95,8 +95,8 @@ public class GameHandler : MonoBehaviour {
 
             GameObject[] enemies = GameObject.FindGameObjectsWithTag("Enemy");
             GameObject[] S_Enemies = GameObject.FindGameObjectsWithTag("S_Enemy");
-            enemyCountText.text = "Enemies Left: " + enemies.Length.ToString() + S_Enemies.Length.ToString();
             enemiesLeft = enemies.Length + S_Enemies.Length;
+            enemyCountText.text = "Enemies Left: " + enemiesLeft.ToString();
 
             if (enemiesLeft == 0) {
                   noEnemies = true; 

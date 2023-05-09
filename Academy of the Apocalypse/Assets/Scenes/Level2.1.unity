@@ -359,6 +359,7 @@ MonoBehaviour:
   speed: 4
   damage: 10
   EnemyLives: 3
+  gameHandler: {fileID: 0}
   attackRange: 10
   isAttacking: 1
   knockBackForce: 20
@@ -864,7 +865,7 @@ GameObject:
   - component: {fileID: 62119197}
   m_Layer: 0
   m_Name: hor2
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1245,6 +1246,7 @@ MonoBehaviour:
   speed: 4
   damage: 10
   EnemyLives: 3
+  gameHandler: {fileID: 0}
   attackRange: 10
   isAttacking: 1
   knockBackForce: 20
@@ -1638,7 +1640,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
-  target: {fileID: 0}
+  target: {fileID: 1387982759}
   speed: 4
   damage: 10
   bulletDamage: 5
@@ -1652,7 +1654,7 @@ MonoBehaviour:
   firePoint: {fileID: 1375225458}
   fireRate: 1.5
   bulletSpeed: 30
-  bulletForce: 20
+  bulletForce: 10
 --- !u!212 &149986708
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2105,7 +2107,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
-  target: {fileID: 0}
+  target: {fileID: 1387982759}
   speed: 4
   damage: 10
   bulletDamage: 5
@@ -2119,7 +2121,7 @@ MonoBehaviour:
   firePoint: {fileID: 1171492931}
   fireRate: 1.5
   bulletSpeed: 30
-  bulletForce: 20
+  bulletForce: 10
 --- !u!212 &391448923
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2425,16 +2427,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b461ce5338938c4dabebc4c3a1014e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy_speed: 3
-  startWaitTime: 3
-  moveSpot: {fileID: 1258810982}
-  minValues: {x: -17, y: -26, z: 4002655}
-  maxValues: {x: 54, y: 1.4, z: 4002655}
   rb2D: {fileID: 0}
   speed: 3
-  damage: 10
+  damage: 20
   EnemyLives: 3
-  attackRange: 5
+  gameHandler: {fileID: 0}
+  attackRange: 10
   isAttacking: 1
   knockBackForce: 20
 --- !u!212 &444808138
@@ -2521,7 +2519,7 @@ GameObject:
   - component: {fileID: 457403485}
   m_Layer: 0
   m_Name: vert (9)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2579,7 +2577,7 @@ GameObject:
   - component: {fileID: 475056065}
   m_Layer: 0
   m_Name: vert (5)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2731,6 +2729,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 774611078}
     m_Modifications:
+    - target: {fileID: 6093185313410705109, guid: 54447ede56e30460191955166e13a39b, type: 3}
+      propertyPath: maxHealth
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 6093185313410705109, guid: 54447ede56e30460191955166e13a39b, type: 3}
+      propertyPath: currentHealth
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 6093185313410705112, guid: 54447ede56e30460191955166e13a39b, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -2779,6 +2785,14 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 6093185313410705114, guid: 54447ede56e30460191955166e13a39b, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6093185313410705114, guid: 54447ede56e30460191955166e13a39b, type: 3}
+      propertyPath: damage
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 6093185313410705115, guid: 54447ede56e30460191955166e13a39b, type: 3}
       propertyPath: m_Name
       value: TableEnemy
@@ -2807,7 +2821,7 @@ GameObject:
   - component: {fileID: 574719501}
   m_Layer: 0
   m_Name: vert (14)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3130,7 +3144,7 @@ GameObject:
   - component: {fileID: 650875299}
   m_Layer: 0
   m_Name: vert (2)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3298,7 +3312,7 @@ GameObject:
   - component: {fileID: 661820888}
   m_Layer: 0
   m_Name: vert (3)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3356,7 +3370,7 @@ GameObject:
   - component: {fileID: 667409658}
   m_Layer: 0
   m_Name: hor (8)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3470,7 +3484,7 @@ GameObject:
   - component: {fileID: 676970104}
   m_Layer: 0
   m_Name: hor (12)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3752,6 +3766,7 @@ MonoBehaviour:
   speed: 4
   damage: 10
   EnemyLives: 3
+  gameHandler: {fileID: 0}
   attackRange: 10
   isAttacking: 1
   knockBackForce: 20
@@ -4074,6 +4089,7 @@ MonoBehaviour:
   speed: 4
   damage: 10
   EnemyLives: 3
+  gameHandler: {fileID: 0}
   attackRange: 10
   isAttacking: 1
   knockBackForce: 20
@@ -4690,16 +4706,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b461ce5338938c4dabebc4c3a1014e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy_speed: 3
-  startWaitTime: 3
-  moveSpot: {fileID: 268150271}
-  minValues: {x: -17, y: -26, z: 4002655}
-  maxValues: {x: 54, y: 1.4, z: 4002655}
   rb2D: {fileID: 0}
   speed: 3
-  damage: 10
+  damage: 20
   EnemyLives: 3
-  attackRange: 5
+  gameHandler: {fileID: 0}
+  attackRange: 10
   isAttacking: 1
   knockBackForce: 20
 --- !u!212 &893120799
@@ -4786,7 +4798,7 @@ GameObject:
   - component: {fileID: 906721855}
   m_Layer: 0
   m_Name: vert (4)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5111,7 +5123,7 @@ GameObject:
   - component: {fileID: 1026604174}
   m_Layer: 0
   m_Name: vert (12)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5492,6 +5504,7 @@ MonoBehaviour:
   speed: 4
   damage: 10
   EnemyLives: 3
+  gameHandler: {fileID: 0}
   attackRange: 10
   isAttacking: 1
   knockBackForce: 20
@@ -5801,7 +5814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
-  target: {fileID: 0}
+  target: {fileID: 1387982759}
   speed: 4
   damage: 10
   bulletDamage: 5
@@ -5815,7 +5828,7 @@ MonoBehaviour:
   firePoint: {fileID: 768167573}
   fireRate: 1.5
   bulletSpeed: 30
-  bulletForce: 20
+  bulletForce: 10
 --- !u!212 &1049714330
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6124,6 +6137,7 @@ MonoBehaviour:
   speed: 4
   damage: 10
   EnemyLives: 3
+  gameHandler: {fileID: 0}
   attackRange: 10
   isAttacking: 1
   knockBackForce: 20
@@ -6295,7 +6309,7 @@ GameObject:
   - component: {fileID: 1107849411}
   m_Layer: 0
   m_Name: hor (9)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6594,7 +6608,7 @@ GameObject:
   - component: {fileID: 1278849059}
   m_Layer: 0
   m_Name: vert (7)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29060,6 +29074,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 774611078}
     m_Modifications:
+    - target: {fileID: 6093185313410705109, guid: 54447ede56e30460191955166e13a39b, type: 3}
+      propertyPath: maxHealth
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 6093185313410705109, guid: 54447ede56e30460191955166e13a39b, type: 3}
+      propertyPath: currentHealth
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 6093185313410705112, guid: 54447ede56e30460191955166e13a39b, type: 3}
       propertyPath: m_RootOrder
       value: 16
@@ -29107,6 +29129,14 @@ PrefabInstance:
     - target: {fileID: 6093185313410705113, guid: 54447ede56e30460191955166e13a39b, type: 3}
       propertyPath: m_SortingOrder
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6093185313410705114, guid: 54447ede56e30460191955166e13a39b, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6093185313410705114, guid: 54447ede56e30460191955166e13a39b, type: 3}
+      propertyPath: damage
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 6093185313410705115, guid: 54447ede56e30460191955166e13a39b, type: 3}
       propertyPath: m_Name
@@ -29314,7 +29344,7 @@ GameObject:
   - component: {fileID: 1430762824}
   m_Layer: 0
   m_Name: vert (11)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29555,7 +29585,7 @@ GameObject:
   - component: {fileID: 1587701725}
   m_Layer: 0
   m_Name: vert (1)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29613,7 +29643,7 @@ GameObject:
   - component: {fileID: 1591468081}
   m_Layer: 0
   m_Name: hor (3)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29682,7 +29712,7 @@ GameObject:
   - component: {fileID: 1601777338}
   m_Layer: 0
   m_Name: hor (1)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29962,7 +29992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb2D: {fileID: 0}
-  target: {fileID: 0}
+  target: {fileID: 1387982759}
   speed: 4
   damage: 10
   bulletDamage: 5
@@ -29976,7 +30006,7 @@ MonoBehaviour:
   firePoint: {fileID: 99909300}
   fireRate: 1.5
   bulletSpeed: 30
-  bulletForce: 20
+  bulletForce: 10
 --- !u!212 &1655582079
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -30145,7 +30175,7 @@ GameObject:
   - component: {fileID: 1727187252}
   m_Layer: 0
   m_Name: hor (11)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30262,7 +30292,7 @@ GameObject:
   - component: {fileID: 1741441069}
   m_Layer: 0
   m_Name: Left2
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30320,7 +30350,7 @@ GameObject:
   - component: {fileID: 1748160546}
   m_Layer: 0
   m_Name: hor (4)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30683,16 +30713,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b461ce5338938c4dabebc4c3a1014e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy_speed: 3
-  startWaitTime: 3
-  moveSpot: {fileID: 245098975}
-  minValues: {x: -17, y: -26, z: 4002655}
-  maxValues: {x: 54, y: 1.4, z: 4002655}
   rb2D: {fileID: 0}
   speed: 3
-  damage: 10
+  damage: 20
   EnemyLives: 3
-  attackRange: 5
+  gameHandler: {fileID: 0}
+  attackRange: 10
   isAttacking: 1
   knockBackForce: 20
 --- !u!212 &1775563164
@@ -30779,7 +30805,7 @@ GameObject:
   - component: {fileID: 1800436223}
   m_Layer: 0
   m_Name: vert (15)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30837,7 +30863,7 @@ GameObject:
   - component: {fileID: 1805791196}
   m_Layer: 0
   m_Name: vert
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30994,7 +31020,7 @@ GameObject:
   - component: {fileID: 1887705678}
   m_Layer: 0
   m_Name: hor (6)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31052,7 +31078,7 @@ GameObject:
   - component: {fileID: 1896604391}
   m_Layer: 0
   m_Name: hor (5)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31110,7 +31136,7 @@ GameObject:
   - component: {fileID: 1904112917}
   m_Layer: 0
   m_Name: vert (8)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31389,16 +31415,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b461ce5338938c4dabebc4c3a1014e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy_speed: 3
-  startWaitTime: 3
-  moveSpot: {fileID: 88602538}
-  minValues: {x: -17, y: -26, z: 4002655}
-  maxValues: {x: 54, y: 1.4, z: 4002655}
   rb2D: {fileID: 0}
   speed: 3
-  damage: 10
+  damage: 20
   EnemyLives: 3
-  attackRange: 5
+  gameHandler: {fileID: 0}
+  attackRange: 10
   isAttacking: 1
   knockBackForce: 20
 --- !u!212 &1908884906
@@ -31683,7 +31705,7 @@ GameObject:
   - component: {fileID: 1918413250}
   m_Layer: 0
   m_Name: vert (13)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31741,7 +31763,7 @@ GameObject:
   - component: {fileID: 1951769080}
   m_Layer: 0
   m_Name: vert (6)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31878,6 +31900,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 774611078}
     m_Modifications:
+    - target: {fileID: 6093185313410705109, guid: 54447ede56e30460191955166e13a39b, type: 3}
+      propertyPath: maxHealth
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 6093185313410705109, guid: 54447ede56e30460191955166e13a39b, type: 3}
+      propertyPath: currentHealth
+      value: 300
+      objectReference: {fileID: 0}
     - target: {fileID: 6093185313410705112, guid: 54447ede56e30460191955166e13a39b, type: 3}
       propertyPath: m_RootOrder
       value: 15
@@ -31926,6 +31956,14 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 6093185313410705114, guid: 54447ede56e30460191955166e13a39b, type: 3}
+      propertyPath: speed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6093185313410705114, guid: 54447ede56e30460191955166e13a39b, type: 3}
+      propertyPath: damage
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 6093185313410705115, guid: 54447ede56e30460191955166e13a39b, type: 3}
       propertyPath: m_Name
       value: TableEnemy (2)
@@ -31949,7 +31987,7 @@ GameObject:
   - component: {fileID: 2013717565}
   m_Layer: 0
   m_Name: vert (16)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32007,7 +32045,7 @@ GameObject:
   - component: {fileID: 2073559101}
   m_Layer: 0
   m_Name: vert (10)
-  m_TagString: Untagged
+  m_TagString: wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32487,6 +32525,7 @@ MonoBehaviour:
   speed: 4
   damage: 10
   EnemyLives: 3
+  gameHandler: {fileID: 0}
   attackRange: 10
   isAttacking: 1
   knockBackForce: 20
@@ -32756,6 +32795,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 868592007}
     - target: {fileID: 3791975871212572930, guid: d40e5e47fc4694e64a8433e0ba4ad61f, type: 3}
+      propertyPath: doorOpen
+      value: 
+      objectReference: {fileID: 670167799}
+    - target: {fileID: 3791975871212572930, guid: d40e5e47fc4694e64a8433e0ba4ad61f, type: 3}
       propertyPath: cameraShake
       value: 
       objectReference: {fileID: 1599494184}
@@ -32764,6 +32807,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 620033105}
     - target: {fileID: 3791975871212572930, guid: d40e5e47fc4694e64a8433e0ba4ad61f, type: 3}
+      propertyPath: playerHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791975871212572930, guid: d40e5e47fc4694e64a8433e0ba4ad61f, type: 3}
       propertyPath: enemyCountText
       value: 
       objectReference: {fileID: 102166983}
@@ -32771,6 +32818,10 @@ PrefabInstance:
       propertyPath: _gameOverScreen
       value: 
       objectReference: {fileID: 710284857}
+    - target: {fileID: 3791975871212572930, guid: d40e5e47fc4694e64a8433e0ba4ad61f, type: 3}
+      propertyPath: StartPlayerHealth
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 3791975871212572931, guid: d40e5e47fc4694e64a8433e0ba4ad61f, type: 3}
       propertyPath: m_Name
       value: GameHandler
@@ -32994,6 +33045,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4574508056532481639, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
+      propertyPath: iceUnlock
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4574508056532481641, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
       propertyPath: m_Name
       value: Player
@@ -33054,6 +33109,10 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 868592014}
+    - target: {fileID: 4574508056826875852, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
+      propertyPath: iceUnlock
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4574508056826875852, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
       propertyPath: coolScript
       value: 

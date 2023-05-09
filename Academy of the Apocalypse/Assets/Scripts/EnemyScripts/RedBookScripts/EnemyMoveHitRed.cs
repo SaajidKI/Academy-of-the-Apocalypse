@@ -11,7 +11,7 @@ public class EnemyMoveHitRed : MonoBehaviour {
        public int damage = 10;
 
        public int EnemyLives = 3;
-       private GameHandler gameHandler;
+       public GameHandler gameHandler;
 
        public float attackRange = 10;
        public bool isAttacking = false;
