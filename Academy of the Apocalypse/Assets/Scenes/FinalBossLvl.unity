@@ -1131,7 +1131,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 852c52b01e86b41da8bfbec633c937f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: Level 2
+  scene: Title Scene
   nextLevelSound: {fileID: 0}
 --- !u!61 &707173125
 BoxCollider2D:
