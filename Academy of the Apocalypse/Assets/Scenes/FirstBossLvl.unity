@@ -5917,8 +5917,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 1658949805}
-  maxHealth: 1000
-  currentHealth: 1000
+  maxHealth: 800
+  currentHealth: 800
   damagePerSecond: 40
   burnDuration: 3
   tickRate: 1

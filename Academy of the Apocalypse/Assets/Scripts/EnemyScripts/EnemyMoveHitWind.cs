@@ -12,7 +12,7 @@ public class EnemyMoveHitWind : MonoBehaviour
     public int bulletDamage = 5;
     public int EnemyLives = 3;
     private GameHandler gameHandler;
-    public EnemyMeleeDamage healthIndicator;
+    public BossMeleeDamage healthIndicator;
     public float attackRange = 10;
     private Transform player;
     public float enemy_speed = 3;
@@ -57,16 +57,26 @@ public class EnemyMoveHitWind : MonoBehaviour
             gameHandler = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>();
         }
 
-        healthIndicator = this.GetComponent<EnemyMeleeDamage>();
+        healthIndicator = this.GetComponent<BossMeleeDamage>();
     }
 
     void Update()
     {
-        float DistToPlayer = Vector3.Distance(transform.position, target.position);
+        enemy_health = healthIndicator.currentHealth;
+
+        float DistToPlayer;
+        if (enemy_health > 0) {
+            DistToPlayer = Vector3.Distance(transform.position, target.position);
+        } else {
+            DistToPlayer = 100;
+        }
+        // float DistToPlayer = Vector3.Distance(transform.position, target.position);
 
         if ((target != null) && (DistToPlayer <= attackRange))
         {
-            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+            if (enemy_health > 0) {
+                transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+            }
             //anim.SetBool("Walk", true);
             //flip enemy to face player direction. Wrong direction? Swap the * -1.
             if (target.position.x > gameObject.transform.position.x)
@@ -77,13 +87,13 @@ public class EnemyMoveHitWind : MonoBehaviour
             {
                 gameObject.transform.localScale = new Vector2(scaleX * -1, gameObject.transform.localScale.y);
             }
-            if (Time.time >= nextFireTime)
+            if (Time.time >= nextFireTime && enemy_health > 0)
             {
                 FireBullet();
                 nextFireTime = Time.time + fireRate;
 
             }
-            if (Time.time >= nextSkillTime) {
+            if (Time.time >= nextSkillTime && enemy_health > 0) {
                 SprayBullet(0f);
                 SprayBullet(40f);
                 SprayBullet(80f);
@@ -119,7 +129,6 @@ public class EnemyMoveHitWind : MonoBehaviour
                 ToAngle = -10f;
             }
         }
-        enemy_health = healthIndicator.currentHealth;
     
         if (enemy_health < (healthIndicator.maxHealth / 2) && rageMode == false) {
 

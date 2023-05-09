@@ -12,7 +12,7 @@ public class EnemyMoveHitIce : MonoBehaviour
     public int bulletDamage = 5;
     public int EnemyLives = 3;
     private GameHandler gameHandler;
-    public EnemyMeleeDamage healthIndicator;
+    public BossMeleeDamage healthIndicator;
     public float attackRange = 10;
     private Transform player;
     public float enemy_speed = 3;
@@ -57,69 +57,76 @@ public class EnemyMoveHitIce : MonoBehaviour
             gameHandler = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>();
         }
 
-        healthIndicator = this.GetComponent<EnemyMeleeDamage>();
+        healthIndicator = this.GetComponent<BossMeleeDamage>();
     }
 
     void Update()
     {
-        float DistToPlayer = Vector3.Distance(transform.position, target.position);
+        enemy_health = healthIndicator.currentHealth;
+        float DistToPlayer;
+        if (enemy_health > 0) {
+            DistToPlayer = Vector3.Distance(transform.position, target.position);
+        } else {
+            DistToPlayer = 100;
+        }
+        if (enemy_health > 0) {
+            if ((target != null) && (DistToPlayer <= attackRange)) {
+                if (enemy_health > 0) {
+                    transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
+                    if (target.position.x > gameObject.transform.position.x)
+                    {
+                        gameObject.transform.localScale = new Vector2(scaleX, gameObject.transform.localScale.y);
+                    }
+                    else
+                    {
+                        gameObject.transform.localScale = new Vector2(scaleX * -1, gameObject.transform.localScale.y);
+                    }
+                }
+                //anim.SetBool("Walk", true);
+                //flip enemy to face player direction. Wrong direction? Swap the * -1.
+                if ((Time.time >= nextFireTime) && (enemy_health > 0))
+                {
+                    FireBullet();
+                    nextFireTime = Time.time + fireRate;
 
-        if ((target != null) && (DistToPlayer <= attackRange))
-        {
-            transform.position = Vector2.MoveTowards(transform.position, target.position, speed * Time.deltaTime);
-            //anim.SetBool("Walk", true);
-            //flip enemy to face player direction. Wrong direction? Swap the * -1.
-            if (target.position.x > gameObject.transform.position.x)
-            {
-                gameObject.transform.localScale = new Vector2(scaleX, gameObject.transform.localScale.y);
-            }
-            else
-            {
-                gameObject.transform.localScale = new Vector2(scaleX * -1, gameObject.transform.localScale.y);
-            }
-            if (Time.time >= nextFireTime)
-            {
-                FireBullet();
-                nextFireTime = Time.time + fireRate;
+                }
+                if ((Time.time >= nextSkillTime) && (enemy_health > 0)) {
+                    SprayBullet(0f);
+                    SprayBullet(40f);
+                    SprayBullet(80f);
+                    SprayBullet(120f);
+                    SprayBullet(160f);
+                    SprayBullet(200f);
+                    SprayBullet(240f);
+                    SprayBullet(280f);
+                    SprayBullet(320f);
+                    nextSkillTime = Time.time + 10f;
+                }
 
-            }
-            if (Time.time >= nextSkillTime) {
-                SprayBullet(0f);
-                SprayBullet(40f);
-                SprayBullet(80f);
-                SprayBullet(120f);
-                SprayBullet(160f);
-                SprayBullet(200f);
-                SprayBullet(240f);
-                SprayBullet(280f);
-                SprayBullet(320f);
-                nextSkillTime = Time.time + 10f;
-            }
+                if (Time.time >= nextSprayTime && rageMode == true) {
+                    Debug.Log("Spraytime");
+                    // nextShootTime = Time.time + 1f;
+                    // Debug.Log("Spraytime done");
+                    nextSprayTime = Time.time + 15f;
+                    smallSpray = true;
+                    nextShootTime = Time.time + 1f;
+                    stopSprayTime = Time.time + 3f;
+                }
 
-            if (Time.time >= nextSprayTime && rageMode == true) {
-                Debug.Log("Spraytime");
-                // nextShootTime = Time.time + 1f;
-                // Debug.Log("Spraytime done");
-                nextSprayTime = Time.time + 15f;
-                smallSpray = true;
-                nextShootTime = Time.time + 1f;
-                stopSprayTime = Time.time + 3f;
-            }
+                if (Time.time >= stopSprayTime) {
+                    smallSpray = false;
+                }
 
-            if (Time.time >= stopSprayTime) {
-                smallSpray = false;
-            }
-
-            if (Time.time >= nextShootTime && smallSpray == true) {
-                    Debug.Log("In for loop!");
-                    portionSpray(ToAngle);
-                    nextShootTime = Time.time + 0.2f;
-                    ToAngle = ToAngle + 5f;
-            } else {
-                ToAngle = -10f;
+                if (Time.time >= nextShootTime && smallSpray == true) {
+                        Debug.Log("In for loop!");
+                        portionSpray(ToAngle);
+                        nextShootTime = Time.time + 0.2f;
+                        ToAngle = ToAngle + 5f;
+                } else {
+                    ToAngle = -10f;
+                }
             }
         }
-        enemy_health = healthIndicator.currentHealth;
     
         if (enemy_health < (healthIndicator.maxHealth / 2) && rageMode == false) {
 
@@ -131,15 +138,18 @@ public class EnemyMoveHitIce : MonoBehaviour
 
     private void FireBullet()
     {
-        playerPos = target.position - firePoint.position;
-        lookAngle = Mathf.Atan2(playerPos.y, playerPos.x) * Mathf.Rad2Deg;
-        firePoint.rotation = Quaternion.Euler(0f, 0f, lookAngle - 90f);
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.rotation = lookAngle;
-        rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
-        // Debug.Log(rb.rotation);
-        animator.SetTrigger("Shooting"); 
+        if (enemy_health > 0) {
+            playerPos = target.position - firePoint.position;
+            lookAngle = Mathf.Atan2(playerPos.y, playerPos.x) * Mathf.Rad2Deg;
+            firePoint.rotation = Quaternion.Euler(0f, 0f, lookAngle - 90f);
+            GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+            rb.rotation = lookAngle;
+            rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+            // Debug.Log(rb.rotation);
+            animator.SetTrigger("Shooting"); 
+        }
+        
     }
 
     private void portionSpray(float Angle) {
@@ -154,13 +164,15 @@ public class EnemyMoveHitIce : MonoBehaviour
 
 
     private void SprayBullet(float SkillAngle) {
-        firePoint.rotation = Quaternion.Euler(0f, 0f, SkillAngle);
-        GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
-        rb.rotation = SkillAngle - 90f;
-        rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
-        // Debug.Log(rb.rotation);
-        animator.SetTrigger("Shooting");
+        if (enemy_health > 0) {
+            firePoint.rotation = Quaternion.Euler(0f, 0f, SkillAngle);
+            GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
+            rb.rotation = SkillAngle - 90f;
+            rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
+            // Debug.Log(rb.rotation);
+            animator.SetTrigger("Shooting");
+        }
     }
 
 
