@@ -33,7 +33,7 @@ public class GameHandler : MonoBehaviour {
 
       private string sceneName;
 
-       public CameraShake cameraShake;
+      public CameraShake cameraShake;
 
       // public CameraShake cameraShake;
       // public GameObject item2;
@@ -112,12 +112,14 @@ public class GameHandler : MonoBehaviour {
         pauseMenuUI.SetActive(true);
         Time.timeScale = 0f;
         GameisPaused = true;
+        cameraShake.disableShake();
     }
 
     public void Resume(){
         pauseMenuUI.SetActive(false);
         Time.timeScale = 1f;
         GameisPaused = false;
+        cameraShake.enableShake();
     }
 
     public void SetLevel (float sliderValue){
