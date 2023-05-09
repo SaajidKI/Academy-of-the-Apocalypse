@@ -123,7 +123,7 @@ public class GameHandler : MonoBehaviour {
     }
 
     public void SetLevel (float sliderValue){
-        mixer.SetFloat("MusicVolume", Mathf.Log10 (sliderValue) * 20);
+        mixer.SetFloat("MasterVolume", Mathf.Log10 (sliderValue) * 20);
         volumeLevel = sliderValue;
     }
         
