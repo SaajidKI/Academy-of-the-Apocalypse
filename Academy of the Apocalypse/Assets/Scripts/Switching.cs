@@ -29,14 +29,14 @@ public class Switching : MonoBehaviour
             animator.SetBool ("toWind", false);
         }
 
-        if (Input.GetButtonDown("WindMode") && iceUnlock == true) {
+        if (Input.GetButtonDown("WindMode") && windUnlock == true) {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = playerWind;
             animator.SetBool ("toFire", false); 
             animator.SetBool ("toIce", false);
             animator.SetBool ("toWind", true);
         } 
 
-        if (Input.GetButtonDown("IceMode") && windUnlock == true) {
+        if (Input.GetButtonDown("IceMode") && iceUnlock == true) {
             this.gameObject.GetComponent<SpriteRenderer>().sprite = playerIce;
             animator.SetBool ("toIce", true); 
             //_clip.Play();

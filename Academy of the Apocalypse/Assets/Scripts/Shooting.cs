@@ -173,7 +173,7 @@ public class Shooting : MonoBehaviour
         Rigidbody2D rb = iceBullet.GetComponent<Rigidbody2D>();
         rb.rotation = lookAngle;
         rb.AddForce(firePoint.up * bulletForce, ForceMode2D.Impulse);
-        Shaker.ShakeCamera(0.05f, 0.1f);
+        Shaker.ShakeCamera(0.03f, 0.05f);
     }
 
     void ShootIceMist() {

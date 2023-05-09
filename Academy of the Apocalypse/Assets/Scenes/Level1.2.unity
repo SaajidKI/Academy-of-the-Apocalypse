@@ -37195,6 +37195,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 868592007}
     - target: {fileID: 3791975871212572930, guid: d40e5e47fc4694e64a8433e0ba4ad61f, type: 3}
+      propertyPath: doorOpen
+      value: 
+      objectReference: {fileID: 426103887}
+    - target: {fileID: 3791975871212572930, guid: d40e5e47fc4694e64a8433e0ba4ad61f, type: 3}
       propertyPath: cameraShake
       value: 
       objectReference: {fileID: 1599494184}
@@ -37436,6 +37440,10 @@ PrefabInstance:
     - target: {fileID: 4574508056532481639, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
       propertyPath: iceUnlock
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4574508056532481639, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
+      propertyPath: windUnlock
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4574508056532481641, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
       propertyPath: m_Name
