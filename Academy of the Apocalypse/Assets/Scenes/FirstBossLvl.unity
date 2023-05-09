@@ -5714,9 +5714,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 0}
-  maxHealth: 1000
-  currentHealth: 1000
+  maxHealth: 1200
+  currentHealth: 1200
   damagePerSecond: 40
   burnDuration: 3
   tickRate: 1

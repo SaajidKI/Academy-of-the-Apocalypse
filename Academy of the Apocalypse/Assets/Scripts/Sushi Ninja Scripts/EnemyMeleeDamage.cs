@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class EnemyMeleeDamage : MonoBehaviour {
        // private Renderer rend;
-       public Animator anim;
+       // public Animator anim;
     //    public GameObject healthLoot;
        public float maxHealth = 100;
        public float currentHealth;
@@ -98,7 +98,7 @@ public class EnemyMeleeDamage : MonoBehaviour {
        void Die(){
             //   Instantiate (healthLoot, transform.position, Quaternion.identity);
               
-              anim.SetBool ("Dead", true);
+              // anim.SetBool ("Dead", true);
               GetComponent<Collider2D>().enabled = false;
               StartCoroutine(Death());
               // NextEnemy.SetActive(true);
@@ -106,7 +106,7 @@ public class EnemyMeleeDamage : MonoBehaviour {
        }
 
        IEnumerator Death(){
-              yield return new WaitForSeconds(0.3f);
+              yield return new WaitForSeconds(0.2f);
               // Debug.Log("You Killed a baddie. You deserve loot!");
               Destroy(gameObject);
 
