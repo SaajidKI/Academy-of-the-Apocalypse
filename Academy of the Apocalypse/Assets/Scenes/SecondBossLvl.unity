@@ -1300,6 +1300,11 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0746679, y: 6.52904}
   m_EdgeRadius: 0
+--- !u!82 &1027475487 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3283197095877272600, guid: 16b7c3abdc84341d68118e2e71b6a54b, type: 3}
+  m_PrefabInstance: {fileID: 5597518157735843349}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &1038560891 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4395986397940181127, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
@@ -4527,6 +4532,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4574508056532481639, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
+      propertyPath: iceUnlock
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4574508056532481641, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
       propertyPath: m_Name
       value: Player
@@ -4595,6 +4604,10 @@ PrefabInstance:
       propertyPath: cooler
       value: 
       objectReference: {fileID: 1287668255}
+    - target: {fileID: 4574508056826875852, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
+      propertyPath: iceUnlock
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4574508056826875852, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}
       propertyPath: coolScript
       value: 
@@ -4818,6 +4831,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3791975871212572930, guid: d40e5e47fc4694e64a8433e0ba4ad61f, type: 3}
+      propertyPath: mixer
+      value: 
+      objectReference: {fileID: 24100000, guid: baf611136962243839fa397ec4247bc6, type: 2}
     - target: {fileID: 3791975871212572930, guid: d40e5e47fc4694e64a8433e0ba4ad61f, type: 3}
       propertyPath: Canvas
       value: 
@@ -5962,6 +5979,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3283197095877272600, guid: 16b7c3abdc84341d68118e2e71b6a54b, type: 3}
+      propertyPath: OutputAudioMixerGroup
+      value: 
+      objectReference: {fileID: 24300002, guid: baf611136962243839fa397ec4247bc6, type: 2}
     - target: {fileID: 5597518158222333074, guid: 16b7c3abdc84341d68118e2e71b6a54b, type: 3}
       propertyPath: m_Name
       value: Next level door
@@ -6009,6 +6030,14 @@ PrefabInstance:
     - target: {fileID: 5597518158222333084, guid: 16b7c3abdc84341d68118e2e71b6a54b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5597518158222333085, guid: 16b7c3abdc84341d68118e2e71b6a54b, type: 3}
+      propertyPath: door_fx
+      value: 
+      objectReference: {fileID: 1027475487}
+    - target: {fileID: 5597518158371114257, guid: 16b7c3abdc84341d68118e2e71b6a54b, type: 3}
+      propertyPath: scene
+      value: Level2.2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16b7c3abdc84341d68118e2e71b6a54b, type: 3}
