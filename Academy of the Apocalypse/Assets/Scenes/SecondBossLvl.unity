@@ -5499,7 +5499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 102219378df62474d9a262714f1c8336, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 0}
+  animator: {fileID: 1658949806}
   rb2D: {fileID: 1714807108}
   target: {fileID: 1714807107}
   speed: 3
