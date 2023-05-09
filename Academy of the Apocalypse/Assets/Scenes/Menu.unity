@@ -871,7 +871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9591c5e760154c5fa7a8af03bd19a58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMixer: {fileID: 24100000, guid: baf611136962243839fa397ec4247bc6, type: 2}
+  mixer: {fileID: 24100000, guid: baf611136962243839fa397ec4247bc6, type: 2}
 --- !u!82 &668589349
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1148,7 +1148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9591c5e760154c5fa7a8af03bd19a58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioMixer: {fileID: 0}
+  mixer: {fileID: 0}
 --- !u!114 &904945737
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2095,16 +2095,16 @@ MonoBehaviour:
   m_FillRect: {fileID: 998910155}
   m_HandleRect: {fileID: 1183761018}
   m_Direction: 0
-  m_MinValue: -80
-  m_MaxValue: -20
+  m_MinValue: 0.0001
+  m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: -20
+  m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 668589348}
         m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
-        m_MethodName: SetVolume
+        m_MethodName: SetLevel
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

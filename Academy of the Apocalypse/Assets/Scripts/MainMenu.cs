@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.Audio;
+
 public class MainMenu : MonoBehaviour
 {
-    public AudioMixer audioMixer;
+
+    public AudioMixer mixer;
 
     public void PlayGame(){
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -17,7 +19,8 @@ public class MainMenu : MonoBehaviour
 
     }
 
-    public void SetVolume(float volume){
-        audioMixer.SetFloat("MusicVolume", volume);
+    public void SetLevel (float sliderValue)
+    {
+        mixer.SetFloat("MasterVolume", Mathf.Log10(sliderValue) * 20);
     }
 }
