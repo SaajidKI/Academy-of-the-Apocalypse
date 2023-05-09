@@ -5024,6 +5024,7 @@ MonoBehaviour:
   closed_1: {fileID: 957989337}
   closed_2: {fileID: 1931851298}
   portal: {fileID: 1848034436}
+  door_fx: {fileID: 0}
 --- !u!4 &1022042337
 Transform:
   m_ObjectHideFlags: 0
@@ -9083,7 +9084,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 852c52b01e86b41da8bfbec633c937f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scene: Boss Level
+  scene: FinalBossLvl
   nextLevelSound: {fileID: 0}
 --- !u!61 &1848034438
 BoxCollider2D:
