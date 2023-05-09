@@ -473,7 +473,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: baf611136962243839fa397ec4247bc6, type: 2}
   m_audioClip: {fileID: 8300000, guid: 26ada6ffcede84cd095fb5ad7f53092f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.195
+  m_Volume: 0.75
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -4973,16 +4973,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 989921896068525315, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
       propertyPath: m_Color.b
-      value: 0.32941177
+      value: 0.06666667
       objectReference: {fileID: 0}
     - target: {fileID: 989921896068525315, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
       propertyPath: m_Color.r
-      value: 1
+      value: 0.7686275
       objectReference: {fileID: 0}
     - target: {fileID: 989921896068525315, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
       propertyPath: m_FontData.m_Font
       value: 
-      objectReference: {fileID: 12800000, guid: d7978cc53f1b746ada87bd14a8213448, type: 3}
+      objectReference: {fileID: 12800000, guid: ccb1dfb8153410f4d93572c6f9331dae, type: 3}
     - target: {fileID: 4395986398352496433, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
       propertyPath: coolTime
       value: 

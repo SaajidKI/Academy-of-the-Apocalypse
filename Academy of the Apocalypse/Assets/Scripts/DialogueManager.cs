@@ -13,6 +13,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject dialogBox;
     public GameObject skipButton1;
     public GameObject skipButton2;
+    public GameObject skipButton3;
 
 
 
