@@ -31,6 +31,8 @@ public class Shooting : MonoBehaviour
     private bool fireMode = true;
     private bool iceMode = false;
     private bool windMode = false;
+    public bool iceUnlock = false;
+    public bool windUnlock = false;
 
     public GameObject cooler;
     public cooldown coolScript;
@@ -195,13 +197,13 @@ public class Shooting : MonoBehaviour
             windMode = false;
         }
 
-        if (Input.GetButtonDown("IceMode")) {
+        if (Input.GetButtonDown("IceMode") && iceUnlock == true) {
             fireMode = false;
             iceMode = true;
             windMode = false;
         }
 
-        if (Input.GetButtonDown("WindMode")) {
+        if (Input.GetButtonDown("WindMode") && windUnlock == true) {
             fireMode = false;
             iceMode = false;
             windMode = true;

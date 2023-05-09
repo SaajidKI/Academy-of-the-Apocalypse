@@ -369,6 +369,10 @@ MonoBehaviour:
   rb2D: {fileID: 4574508056532481646}
   startSpeed: 10
   isAlive: 1
+  walking: 1
+  dashSpeed: 30
+  dashDuration: 0.1
+  dashCooldown: 0.5
   cam: {fileID: 0}
 --- !u!50 &4574508056532481646
 Rigidbody2D:
@@ -562,6 +566,8 @@ MonoBehaviour:
   playerIce: {fileID: -818772406, guid: 0c32d4646349f834d8e97d7b4015a3c8, type: 3}
   playerWind: {fileID: 0}
   animator: {fileID: 0}
+  iceUnlock: 0
+  windUnlock: 0
 --- !u!82 &1387982760
 AudioSource:
   m_ObjectHideFlags: 0
@@ -714,8 +720,11 @@ MonoBehaviour:
   WindTornadoPrefab: {fileID: 766155229160702928, guid: 3aa711c7caa2e41e88e892da01ee805c, type: 3}
   bulletForce: 20
   attackRate: 4
+  iceUnlock: 0
+  windUnlock: 0
   cooler: {fileID: 0}
   coolScript: {fileID: 0}
   isCooldownFire: 0
   isCooldownIce: 0
   isCooldownWind: 0
+  shoot_f: 1

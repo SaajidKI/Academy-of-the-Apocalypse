@@ -9,6 +9,7 @@ TagManager:
   - GameHandler
   - bullet
   - S_Enemy
+  - wall
   layers:
   - Default
   - TransparentFX

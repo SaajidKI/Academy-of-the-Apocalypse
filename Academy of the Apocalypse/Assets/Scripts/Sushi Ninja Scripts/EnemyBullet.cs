@@ -45,6 +45,10 @@ public class EnemyBullet : MonoBehaviour
             StartCoroutine(DestroyObject(gameObject));
         }
 
+        if (other.gameObject.tag == "wall") {
+            Destroy(gameObject);
+        }
+
         if (other.gameObject.tag == "Player")
         {
             gamehandle.GetComponent<GameHandler>().playerGetHit(BulletDamage);
