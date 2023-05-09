@@ -2626,6 +2626,7 @@ MonoBehaviour:
   closed_1: {fileID: 1162443747}
   closed_2: {fileID: 1999129780}
   portal: {fileID: 1132112616}
+  door_fx: {fileID: 0}
 --- !u!4 &426103888
 Transform:
   m_ObjectHideFlags: 0
@@ -37190,6 +37191,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3791975871212572930, guid: d40e5e47fc4694e64a8433e0ba4ad61f, type: 3}
+      propertyPath: mixer
+      value: 
+      objectReference: {fileID: 24100000, guid: baf611136962243839fa397ec4247bc6, type: 2}
     - target: {fileID: 3791975871212572930, guid: d40e5e47fc4694e64a8433e0ba4ad61f, type: 3}
       propertyPath: Canvas
       value: 
