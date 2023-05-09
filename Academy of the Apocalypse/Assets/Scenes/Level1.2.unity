@@ -341,7 +341,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 200
   currentHealth: 200
-  damagePerSecond: 10
+  damagePerSecond: 20
   burnDuration: 5
   tickRate: 1
 --- !u!114 &20809024
@@ -654,7 +654,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 100
-  damagePerSecond: 10
+  damagePerSecond: 20
   burnDuration: 5
   tickRate: 1
 --- !u!114 &61077761
@@ -1278,7 +1278,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   currentHealth: 150
-  damagePerSecond: 10
+  damagePerSecond: 20
   burnDuration: 5
   tickRate: 1
 --- !u!114 &156412305
@@ -2323,7 +2323,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   currentHealth: 150
-  damagePerSecond: 10
+  damagePerSecond: 20
   burnDuration: 5
   tickRate: 1
 --- !u!114 &342157749
@@ -3126,7 +3126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   currentHealth: 150
-  damagePerSecond: 10
+  damagePerSecond: 20
   burnDuration: 5
   tickRate: 1
 --- !u!114 &547778870
@@ -3459,7 +3459,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   currentHealth: 150
-  damagePerSecond: 10
+  damagePerSecond: 20
   burnDuration: 5
   tickRate: 1
 --- !u!114 &646332737
@@ -17933,7 +17933,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 100
-  damagePerSecond: 10
+  damagePerSecond: 20
   burnDuration: 5
   tickRate: 1
 --- !u!114 &743435038
@@ -19143,7 +19143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 100
-  damagePerSecond: 10
+  damagePerSecond: 20
   burnDuration: 5
   tickRate: 1
 --- !u!114 &1085365595
@@ -20448,7 +20448,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   currentHealth: 150
-  damagePerSecond: 10
+  damagePerSecond: 20
   burnDuration: 5
   tickRate: 1
 --- !u!114 &1488246143
@@ -33877,7 +33877,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 200
   currentHealth: 200
-  damagePerSecond: 10
+  damagePerSecond: 20
   burnDuration: 5
   tickRate: 1
 --- !u!114 &1579866652
@@ -34190,7 +34190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 100
-  damagePerSecond: 10
+  damagePerSecond: 20
   burnDuration: 5
   tickRate: 1
 --- !u!114 &1587387552
@@ -34606,7 +34606,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 200
   currentHealth: 200
-  damagePerSecond: 10
+  damagePerSecond: 20
   burnDuration: 5
   tickRate: 1
 --- !u!114 &1633384969
@@ -35202,7 +35202,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 150
   currentHealth: 150
-  damagePerSecond: 10
+  damagePerSecond: 20
   burnDuration: 5
   tickRate: 1
 --- !u!114 &1726336458
@@ -36534,7 +36534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 200
   currentHealth: 200
-  damagePerSecond: 10
+  damagePerSecond: 20
   burnDuration: 5
   tickRate: 1
 --- !u!114 &2042183898
