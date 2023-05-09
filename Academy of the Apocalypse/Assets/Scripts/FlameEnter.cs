@@ -22,8 +22,10 @@ public class FlameEnter : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other) {
 
-        if (other.gameObject.tag == "Enemy" || other.gameObject.tag == "S_Enemy") {
+        if (other.gameObject.tag == "Enemy") {
             other.GetComponent<EnemyMeleeDamage>().ApplyBurningDamage();
+        } else if (other.gameObject.tag == "S_Enemy") {
+            other.GetComponent<BossMeleeDamage>().ApplyBurningDamage_B();
         }
     }
 

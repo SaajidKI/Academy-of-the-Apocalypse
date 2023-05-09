@@ -65,7 +65,7 @@ public class WindTornadoSkill : MonoBehaviour
         }
 
         if (other.gameObject.tag == "S_Enemy") {
-            other.GetComponent<EnemyMeleeDamage>().TakeDamage(40);
+            other.GetComponent<BossMeleeDamage>().TakeDamage_B(40);
 
             Rigidbody2D pushRB = other.gameObject.GetComponent<Rigidbody2D>();
             Vector2 moveDirectionPush = rb2D.transform.position - other.transform.position;

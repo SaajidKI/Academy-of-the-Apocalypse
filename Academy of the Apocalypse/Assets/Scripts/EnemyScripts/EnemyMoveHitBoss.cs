@@ -11,7 +11,7 @@ public class EnemyMoveHitBoss : MonoBehaviour
     public int bulletDamage = 5;
     public int EnemyLives = 3;
     private GameHandler gameHandler;
-    private EnemyMeleeDamage healthIndicator;
+    private BossMeleeDamage healthIndicator;
     public float attackRange = 10;
     private Transform player;
     public float enemy_speed = 3;
@@ -25,7 +25,7 @@ public class EnemyMoveHitBoss : MonoBehaviour
     public Transform firePoint;
     public float fireRate = 1.5f;
     public float bulletSpeed = 30f;
-    public Animator anim;
+    // public Animator anim;
 
     private float nextFireTime = 0f;
     private float nextSkillTime = 10f;
@@ -63,7 +63,7 @@ public class EnemyMoveHitBoss : MonoBehaviour
             gameHandler = GameObject.FindWithTag("GameHandler").GetComponent<GameHandler>();
         }
 
-        healthIndicator = this.GetComponent<EnemyMeleeDamage>();
+        healthIndicator = this.GetComponent<BossMeleeDamage>();
     }
 
     void Update()
@@ -137,10 +137,6 @@ public class EnemyMoveHitBoss : MonoBehaviour
             fireRate = 1f;
             rageMode = true;
             speed = 4f;
-        }
-
-        if (enemy_health <= 0) {
-            anim.SetTrigger("Die");
         }
     }
 

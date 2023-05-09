@@ -513,6 +513,7 @@ GameObject:
   - component: {fileID: 361833716}
   - component: {fileID: 361833718}
   - component: {fileID: 361833717}
+  - component: {fileID: 361833719}
   m_Layer: 6
   m_Name: E_health
   m_TagString: Untagged
@@ -542,7 +543,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 361833715}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de32ace0cdcbc4ef7b4c36ca2cc27f1b, type: 3}
   m_Name: 
@@ -601,6 +602,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &361833719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 361833715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 414fbfd22b6564f93ab3d1505bfdb840, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Enemy: {fileID: 1658949796}
+  localScale: {x: 0, y: 0, z: 0}
 --- !u!1001 &392622851
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5679,6 +5694,7 @@ GameObject:
   - component: {fileID: 1658949797}
   - component: {fileID: 1658949804}
   - component: {fileID: 1658949805}
+  - component: {fileID: 1658949806}
   m_Layer: 0
   m_Name: BossIce
   m_TagString: S_Enemy
@@ -5693,11 +5709,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1658949796}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
   maxHealth: 1000
   currentHealth: 1000
   damagePerSecond: 40
@@ -5887,6 +5904,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1658949806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1658949796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0560a7fd7d1343918bea2ca5e94f7b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1658949805}
+  maxHealth: 1000
+  currentHealth: 1000
+  damagePerSecond: 40
+  burnDuration: 3
+  tickRate: 1
 --- !u!4 &1714807107 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4574508056532481645, guid: a39d2152d8d8f40a98b2d9ee4f8c0de8, type: 3}

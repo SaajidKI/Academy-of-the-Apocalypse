@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Collections;
 using UnityEngine;
 
-public class EnemyMeleeDamage : MonoBehaviour {
+public class BossMeleeDamage : MonoBehaviour {
        // private Renderer rend;
        public Animator anim;
     //    public GameObject healthLoot;
@@ -33,15 +33,15 @@ public class EnemyMeleeDamage : MonoBehaviour {
        void Update() {
               if (isBurning) {
                      burnTimeLeft -= Time.deltaTime;
-                     ColorChange(new Color(1f, 0.635f, 0.635f));
+                     ColorChange_B(new Color(1f, 0.635f, 0.635f));
 
                      if (burnTimeLeft <= 0f) {
                             isBurning = false;
-                            ColorChange(Color.white);
+                            ColorChange_B(Color.white);
 
                      } else {
                             if (Time.time >= nextTickTime) {
-                            ApplyDamage(damagePerSecond * tickRate);
+                            ApplyDamage_B(damagePerSecond * tickRate);
                             nextTickTime = Time.time + tickRate;
 
                             }
@@ -49,44 +49,44 @@ public class EnemyMeleeDamage : MonoBehaviour {
               }
        }
 
-       public void ColorChange(Color color) {
+       public void ColorChange_B(Color color) {
               spriteRenderer.color = color;
        }
 
-       public void ColorReset() {
-              StartCoroutine(ResetColor());
+       public void ColorReset_B() {
+              StartCoroutine(ResetColor_B());
        }
 
-       public void ApplyBurningDamage() {
+       public void ApplyBurningDamage_B() {
               isBurning = true;
               burnTimeLeft = burnDuration;
               nextTickTime = Time.time + tickRate;
        }
 
-       public void ApplyDamage(float damage) {
+       public void ApplyDamage_B(float damage) {
               damage += 20;
               currentHealth -= damage;
               if (currentHealth <= 0) {
-                     Die();
+                     Die_B();
               }
        }
 
-       public void ApplyIceDamage(float damage) {
+       public void ApplyIceDamage_B(float damage) {
               damage += 10;
               currentHealth -= damage;
               if (currentHealth <= 0) {
-                     Die();
+                     Die_B();
               }
        }
 
-       public void TakeDamage(int damage){
+       public void TakeDamage_B(int damage){
               damage += 10;
               currentHealth -= damage;
               //rend.material.color = new Color(2.4f, 0.9f, 0.9f, 1f);
               //StartCoroutine(ResetColor());
               //anim.SetTrigger ("Hurt");
               if (currentHealth <= 0){
-                     Die();
+                     Die_B();
               }
        }
 
@@ -95,24 +95,24 @@ public class EnemyMeleeDamage : MonoBehaviour {
        // }
        
 
-       void Die(){
+       void Die_B(){
             //   Instantiate (healthLoot, transform.position, Quaternion.identity);
               
               anim.SetBool ("Dead", true);
               GetComponent<Collider2D>().enabled = false;
-              StartCoroutine(Death());
+              StartCoroutine(Death_B());
               // NextEnemy.SetActive(true);
               // gameHandler.DeathCount();
        }
 
-       IEnumerator Death(){
-              yield return new WaitForSeconds(0.3f);
+       IEnumerator Death_B(){
+              yield return new WaitForSeconds(2f);
               // Debug.Log("You Killed a baddie. You deserve loot!");
               Destroy(gameObject);
 
        }
 
-       IEnumerator ResetColor(){
+       IEnumerator ResetColor_B(){
               yield return new WaitForSeconds(4f);
               spriteRenderer.color = Color.white;
        }

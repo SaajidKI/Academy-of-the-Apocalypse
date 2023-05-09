@@ -46,7 +46,7 @@ public class Bullet : MonoBehaviour
         }
 
         if (other.gameObject.tag == "S_Enemy") {
-            other.GetComponent<EnemyMeleeDamage>().TakeDamage(BulletDamage);
+            other.GetComponent<BossMeleeDamage>().TakeDamage_B(BulletDamage);
             Rigidbody2D pushRB = other.gameObject.GetComponent<Rigidbody2D>();
             Vector2 moveDirectionPush = rb2D.transform.position - other.transform.position;
             pushRB.AddForce(moveDirectionPush.normalized * (knockBackForce / 10f) * - 1f, ForceMode2D.Impulse);

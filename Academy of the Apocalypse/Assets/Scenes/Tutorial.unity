@@ -2210,6 +2210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
   maxHealth: 100
   currentHealth: 100
   damagePerSecond: 10
@@ -2511,6 +2512,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 358880480}
   maxHealth: 100
   currentHealth: 100
   damagePerSecond: 10
@@ -2989,6 +2991,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
   maxHealth: 100
   currentHealth: 100
   damagePerSecond: 10
@@ -4057,6 +4060,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 628736044}
   maxHealth: 100
   currentHealth: 100
   damagePerSecond: 10
@@ -4858,6 +4862,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 901231114}
   maxHealth: 100
   currentHealth: 100
   damagePerSecond: 10
@@ -7948,6 +7953,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 995153277}
   maxHealth: 100
   currentHealth: 100
   damagePerSecond: 10
@@ -7965,7 +7971,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20160db22beb318409fd782be66e7c05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rb2D: {fileID: 0}
+  rb2D: {fileID: 995153273}
   speed: 4
   damage: 10
   EnemyLives: 3
@@ -8478,6 +8484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
   maxHealth: 100
   currentHealth: 100
   damagePerSecond: 10
@@ -8779,6 +8786,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 1023365151}
   maxHealth: 100
   currentHealth: 100
   damagePerSecond: 10
@@ -10208,6 +10216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 1256432994}
   maxHealth: 100
   currentHealth: 100
   damagePerSecond: 10
@@ -11931,6 +11940,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 0}
   maxHealth: 100
   currentHealth: 100
   damagePerSecond: 10
@@ -12579,6 +12589,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  anim: {fileID: 1877059664}
   maxHealth: 100
   currentHealth: 100
   damagePerSecond: 10
