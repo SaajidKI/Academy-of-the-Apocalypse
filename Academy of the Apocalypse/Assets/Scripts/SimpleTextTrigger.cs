@@ -9,6 +9,7 @@ public class SimpleTextTrigger : MonoBehaviour
     public GameObject trigger;
     public AudioSource triggerSound;
     private int counter = 1;
+    private int exitCount = 1;
     private void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("Trigger entered by: " + other.gameObject.name);
@@ -26,10 +27,17 @@ public class SimpleTextTrigger : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        Debug.Log("Trigger exited by: " + other.gameObject.name);
-
+        
+        if (other.CompareTag("Player") && exitCount == 1)
+        {
             text.SetActive(false);
             trigger.SetActive(false);
+            exitCount --;
+        }
+
+     
+
+
 
     }
 }

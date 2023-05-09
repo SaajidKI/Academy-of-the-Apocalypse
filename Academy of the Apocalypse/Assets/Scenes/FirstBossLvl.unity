@@ -5233,6 +5233,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3791975871212572930, guid: d40e5e47fc4694e64a8433e0ba4ad61f, type: 3}
+      propertyPath: mixer
+      value: 
+      objectReference: {fileID: 24100000, guid: baf611136962243839fa397ec4247bc6, type: 2}
+    - target: {fileID: 3791975871212572930, guid: d40e5e47fc4694e64a8433e0ba4ad61f, type: 3}
       propertyPath: Canvas
       value: 
       objectReference: {fileID: 1287668255}
