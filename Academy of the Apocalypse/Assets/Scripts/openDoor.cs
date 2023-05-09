@@ -9,6 +9,8 @@ public class openDoor : MonoBehaviour
     public GameObject closed_1;
     public GameObject closed_2;
     public GameObject portal;
+
+    public AudioSource door_fx;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,5 +29,6 @@ public class openDoor : MonoBehaviour
         opened_1.SetActive(true);
         opened_2.SetActive(true);
         portal.SetActive(true);
+        door_fx.Play();
     }
 }
