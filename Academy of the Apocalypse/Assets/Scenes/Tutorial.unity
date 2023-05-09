@@ -572,7 +572,8 @@ MonoBehaviour:
   dialogue:
     name: Shadow
     sentences:
-    - Great job!!! The door is right here. See you outside soon.
+    - The door is right there. Also you don't have all the powers I showed you. Go
+      find out how you can get them.
 --- !u!1 &95296759
 GameObject:
   m_ObjectHideFlags: 0
@@ -816,6 +817,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1259072549}
+        m_TargetAssemblyTypeName: GameHandler, Assembly-CSharp
+        m_MethodName: disable_damage
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2210,7 +2223,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 0}
   maxHealth: 100
   currentHealth: 100
   damagePerSecond: 10
@@ -2512,7 +2524,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 358880480}
   maxHealth: 100
   currentHealth: 100
   damagePerSecond: 10
@@ -2991,7 +3002,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 0}
   maxHealth: 100
   currentHealth: 100
   damagePerSecond: 10
@@ -3622,10 +3632,11 @@ MonoBehaviour:
   dialogue:
     name: Shadow
     sentences:
-    - There's not a lot of enemies left. Take a rest.
-    - 'Your next job is to find the door that will take you out of this training
-      range. '
-    - We believe in you. Go save the world!
+    - There's not a lot of enemies left.  Kill !! all !! of them before you get out
+      of here.
+    - Your next job is to find the door that will take you out of this training range.
+      Remember, outside this range, everything wants you dead.
+    - 'We believe in you. Go find the door that''ll take you out of here. '
 --- !u!224 &521846618
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4060,7 +4071,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 628736044}
   maxHealth: 100
   currentHealth: 100
   damagePerSecond: 10
@@ -4465,7 +4475,8 @@ MonoBehaviour:
   dialogue:
     name: Shadow
     sentences:
-    - Ah, I see you're new here. Let me explain ;)
+    - Ah, I see you're new here. Let me explain. This is your training range. For
+      now, you are !! immortal !!
     - An alien hive mind merged different life forms to create new beings and gave
       them superpowers.
     - We need you to help stop them. They look like books but are deadly. Kill them
@@ -4862,7 +4873,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 901231114}
   maxHealth: 100
   currentHealth: 100
   damagePerSecond: 10
@@ -7953,7 +7963,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 995153277}
   maxHealth: 100
   currentHealth: 100
   damagePerSecond: 10
@@ -8185,7 +8194,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1259072549}
         m_TargetAssemblyTypeName: GameHandler, Assembly-CSharp
-        m_MethodName: enable_damage
+        m_MethodName: disable_damage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8484,7 +8493,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 0}
   maxHealth: 100
   currentHealth: 100
   damagePerSecond: 10
@@ -8786,7 +8794,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 1023365151}
   maxHealth: 100
   currentHealth: 100
   damagePerSecond: 10
@@ -9160,7 +9167,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1259072549}
         m_TargetAssemblyTypeName: GameHandler, Assembly-CSharp
-        m_MethodName: enable_damage
+        m_MethodName: disable_damage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10216,7 +10223,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 1256432994}
   maxHealth: 100
   currentHealth: 100
   damagePerSecond: 10
@@ -11438,7 +11444,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1666394308
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11665,6 +11671,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5597518158371114257, guid: 16b7c3abdc84341d68118e2e71b6a54b, type: 3}
+      propertyPath: scene
+      value: Testing Scene
+      objectReference: {fileID: 0}
+    - target: {fileID: 5597518158371114257, guid: 16b7c3abdc84341d68118e2e71b6a54b, type: 3}
+      propertyPath: nextLevelSound
+      value: 
+      objectReference: {fileID: 1891092736}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16b7c3abdc84341d68118e2e71b6a54b, type: 3}
 --- !u!1 &1716778904
@@ -11940,7 +11954,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 0}
   maxHealth: 100
   currentHealth: 100
   damagePerSecond: 10
@@ -12589,7 +12602,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 1877059664}
   maxHealth: 100
   currentHealth: 100
   damagePerSecond: 10
@@ -12767,6 +12779,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1885268629}
   m_CullTransparentMesh: 1
+--- !u!82 &1891092736 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3283197095877272600, guid: 16b7c3abdc84341d68118e2e71b6a54b, type: 3}
+  m_PrefabInstance: {fileID: 1691774785}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1898344395
 GameObject:
   m_ObjectHideFlags: 0
