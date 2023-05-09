@@ -6014,6 +6014,7 @@ MonoBehaviour:
   firePoint: {fileID: 1814237428}
   fireRate: 1.5
   bulletSpeed: 30
+  anim: {fileID: 0}
   bulletForce: 10
 --- !u!95 &1658949806
 Animator:
