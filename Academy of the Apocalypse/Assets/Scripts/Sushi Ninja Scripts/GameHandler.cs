@@ -198,7 +198,7 @@ public class GameHandler : MonoBehaviour {
             // player.GetComponent<PlayerMove>().isAlive = false;
             // player.GetComponent<PlayerJump>().isAlive = false;
             yield return new WaitForSeconds(1.0f);
-            SceneManager.LoadScene("Menu");
+            SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
       }
 
      
@@ -209,7 +209,7 @@ public class GameHandler : MonoBehaviour {
 
       public void RestartGame() {
           Time.timeScale = 1f;
-            SceneManager.LoadScene("Menu");
+            SceneManager.LoadScene (SceneManager.GetActiveScene ().name);
             playerHealth = StartPlayerHealth;
       }
 

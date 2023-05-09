@@ -1065,11 +1065,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.0366011, y: 16.926998}
   m_EdgeRadius: 0
---- !u!1 &783226615 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1135322696251062018, guid: 3e54b2e96b50f45909c29a881bc80a87, type: 3}
-  m_PrefabInstance: {fileID: 1206268599}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &863666711
 GameObject:
   m_ObjectHideFlags: 0
@@ -4394,6 +4389,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1135322696224423020, guid: 3e54b2e96b50f45909c29a881bc80a87, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1331720203}
+    - target: {fileID: 1135322696224423020, guid: 3e54b2e96b50f45909c29a881bc80a87, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitGame
+      objectReference: {fileID: 0}
     - target: {fileID: 1135322696251062018, guid: 3e54b2e96b50f45909c29a881bc80a87, type: 3}
       propertyPath: m_Name
       value: Pause Menu
@@ -4482,8 +4485,41 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1135322696614310330, guid: 3e54b2e96b50f45909c29a881bc80a87, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1331720203}
+    - target: {fileID: 1135322696614310330, guid: 3e54b2e96b50f45909c29a881bc80a87, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Resume
+      objectReference: {fileID: 0}
+    - target: {fileID: 1135322697337274909, guid: 3e54b2e96b50f45909c29a881bc80a87, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1135322697337274909, guid: 3e54b2e96b50f45909c29a881bc80a87, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1331720203}
+    - target: {fileID: 1135322697337274909, guid: 3e54b2e96b50f45909c29a881bc80a87, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetLevel
+      objectReference: {fileID: 0}
+    - target: {fileID: 1135322697673279644, guid: 3e54b2e96b50f45909c29a881bc80a87, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1331720203}
+    - target: {fileID: 1135322697673279644, guid: 3e54b2e96b50f45909c29a881bc80a87, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RestartGame
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e54b2e96b50f45909c29a881bc80a87, type: 3}
+--- !u!1 &1206268600 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1135322697274213719, guid: 3e54b2e96b50f45909c29a881bc80a87, type: 3}
+  m_PrefabInstance: {fileID: 1206268599}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1223437881
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4572,6 +4608,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4366888476437939214, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4395986398352496433, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
       propertyPath: coolTime
       value: 
@@ -4682,7 +4722,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4395986398979256431, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -647.7
+      value: -662.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a05c1d0839d16475a872cd5ef39c10a1, type: 3}
@@ -4793,7 +4833,7 @@ PrefabInstance:
     - target: {fileID: 3791975871212572930, guid: d40e5e47fc4694e64a8433e0ba4ad61f, type: 3}
       propertyPath: pauseMenuUI
       value: 
-      objectReference: {fileID: 783226615}
+      objectReference: {fileID: 1206268600}
     - target: {fileID: 3791975871212572930, guid: d40e5e47fc4694e64a8433e0ba4ad61f, type: 3}
       propertyPath: enemyCountText
       value: 
@@ -5362,7 +5402,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b83699560337944cea3cd8587ce5090e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 0}
   maxHealth: 1500
   currentHealth: 1500
   damagePerSecond: 40

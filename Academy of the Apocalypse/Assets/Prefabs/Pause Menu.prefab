@@ -761,7 +761,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 3791975871212572930, guid: d40e5e47fc4694e64a8433e0ba4ad61f, type: 3}
         m_TargetAssemblyTypeName: GameHandler, Assembly-CSharp
         m_MethodName: Resume
         m_Mode: 1
@@ -864,7 +864,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Menu
+  m_Text: Restart
 --- !u!1 &1135322696819942666
 GameObject:
   m_ObjectHideFlags: 0

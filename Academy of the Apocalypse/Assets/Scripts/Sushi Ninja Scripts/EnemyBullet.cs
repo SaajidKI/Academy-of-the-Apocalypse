@@ -42,7 +42,7 @@ public class EnemyBullet : MonoBehaviour
         if (other.gameObject.tag != "Enemy" && other.gameObject.tag != "S_Enemy" && other.gameObject.tag != "bullet")
         {
             // gameObject.GetComponent<Renderer>().enabled = false;
-            StartCoroutine(DestroyObject(gameObject));
+            Destroy(gameObject);
         }
 
         if (other.gameObject.tag == "wall") {
@@ -52,7 +52,7 @@ public class EnemyBullet : MonoBehaviour
         if (other.gameObject.tag == "Player")
         {
             gamehandle.GetComponent<GameHandler>().playerGetHit(BulletDamage);
-            StartCoroutine(DestroyObject(gameObject));
+            Destroy(gameObject);
         }
 
 
