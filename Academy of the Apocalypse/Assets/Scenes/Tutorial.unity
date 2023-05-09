@@ -825,18 +825,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1259072549}
-        m_TargetAssemblyTypeName: GameHandler, Assembly-CSharp
-        m_MethodName: disable_damage
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &111621495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3634,8 +3622,8 @@ MonoBehaviour:
     sentences:
     - There's not a lot of enemies left.  Kill !! all !! of them before you get out
       of here.
-    - Your next job is to find the door that will take you out of this training range.
-      Remember, outside this range, everything wants you dead.
+    - This part hurts the most. I've taken off your shield. The books will hurt you.
+      Stay alive.
     - 'We believe in you. Go find the door that''ll take you out of here. '
 --- !u!224 &521846618
 RectTransform:
@@ -9167,7 +9155,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1259072549}
         m_TargetAssemblyTypeName: GameHandler, Assembly-CSharp
-        m_MethodName: disable_damage
+        m_MethodName: enable_damage
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
