@@ -11,6 +11,7 @@ public class Bullet : MonoBehaviour
     // private ParticleSystem testParticleSystem = default;
     public GameObject hitParticles;
     public Vector3 spwnPoint;
+    private int contacts;
 
 
 
@@ -18,6 +19,7 @@ public class Bullet : MonoBehaviour
     void Start()
     {
         animator = gameObject.GetComponent<Animator>();
+        contacts = 0;
     }
 
     // Update is called once per frame
@@ -33,10 +35,11 @@ public class Bullet : MonoBehaviour
 
         if (other.gameObject.tag != "Player" && other.gameObject.tag != "bullet") {
             gameObject.GetComponent<Renderer>().enabled = false;
+            contacts += 1;
             StartCoroutine(DestroyObject(gameObject));
         }
 
-        if (other.gameObject.tag == "Enemy") {
+        if (other.gameObject.tag == "Enemy" && other.gameObject.tag != "wall" && contacts < 2) {
             other.GetComponent<EnemyMeleeDamage>().TakeDamage(BulletDamage);
             Rigidbody2D pushRB = other.gameObject.GetComponent<Rigidbody2D>();
             Vector2 moveDirectionPush = rb2D.transform.position - other.transform.position;
@@ -49,7 +52,7 @@ public class Bullet : MonoBehaviour
             StartCoroutine(destroyParticles(particleSys));
         }
 
-        if (other.gameObject.tag == "S_Enemy") {
+        if (other.gameObject.tag == "S_Enemy" && other.gameObject.tag != "wall" && contacts < 2) {
             other.GetComponent<BossMeleeDamage>().TakeDamage_B(BulletDamage);
             Rigidbody2D pushRB = other.gameObject.GetComponent<Rigidbody2D>();
             Vector2 moveDirectionPush = rb2D.transform.position - other.transform.position;
@@ -69,7 +72,7 @@ public class Bullet : MonoBehaviour
     }
 
     private IEnumerator DestroyObject(GameObject bullet) {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(1f);
         Destroy(bullet);
     }
     
@@ -88,7 +91,7 @@ public class Bullet : MonoBehaviour
 // }
 
     private IEnumerator destroyParticles(GameObject pSys){
-           yield return new WaitForSeconds(2f);
+           yield return new WaitForSeconds(0.9f);
            Destroy(pSys);
     }
 }
