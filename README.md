@@ -1,0 +1,1 @@
+A Unity-based 2D game developed by our team as the final project for for our Game Design course. Players explore a post-apocalyptic academy, using interactive mechanics, custom graphics, and environmental storytelling. Each member collaborated on core systems such as character movement, visual effects, asset creation, and game logic.
