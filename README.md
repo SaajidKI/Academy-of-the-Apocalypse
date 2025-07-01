@@ -4,6 +4,7 @@ A collaborative Unity 2D team game built in C#, taking place in a post-apocalypt
 
 ## Website & Trailer
 
-You can try the game live on our studio site: [Yeehaw Studios](https://mislam8084.wixsite.com/yeehaw-studios)
+Try the game live on our studio site: [Yeehaw Studios](https://mislam8084.wixsite.com/yeehaw-studios)
 
-[![Watch the video](https://img.youtube.com/vi/CaVZzIhX-Do/maxresdefault.jpg)](https://www.youtube.com/watch?v=CaVZzIhX-Do)
+[![Watch the trailer](https://img.youtube.com/vi/CaVZzIhX-Do/0.jpg)](https://youtu.be/CaVZzIhX-Do)
+
